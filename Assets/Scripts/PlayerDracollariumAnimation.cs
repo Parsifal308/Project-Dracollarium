@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAnimation : MonoBehaviour{
+public class PlayerDracollariumAnimation : MonoBehaviour{
     [SerializeField] private Animator animator;
     [SerializeField] private PlayerInput input;
        public void SetMovementAnimationBoolean(object sender, EventArgs e){
