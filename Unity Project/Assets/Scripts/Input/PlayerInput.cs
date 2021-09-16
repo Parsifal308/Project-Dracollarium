@@ -10,12 +10,16 @@ public class PlayerInput : MonoBehaviour{
 
     //En estos campos se almacenan los valores recibidos por el InputSystem de Unity
     [SerializeField] private Vector3 movementInput;
+    [Space(10)]
     [SerializeField] private Vector2 mouseDelta;
+    [Space(10)]
     [SerializeField] private Vector2 mousePosition;
+    [Header("PLAYER MOVEMENT STATE:"), Space(10)]
     [SerializeField] private bool isMoving;
     [SerializeField] private bool isRunning;
     [SerializeField] private bool isWalking;
     [SerializeField] private bool isJumping;
+    [Header("CAMERA MOUSE INPUT:"), Space(10)]
     [SerializeField] private float mouseX;
     [SerializeField] private float mouseY;
 
@@ -23,16 +27,18 @@ public class PlayerInput : MonoBehaviour{
     public event EventHandler OnWalkKey;
     public event EventHandler OnJumpKey;
     public event EventHandler OnMoving;
+    public event EventHandler OnBuildMenuKey;
     public void CalculateMouseToCameraInput(){
         mouseX += mouseDelta.x * cameraScript.CameraSensibility;
         mouseY += mouseDelta.y * cameraScript.CameraSensibility;
+        mouseY = Mathf.Clamp(mouseY, -25f, 25f);
     }
     private void Awake(){
         cameraScript = GetComponent<ICamera>();
+        //OnBuildMenuKey += GetComponent<PlayerManager>().BuildingPanel.GetComponent<EnableMenu>().ShowMenu;
     }
-
+    
     #region PROPERTIES
-    //Estas propiedades son utilizadas para acceder a los campos privados de esta clase
     public Vector3 MovementInput {get {return movementInput;} }
     public Vector2 MouseDelta { get { return mouseDelta; } }
     public Vector2 MousePosition { get { return mousePosition; } }
@@ -62,7 +68,7 @@ public class PlayerInput : MonoBehaviour{
         isWalking = value.ReadValueAsButton();
     }
     public void SetJumpInput(InputAction.CallbackContext value){ //UnityEvent que se invoca cuando el jugador presiona la tecla para saltar(ej. spacebar)
-    isJumping = value.ReadValueAsButton();
+        isJumping = value.ReadValueAsButton();
     }
     public void SetMouseDelta(InputAction.CallbackContext value){
         mouseDelta = value.ReadValue<Vector2>();
@@ -70,6 +76,6 @@ public class PlayerInput : MonoBehaviour{
     public void SetMousePosition(InputAction.CallbackContext value){
         mousePosition = value.ReadValue<Vector2>();
     }
-
+  
     #endregion
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,17 +14,27 @@ public class PlayerCameraLookAround : MonoBehaviour, ICamera{
     [SerializeField] private float cameraSensibility = 0.25f;
     [SerializeField] private float positionLerp = 0.05f;
     [SerializeField] private float rotationLerp = 0.05f;
+    [SerializeField] private bool disableMouse = true;
     #endregion
     #region PROPERTIES
     public GameObject RotationTarget { get { return rotationTarget; } }
     public GameObject FollowTarget { get { return followTarget; } }
     public float CameraSensibility { get{ return cameraSensibility; } }
     public bool Enabled { get{return enabled; } set{ enabled = value; } }
+    public bool IsMouseEnabled { get { return disableMouse; } set { disableMouse = value; } }
     #endregion
     #region METHODS
     public void LerpCamera(){
         playerCamera.transform.position = Vector3.Slerp(playerCamera.transform.position, followTarget.transform.position, positionLerp);
         playerCamera.transform.rotation = Quaternion.Lerp(playerCamera.transform.rotation, rotationTarget.transform.rotation, rotationLerp);
+    }
+    public void EnableMouseRotation(object sender, EventArgs e)
+    {
+        IsMouseEnabled = true;
+    }
+    public void DisableMouseRotation(object sender, EventArgs e)
+    {
+        IsMouseEnabled = false;
     }
     #endregion
     private void Start(){

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,10 +8,12 @@ public class PlayerCameraFocusedLook : MonoBehaviour, ICamera{
     [SerializeField] private float cameraSensibility;
     [SerializeField] private float positionLerp = 0.05f;
     [SerializeField] private float rotationLerp = 0.05f;
+    [SerializeField] private bool isMouseEnabled = true;
     private PlayerManager playerManager;
     private Camera playerCamera;
     private GameObject followTarget;
     private GameObject rotationTarget;
+    
     #endregion
 
     #region PROPERTIES
@@ -18,6 +21,7 @@ public class PlayerCameraFocusedLook : MonoBehaviour, ICamera{
     public bool Enabled { get { return enabled; } set { enabled = value; } }
     public Camera Camera { get { return playerCamera; } }
     public GameObject RotationTarget { get { return RotationTarget; } }
+    public bool IsMouseEnabled { get { return isMouseEnabled; } set { isMouseEnabled = value; } }
     #endregion
 
     #region METHODS
@@ -25,6 +29,13 @@ public class PlayerCameraFocusedLook : MonoBehaviour, ICamera{
         playerCamera.transform.position = Vector3.Lerp(playerCamera.transform.position, followTarget.transform.position, positionLerp);
         playerCamera.transform.rotation = Quaternion.Lerp(playerCamera.transform.rotation, rotationTarget.transform.rotation, rotationLerp);
     }
+    public void EnableMouseRotation(object sender, EventArgs e){
+        IsMouseEnabled = true;
+    }
+    public void DisableMouseRotation(object sender, EventArgs e){
+        IsMouseEnabled = false;
+    }
+
     #endregion
     private void Start(){
         playerCamera = Camera.main;
@@ -36,10 +47,12 @@ public class PlayerCameraFocusedLook : MonoBehaviour, ICamera{
         followTarget.transform.SetParent(GetComponentInChildren<CharacterController>().transform);
 
     }
+    
     private void Update(){
-        playerManager.PlayerInput.CalculateMouseToCameraInput();
+        if (isMouseEnabled){
+            playerManager.PlayerInput.CalculateMouseToCameraInput();
+        }
         rotationTarget.transform.localRotation = Quaternion.Euler(-playerManager.PlayerInput.MouseY, playerManager.PlayerInput.MouseX + 90f, 0);
         Lerp();
-    }
-    
+    } 
 }

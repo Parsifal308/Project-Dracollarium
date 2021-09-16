@@ -3,17 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerFocusedMovement : MonoBehaviour{
+public class PlayerFocusedMovement : MonoBehaviour , IMovement{
     private PlayerManager playerManager;
     public event EventHandler OnPlayerMovement;
     private CharacterController controller;
     private Vector3 movementVector;
-    private void Start(){
-        playerManager = GetComponent<PlayerManager>();
-        controller = GetComponentInChildren<CharacterController>();
-        OnPlayerMovement += GetComponent<PlayerDracollariumAnimation>().SetMovementAnimationBoolean;
-        OnPlayerMovement += GetComponent<PlayerDracollariumAnimation>().SetMovementInput;
-    }
+
+    #region METHODS
     public void Move(float moveSpeed){
         movementVector = controller.transform.right * playerManager.PlayerInput.MovementInput.z + controller.transform.forward * -playerManager.PlayerInput.MovementInput.x;
         controller.Move(movementVector * Time.deltaTime * moveSpeed);
@@ -23,6 +19,23 @@ public class PlayerFocusedMovement : MonoBehaviour{
     }
     public void Rotate(){
         controller.transform.rotation = Quaternion.Euler(0f, playerManager.FocusedLookCam.Camera.transform.rotation.eulerAngles.y - 90f, 0f);
+    }
+    public void Enable()
+    {
+        this.enabled = true;
+    }
+
+    public void Disable()
+    {
+        this.enabled = false;
+    }
+    #endregion
+    private void Start()
+    {
+        playerManager = GetComponent<PlayerManager>();
+        controller = GetComponentInChildren<CharacterController>();
+        OnPlayerMovement += GetComponent<PlayerDracollariumAnimation>().SetMovementAnimationBoolean;
+        OnPlayerMovement += GetComponent<PlayerDracollariumAnimation>().SetMovementInput;
     }
     private void Update(){
         if (playerManager.PlayerInput.IsRunning){

@@ -13,6 +13,7 @@ public class PlayerFreeMovement : MonoBehaviour, IMovement{
         OnPlayerMovement += GetComponent<PlayerDracollariumAnimation>().SetMovementAnimationBoolean; //Subscribe el metodo del componente PlayerAnimation.cs a este evento
 
     }
+    #region METHODS
     public void Move(float moveSpeed){
         controller.Move(playerManager.PlayerInput.MovementInput * Time.deltaTime * moveSpeed);  //Mueve el CharacterController usando las propiedades de PlayerInput.cs(Input x Velocidad x Tiempo)
         OnPlayerMovement?.Invoke(this, EventArgs.Empty);    //Si los subscriptores del evento no son nulos, entonces se dispara dicho metodo.
@@ -23,7 +24,19 @@ public class PlayerFreeMovement : MonoBehaviour, IMovement{
             controller.transform.right = playerManager.PlayerInput.MovementInput;   //rota el CharacterController hacia la direccion del Input
         }
     }
+    public void Enable()
+    {
+        this.enabled = true;
+    }
+
+    public void Disable()
+    {
+        this.enabled = false;
+    }
+    #endregion
     private void Update(){
         Move(playerManager.PlayerStats.WalkSpeed);
     }
+
+
 }

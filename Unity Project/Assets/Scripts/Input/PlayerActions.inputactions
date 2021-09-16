@@ -2,7 +2,7 @@
     "name": "PlayerActions",
     "maps": [
         {
-            "name": "PlayerControls",
+            "name": "PlayerKeyboard",
             "id": "00b5fead-8259-4acb-984a-536e6b583467",
             "actions": [
                 {
@@ -50,6 +50,22 @@
                     "type": "PassThrough",
                     "id": "5ba347be-2ab1-4111-af5e-40d2450f69bd",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "BuildMenu",
+                    "type": "Button",
+                    "id": "8258cfcc-6b83-4397-b8e7-52eed828efed",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "EquipmentMenu",
+                    "type": "Button",
+                    "id": "33708342-dbad-4166-8019-d3aa6a158fc4",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
@@ -162,6 +178,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1bdd7d1a-a0ee-414b-bcf3-11c67a312104",
+                    "path": "<Keyboard>/b",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BuildMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c6d9fa90-2013-4675-821e-3a8e99ace72a",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EquipmentMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

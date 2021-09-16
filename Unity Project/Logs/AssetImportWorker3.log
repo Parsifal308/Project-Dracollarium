@@ -1,0 +1,213 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.5f1 (8095aa901b9b) revision 8426922'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'es' Physical Memory: 8140 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Program Files\Unity\2020.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/MisProyectos/Dracollarium/Project-Dracollarium/Unity Project
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+63074
+Successfully changed project path to: D:/MisProyectos/Dracollarium/Project-Dracollarium/Unity Project
+D:/MisProyectos/Dracollarium/Project-Dracollarium/Unity Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 174.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.5f1 (8095aa901b9b)
+[Subsystems] Discovering subsystems at path D:/Program Files/Unity/2020.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/MisProyectos/Dracollarium/Project-Dracollarium/Unity Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   
+    VRAM:     8171 MB
+    Driver:   27.20.1034.6
+Initialize mono
+Mono path[0] = 'D:/Program Files/Unity/2020.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/Unity/2020.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Program Files/Unity/2020.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56868
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files/Unity/2020.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003445 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 170.93 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.927 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006957 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 180.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.946 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4239 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 207.3 MB.
+System memory in use after: 207.5 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4702.
+Total: 5.842700 ms (FindLiveObjects: 1.058000 ms CreateObjectMapping: 0.269900 ms MarkObjects: 4.414000 ms  DeleteObjects: 0.098900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category 04.png
+  artifactKey: Guid(88c8ceb175bef214ba0af3a316daf09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category 04.png using Guid(88c8ceb175bef214ba0af3a316daf09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13df7f19b85e00aeaea3598002d809c4') in 0.378220 seconds
+  Import took 0.414445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.418327 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Next.png
+  artifactKey: Guid(4f072f4d392ab1947b3939fd68906e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Next.png using Guid(4f072f4d392ab1947b3939fd68906e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df34d2632155c32bdb884608cbaa13d7') in 0.081603 seconds
+  Import took 0.122825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.856545 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 10.png
+  artifactKey: Guid(635c780dc916d234db0fbe1d10a9ae83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 10.png using Guid(635c780dc916d234db0fbe1d10a9ae83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442e30db8b4e3f123574bcfa72633707') in 0.101126 seconds
+  Import took 0.133620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.354485 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 05.png
+  artifactKey: Guid(eb67303bd828e204586f6c5b4004bf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 05.png using Guid(eb67303bd828e204586f6c5b4004bf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3be0a4656d03b02f48101266978ceb3') in 0.073474 seconds
+  Import took 0.089355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000839 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 06.png
+  artifactKey: Guid(1d7ac13525afc6d47b77c5a4aff0bc0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 06.png using Guid(1d7ac13525afc6d47b77c5a4aff0bc0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca12497ab4bbb9cd68d0617675f9ab6') in 0.066218 seconds
+  Import took 0.116811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000874 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 07.png
+  artifactKey: Guid(8ca86b9efca5ac3429620760f2faf5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 07.png using Guid(8ca86b9efca5ac3429620760f2faf5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c127e0536befb2a19008b87a5433e5c4') in 0.072189 seconds
+  Import took 0.099474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001324 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 02.png
+  artifactKey: Guid(6f2e0a1424baeae478b72ccf3a67f22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 02.png using Guid(6f2e0a1424baeae478b72ccf3a67f22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586900448e749b071af221986d6ae737') in 0.077939 seconds
+  Import took 0.110926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000933 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 03.png
+  artifactKey: Guid(e4a5a6249e0ef8a46be8de8019a54e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 03.png using Guid(e4a5a6249e0ef8a46be8de8019a54e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d795e0a9c429dd4d19a0bd4bccfe257') in 0.064460 seconds
+  Import took 0.098578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000860 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category 02.png
+  artifactKey: Guid(8ddaa4c53e9e3b14d8ac827a8f11d153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category 02.png using Guid(8ddaa4c53e9e3b14d8ac827a8f11d153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6bb39de33b27a41684127de6076b4d') in 0.107564 seconds
+  Import took 0.134888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001210 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Back.png
+  artifactKey: Guid(75fecb82b9689c643919b953e459d532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Back.png using Guid(75fecb82b9689c643919b953e459d532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324f1f240ead52198512bee1384b67ad') in 0.041488 seconds
+  Import took 0.094767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001066 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 04.png
+  artifactKey: Guid(4029db294d53e6f4280181b76be14193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 04.png using Guid(4029db294d53e6f4280181b76be14193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e945d3906e1291d6dbd5e782fa4048') in 0.064705 seconds
+  Import took 0.099846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000847 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 01.png
+  artifactKey: Guid(96a34a8e3cdaa8e42bf81c6541dc129a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 01.png using Guid(96a34a8e3cdaa8e42bf81c6541dc129a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3893a0c29b7f19315563c6c4274b5369') in 0.359581 seconds
+  Import took 0.429957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002043 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category 01.png
+  artifactKey: Guid(608ff9c0d350b974aa6ae6b2cf76b7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category 01.png using Guid(608ff9c0d350b974aa6ae6b2cf76b7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd65c037afcff907db63339c14043dd6') in 0.060550 seconds
+  Import took 0.110071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001283 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category 05.png
+  artifactKey: Guid(161bcb569a449ae43b9bc65b79d6ce5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category 05.png using Guid(161bcb569a449ae43b9bc65b79d6ce5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a781a296877058915e6110369a1ba51') in 0.092764 seconds
+  Import took 0.109495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001670 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category 01.png
+  artifactKey: Guid(608ff9c0d350b974aa6ae6b2cf76b7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category 01.png using Guid(608ff9c0d350b974aa6ae6b2cf76b7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd65c037afcff907db63339c14043dd6') in 0.020826 seconds
+  Import took 0.038476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001036 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 09.png
+  artifactKey: Guid(e9693ae3951e86c48b8532af12f35ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 09.png using Guid(e9693ae3951e86c48b8532af12f35ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2fb44796098fc6be39e450d80c87bf') in 0.648253 seconds
+  Import took 0.666554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000897 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category 03.png
+  artifactKey: Guid(8f5d75e5ab339ce46a19c58818b6552f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category 03.png using Guid(8f5d75e5ab339ce46a19c58818b6552f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '784373b3cb0f6bf12fa436e0a29d149e') in 0.268242 seconds
+  Import took 0.296190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000837 seconds.
+  path: Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 08.png
+  artifactKey: Guid(6f9288243415a7f4199f8766a9b13fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUI/Buttons/Menu_Building_Category_Select 08.png using Guid(6f9288243415a7f4199f8766a9b13fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411c0a40dcd8d57c7802eb07cd25b9f3') in 0.053551 seconds
+  Import took 0.087288 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
