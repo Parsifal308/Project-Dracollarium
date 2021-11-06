@@ -68,13 +68,21 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "BuildingPlacement",
+                    "type": "Button",
+                    "id": "8a8b0ab8-7941-4040-9a8d-5e15ce82d456",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
                 {
                     "name": "2D Vector",
                     "id": "2c24f6fd-7f83-4b79-985d-037ac8d092eb",
-                    "path": "2DVector(mode=2)",
+                    "path": "2DVector(mode=1)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -200,6 +208,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "EquipmentMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "865ae6c6-d9f4-4a02-9407-35b5d5c16b28",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BuildingPlacement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5386bbe-b93d-4ca2-8a0f-d1e2e02795e3",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BuildingPlacement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "99d60496-1513-464c-891f-799ddc1692a5",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BuildingPlacement",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
