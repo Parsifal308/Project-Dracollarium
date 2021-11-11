@@ -1,9 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ModularBuilding : MonoBehaviour, IFabricate{
+
+    public event EventHandler OnCreated;
+
     [Header("OUTLINE MATERIAL:"), Space(10)]
     [SerializeField] private Material outlineMaterial;
 
@@ -28,8 +32,8 @@ public class ModularBuilding : MonoBehaviour, IFabricate{
     private void Start(){
         buildRayLine = GetComponent<LineRenderer>();
         buildTerrainMask= LayerMask.GetMask("BuildTerrain");
-
-
+        OnCreated += GetComponent<PlayerManager>().EnableItemCollection;
+        OnCreated += GetComponent<PlayerManager>().DisableBuildingPositioning;
     }
     private void Update(){
         if (isPositioning){
@@ -40,7 +44,7 @@ public class ModularBuilding : MonoBehaviour, IFabricate{
             Create(building);
         }
     }
-    public void PositionBuilding(GameObject building){
+    public void PositionBuilding(GameObject building){ //CALLED FROM GUI
         isPositioning = true;
         this.building = building;
         outline = Instantiate(this.building);
@@ -60,14 +64,20 @@ public class ModularBuilding : MonoBehaviour, IFabricate{
         buildRay.direction = Camera.main.transform.forward;
         if (Physics.Raycast(buildRay, out terrainHit, buildRange, buildTerrainMask)){
             outline.transform.position = terrainHit.point;
-
             if(Mouse.current.leftButton.isPressed){
-                Debug.Log("Se Presiono el boton izquierdo del mouse durante el raycasting");
-                isPositioning = false;
-                GameObject.Instantiate(building, outline.transform.position, outline.transform.rotation);
-                building = null;
-                Destroy(outline);
-                outlineCreated = false;
+                try {
+                    Debug.Log("-->[LOG] Instantiating " + building + "...");
+                    GameObject.Instantiate(building, outline.transform.position, outline.transform.rotation); 
+                }catch (Exception ex){
+                    Debug.Log("----->[ERROR] An Error of type: "+ ex.GetType()+ "has occurred!!!");
+                }
+                finally{
+                    Debug.Log("-->[LOG] '" + building + "' instantiated successfully");
+                    building = null;
+                    Destroy(outline);
+                    outlineCreated = false;
+                    OnCreated?.Invoke(this, EventArgs.Empty);
+                }
             }       
         }
         else{

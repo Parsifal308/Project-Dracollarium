@@ -1936,6 +1936,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagData: {fileID: 11400000, guid: 140e7c399731aae4398118aaa6f180fc, type: 2}
+  usedSpace: 0
+  currentDurability: 0
+  effectIntensity: 0
+  quality: 0
+  itemA: {fileID: 0}
+  itemB: {fileID: 0}
 --- !u!136 &302643154
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2523,6 +2529,7 @@ GameObject:
   - component: {fileID: 460679051}
   - component: {fileID: 460679050}
   - component: {fileID: 460679049}
+  - component: {fileID: 460679052}
   m_Layer: 0
   m_Name: '[Item] Dev_Armor'
   m_TagString: Untagged
@@ -2607,6 +2614,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460679047}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &460679052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460679047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4543fa88f06c542a565d4418e08138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equippableData: {fileID: 11400000, guid: e8626f2894822e34294f306b549bcfa5, type: 2}
+  usedSpace: 0
+  currentDurability: 111
+  effectIntensity: 0
+  quality: 0
 --- !u!1 &463877722
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,9 +3075,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1603597659}
-        m_TargetAssemblyTypeName: ModularBuilding, Assembly-CSharp
-        m_MethodName: EnablePositioning
+      - m_Target: {fileID: 1603597652}
+        m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
+        m_MethodName: EnableBuildingPositioning
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3075,10 +3099,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1603597657}
-        m_TargetAssemblyTypeName: PlayerCameraFocusedLook, Assembly-CSharp
-        m_MethodName: set_IsMouseEnabled
-        m_Mode: 6
+      - m_Target: {fileID: 1603597652}
+        m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
+        m_MethodName: EnableMouseRotation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3087,13 +3111,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1603597659}
-        m_TargetAssemblyTypeName: ModularBuilding, Assembly-CSharp
+      - m_Target: {fileID: 1603597652}
+        m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
         m_MethodName: PositionBuilding
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 919132149155446097, guid: f3ee3e638b92cad4a995817d0d39762e, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1603597652}
+        m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
+        m_MethodName: DisableItemCollection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8044,10 +8080,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1340701504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c0786f8241ff8f4ea5bda3df790855a, type: 3}
+  m_Script: {fileID: 11500000, guid: eb4543fa88f06c542a565d4418e08138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bagData: {fileID: 11400000, guid: 140e7c399731aae4398118aaa6f180fc, type: 2}
+  equippableData: {fileID: 11400000, guid: d9fe877f2fe014045ad53c4864f718c7, type: 2}
+  usedSpace: 0
+  currentDurability: 222
+  effectIntensity: 0
+  quality: 0
 --- !u!136 &1340701507
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9194,6 +9234,7 @@ GameObject:
   - component: {fileID: 1603597660}
   - component: {fileID: 1603597655}
   - component: {fileID: 1603597651}
+  - component: {fileID: 1603597661}
   m_Layer: 0
   m_Name: '[Axis]Player'
   m_TagString: Untagged
@@ -9402,6 +9443,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 33708342-dbad-4166-8019-d3aa6a158fc4
     m_ActionName: PlayerKeyboard/EquipmentMenu[/Keyboard/tab]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8a8b0ab8-7941-4040-9a8d-5e15ce82d456
+    m_ActionName: PlayerKeyboard/BuildingPlacement[/Keyboard/t,/Keyboard/g,/Keyboard/shift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerKeyboard
@@ -9477,6 +9522,8 @@ MonoBehaviour:
   focusedLookCam: {fileID: 1603597657}
   playerEquipment: {fileID: 1603597658}
   playerStats: {fileID: 1603597654}
+  playerItemPickUp: {fileID: 1603597661}
+  playerModularBuilding: {fileID: 1603597659}
   playerGameMode: 0
 --- !u!114 &1603597653
 MonoBehaviour:
@@ -9696,6 +9743,20 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1603597661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603597647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba4ca3b65c78144eb011dcff388f5f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpRange: 8
+  masksNames: []
 --- !u!1 &1686049714
 GameObject:
   m_ObjectHideFlags: 0

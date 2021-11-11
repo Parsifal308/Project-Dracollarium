@@ -23,5 +23,5 @@ enum resourceType{
     Mining,
     Plants,
     Hunt,
-    DEV
+    DEVELOPMENT
 }

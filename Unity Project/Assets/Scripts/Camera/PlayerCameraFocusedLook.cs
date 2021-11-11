@@ -35,7 +35,6 @@ public class PlayerCameraFocusedLook : MonoBehaviour, ICamera{
     public void DisableMouseRotation(object sender, EventArgs e){
         IsMouseEnabled = false;
     }
-
     #endregion
     private void Start(){
         playerCamera = Camera.main;

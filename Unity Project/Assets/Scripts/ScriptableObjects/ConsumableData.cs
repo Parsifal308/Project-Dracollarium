@@ -20,5 +20,5 @@ enum consumableType{
     Artefact,
     Quest,
     Scroll,
-    DEV
+    DEVELOPMENT
 }
