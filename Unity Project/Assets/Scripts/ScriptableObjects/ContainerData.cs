@@ -13,9 +13,11 @@ public class ContainerData : ScriptableObject{
     [SerializeField] float cost;
     [SerializeField] float quality;
     [SerializeField] float size;
+
+    public float Size { get { return size; } }
 }
 enum containerType{
     Bag,
     Box,
-    DEV
+    DEVELOPMENT
 }

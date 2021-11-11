@@ -16,5 +16,5 @@ public class MaterialData : ScriptableObject{
 }
 enum materialType{
     Raw,
-    DEV
+    DEVELOPMENT
 }

@@ -18,4 +18,5 @@ public class PlayerEquipment : MonoBehaviour, IEquipment{
     [SerializeField] Bag back;
     [SerializeField] Equippable rightHand;
     [SerializeField] Equippable leftHand;
+
 }
