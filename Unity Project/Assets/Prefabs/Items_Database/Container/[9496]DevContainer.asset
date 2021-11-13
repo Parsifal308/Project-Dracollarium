@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0f31b1fe436944c9e572a4677e918f, type: 3}
   m_Name: '[9496]DevContainer'
   m_EditorClassIdentifier: 
-  containerId: 9496
-  containerType: 2
-  itemName: 
+  itemID: 0
+  itemName: Dev Container
   description: 
+  containerType: 2
   cost: 0
   quality: 0
   size: 0

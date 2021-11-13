@@ -16,4 +16,5 @@ public class Equippable : MonoBehaviour, I_Item{
     public float Quality { get { return quality; } set { quality = value; } }
     public List<ItemStateStats> ItemsContainedData => throw new System.NotImplementedException();
     float I_Item.UsedSpace { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+    public ItemData GetData { get { return equippableData; } }
 }

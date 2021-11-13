@@ -4,12 +4,12 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Resource", menuName = "Game Database/Resource")]
 public class ResourceData : ScriptableObject{
-    [SerializeField] public int resourceId;
+    [Header("RESOURCE  DATA:"), Space(10)]
+
     [SerializeField] ArrayList itemsDropped;
     [Space(10)]
     [SerializeField] resourceType resourceType;
     [TextArea(5, 10)]
-    [SerializeField] string description;
     [SerializeField] float quality;
     [Space(30)]
     [SerializeField] float maxResistance;

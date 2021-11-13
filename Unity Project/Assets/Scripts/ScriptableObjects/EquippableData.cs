@@ -2,12 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EquippableData : ScriptableObject{
-
+public class EquippableData : ItemData{
+    [Header("EQUIPABBLE DATA:"), Space(10)]
     [Header("Equippable Stats:")]
-    [SerializeField] string itemName;
-    [TextArea(5, 10)]
-    [SerializeField] string description;
     [SerializeField] float cost;
     [SerializeField] float quality;
     [SerializeField] float durability;

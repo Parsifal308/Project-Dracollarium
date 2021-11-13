@@ -6,9 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Weapon", menuName = "Game Database/Equippable/Weapon")]
 public class WeaponData : EquippableData{
 
-    [Header("Weapon Information:")]
-    [SerializeField] public int weaponId;
-    [Space(10)]
+    [Header("WEAPON DATA:"),Space(10)]
     [SerializeField] weaponType weaponType;
 }
 enum weaponType{

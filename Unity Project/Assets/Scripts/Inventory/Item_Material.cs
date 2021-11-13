@@ -10,4 +10,5 @@ public class Item_Material : MonoBehaviour, I_Item{
     public float UsedSpace { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     public float EffectIntensity { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     public List<ItemStateStats> ItemsContainedData => throw new System.NotImplementedException();
+    public ItemData GetData { get { return materialData; } }
 }
