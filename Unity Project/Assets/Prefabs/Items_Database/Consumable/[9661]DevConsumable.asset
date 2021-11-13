@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca0c6d1d18d1e64aacd6887b8c23663, type: 3}
   m_Name: '[9661]DevConsumable'
   m_EditorClassIdentifier: 
-  consumableId: 9661
-  consumableType: 5
-  itemName: 
+  itemID: 0
+  itemName: Dev Consumable
   description: 
+  consumableType: 5
   cost: 0
   quality: 0
   size: 0

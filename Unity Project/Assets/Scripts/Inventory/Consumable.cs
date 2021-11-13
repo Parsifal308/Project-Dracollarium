@@ -15,4 +15,5 @@ public class Consumable : MonoBehaviour, I_Item{
     public float EffectIntensity { get { return effectIntensity; } set { effectIntensity = value; } }
     public float Quality { get { return quality; } set { quality = value; } }
     public List<ItemStateStats> ItemsContainedData => throw new System.NotImplementedException();
+    public ItemData GetData { get { return consumableData; } }
 }

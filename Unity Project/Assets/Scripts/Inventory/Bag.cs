@@ -23,4 +23,6 @@ public class Bag : MonoBehaviour, I_Item {
     public float EffectIntensity { get { return effectIntensity; } set {effectIntensity = value; } }
     public float Quality { get { return quality; } set { quality = value; } }
     public List<ItemStateStats> ItemsContainedData { get { return itemsContainedData; } }
+    public ItemData GetData { get { return bagData; } }
+
 }

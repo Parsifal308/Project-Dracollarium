@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f63673b125a7e145b2695d230cb8f36, type: 3}
   m_Name: '[9000]DevArmor'
   m_EditorClassIdentifier: 
-  armorId: 9000
-  armorType: 6
-  armorPiece: 0
-  itemName: 
+  itemID: 0
+  itemName: Dev Armor
+  description: 
   description: 
   cost: 0
   quality: 0
@@ -31,3 +30,5 @@ MonoBehaviour:
   dexteryMod: 0
   enduranceMod: 0
   concentrationMod: 0
+  armorType: 6
+  armorPiece: 0

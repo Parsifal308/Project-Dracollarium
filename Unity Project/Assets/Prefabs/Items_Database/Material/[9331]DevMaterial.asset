@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff6f4d0b533f6f46a981a68677fbf4f, type: 3}
   m_Name: '[9331]DevMaterial'
   m_EditorClassIdentifier: 
-  materialId: 9331
-  materialType: 1
-  itemName: 
+  itemID: 0
+  itemName: Dev Material
   description: 
+  materialType: 1
   cost: 0
   quality: 0
   size: 0

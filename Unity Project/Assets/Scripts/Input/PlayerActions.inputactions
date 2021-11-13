@@ -14,7 +14,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "RunMode",
+                    "name": "Run",
                     "type": "Button",
                     "id": "e979434c-7330-4131-996d-bc14ee9f69fc",
                     "expectedControlType": "Button",
@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "WalkMode",
+                    "name": "Walk",
                     "type": "Button",
                     "id": "8555bed1-fe10-404f-bd8d-05d924141775",
                     "expectedControlType": "Button",
@@ -33,6 +33,22 @@
                     "name": "Jump",
                     "type": "Button",
                     "id": "c1ceffcc-b448-460f-89c9-66d4ff0abc4f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ActionA",
+                    "type": "Button",
+                    "id": "aa74f212-906a-4f4d-9343-58ff50b546c8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ActionB",
+                    "type": "Button",
+                    "id": "45eadb1f-832e-4680-9942-eaf2604e8ed0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -54,9 +70,9 @@
                     "interactions": ""
                 },
                 {
-                    "name": "BuildMenu",
+                    "name": "BuildingPlacement",
                     "type": "Button",
-                    "id": "8258cfcc-6b83-4397-b8e7-52eed828efed",
+                    "id": "8a8b0ab8-7941-4040-9a8d-5e15ce82d456",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -70,9 +86,41 @@
                     "interactions": ""
                 },
                 {
-                    "name": "BuildingPlacement",
+                    "name": "CharacterMenu",
                     "type": "Button",
-                    "id": "8a8b0ab8-7941-4040-9a8d-5e15ce82d456",
+                    "id": "9c8f3e32-1084-4e45-8b33-0a3cb3a9113b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "BuildMenu",
+                    "type": "Button",
+                    "id": "8258cfcc-6b83-4397-b8e7-52eed828efed",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "JourneyMenu",
+                    "type": "Button",
+                    "id": "99b01bfe-4465-4dd4-8511-8a4a7d4ec052",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MapMenu",
+                    "type": "Button",
+                    "id": "c34852fb-e04a-485e-b781-e39e67b3c273",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "FacultiesMenu",
+                    "type": "Button",
+                    "id": "afdf9619-e13c-4956-a8de-20cdced46eeb",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -141,7 +189,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RunMode",
+                    "action": "Run",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -152,7 +200,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WalkMode",
+                    "action": "Walk",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -191,6 +239,39 @@
                 },
                 {
                     "name": "",
+                    "id": "c6d9fa90-2013-4675-821e-3a8e99ace72a",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EquipmentMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7aa2d082-d7b7-4d78-abaa-4e7b9c362518",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CharacterMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "553d5ed8-8feb-4a66-8c09-68a073365027",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JourneyMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "1bdd7d1a-a0ee-414b-bcf3-11c67a312104",
                     "path": "<Keyboard>/b",
                     "interactions": "Hold",
@@ -202,12 +283,45 @@
                 },
                 {
                     "name": "",
-                    "id": "c6d9fa90-2013-4675-821e-3a8e99ace72a",
-                    "path": "<Keyboard>/tab",
+                    "id": "d255ea34-d2f9-48a6-be57-87249f1cd8b0",
+                    "path": "<Keyboard>/m",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "EquipmentMenu",
+                    "action": "MapMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "100158f2-2c3c-4afe-b1a1-b8c7d155648e",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActionA",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d19a70e-6e0a-49db-a845-e7030e1da5b9",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActionB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b140c9a5-45f8-46b8-b4ee-8041b94f75b7",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FacultiesMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
