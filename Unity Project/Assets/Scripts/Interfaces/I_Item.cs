@@ -8,7 +8,7 @@ public interface I_Item{
     public float EffectIntensity { get; set; }
     public float Quality { get; set; }
     public List<ItemStateStats> ItemsContainedData { get ; }
-    public ItemData GetData { get; }
+    public Database_Item GetData { get; }
 
 }
 public struct ItemStateStats{

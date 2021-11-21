@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ModularBuilding : MonoBehaviour, IFabricate{
-
+    #region FIELDS
     public event EventHandler OnCreated;
 
     [Header("OUTLINE MATERIAL:"), Space(10)]
@@ -28,12 +28,13 @@ public class ModularBuilding : MonoBehaviour, IFabricate{
     private GameObject building;
 
     [SerializeField] private InputActionAsset actionsMap;
-    
+    #endregion
+    #region UNITY METHODS
     private void Start(){
         buildRayLine = GetComponent<LineRenderer>();
         buildTerrainMask= LayerMask.GetMask("BuildTerrain");
-        OnCreated += GetComponent<PlayerManager>().EnableItemCollection;
-        OnCreated += GetComponent<PlayerManager>().DisableBuildingPositioning;
+        OnCreated += GetComponent<Controller_PlayerManager>().EnableItemCollection;
+        OnCreated += GetComponent<Controller_PlayerManager>().DisableBuildingPositioning;
     }
     private void Update(){
         if (isPositioning){
@@ -44,6 +45,8 @@ public class ModularBuilding : MonoBehaviour, IFabricate{
             Create(building);
         }
     }
+    #endregion
+    #region METHODS
     public void PositionBuilding(GameObject building){ //CALLED FROM GUI
         isPositioning = true;
         this.building = building;
@@ -66,13 +69,13 @@ public class ModularBuilding : MonoBehaviour, IFabricate{
             outline.transform.position = terrainHit.point;
             if(Mouse.current.leftButton.isPressed){
                 try {
-                    Debug.Log("-->[LOG] Instantiating " + building + "...");
+                    Debug.LogFormat("<color=#00ff00> {0} </color>", "-- >[LOG] Instantiating " + building + "...");
                     GameObject.Instantiate(building, outline.transform.position, outline.transform.rotation); 
                 }catch (Exception ex){
-                    Debug.Log("----->[ERROR] An Error of type: "+ ex.GetType()+ "has occurred!!!");
+                    Debug.LogError("----->[ERROR] An Error of type: "+ ex.GetType()+ "has occurred!!!");
                 }
                 finally{
-                    Debug.Log("-->[LOG] '" + building + "' instantiated successfully");
+                    Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] '" + building + "' instantiated successfully");
                     building = null;
                     Destroy(outline);
                     outlineCreated = false;
@@ -105,4 +108,5 @@ public class ModularBuilding : MonoBehaviour, IFabricate{
     {
         isPositioning = false;
     }
+    #endregion
 }

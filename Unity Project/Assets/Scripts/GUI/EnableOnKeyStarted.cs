@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class EnableOnKeyStarted : MonoBehaviour{
     public event EventHandler OnMenuEnabled; //escuchado desde ICamera para activar/desactivar mouse
     private void Start(){
-        OnMenuEnabled += GetComponentInParent<PlayerManager>().DisableMouseRotation;   
+        OnMenuEnabled += GetComponentInParent<Controller_PlayerManager>().DisableMouseRotation;   
     }
     public void EnableMenu(InputAction.CallbackContext value){    //invocado cada vez que se presiona tecla de construir desde InputSystem"
         if (value.started){

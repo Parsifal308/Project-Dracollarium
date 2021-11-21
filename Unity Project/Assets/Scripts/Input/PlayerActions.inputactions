@@ -2,7 +2,7 @@
     "name": "PlayerActions",
     "maps": [
         {
-            "name": "PlayerKeyboard",
+            "name": "PlayerCharacterMovement",
             "id": "00b5fead-8259-4acb-984a-536e6b583467",
             "actions": [
                 {
@@ -38,22 +38,6 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ActionA",
-                    "type": "Button",
-                    "id": "aa74f212-906a-4f4d-9343-58ff50b546c8",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "ActionB",
-                    "type": "Button",
-                    "id": "45eadb1f-832e-4680-9942-eaf2604e8ed0",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "MouseDelta",
                     "type": "PassThrough",
                     "id": "84226c60-17a7-4523-878a-b2c05081f385",
@@ -66,62 +50,6 @@
                     "type": "PassThrough",
                     "id": "5ba347be-2ab1-4111-af5e-40d2450f69bd",
                     "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "BuildingPlacement",
-                    "type": "Button",
-                    "id": "8a8b0ab8-7941-4040-9a8d-5e15ce82d456",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "EquipmentMenu",
-                    "type": "Button",
-                    "id": "33708342-dbad-4166-8019-d3aa6a158fc4",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "CharacterMenu",
-                    "type": "Button",
-                    "id": "9c8f3e32-1084-4e45-8b33-0a3cb3a9113b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "BuildMenu",
-                    "type": "Button",
-                    "id": "8258cfcc-6b83-4397-b8e7-52eed828efed",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "JourneyMenu",
-                    "type": "Button",
-                    "id": "99b01bfe-4465-4dd4-8511-8a4a7d4ec052",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "MapMenu",
-                    "type": "Button",
-                    "id": "c34852fb-e04a-485e-b781-e39e67b3c273",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "FacultiesMenu",
-                    "type": "Button",
-                    "id": "afdf9619-e13c-4956-a8de-20cdced46eeb",
-                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
@@ -196,7 +124,7 @@
                 {
                     "name": "",
                     "id": "0eaeb3f7-d83a-4cb4-8ef9-39799e67bb09",
-                    "path": "<Keyboard>/x",
+                    "path": "<Keyboard>/alt",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -236,10 +164,66 @@
                     "action": "MousePosition",
                     "isComposite": false,
                     "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PlayerMenus",
+            "id": "c123fcbd-ad3c-4d62-963b-6d99824cd6bf",
+            "actions": [
+                {
+                    "name": "FacultiesMenu",
+                    "type": "Button",
+                    "id": "d6cf9d83-2e9a-4f5b-8f59-4971d06c51f7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 },
                 {
+                    "name": "MapMenu",
+                    "type": "Button",
+                    "id": "fd375436-96a9-4dfe-b30b-a229ef5bc802",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "JourneyMenu",
+                    "type": "Button",
+                    "id": "1266183a-e0f0-4125-8f79-c79389486bd4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "BuildMenu",
+                    "type": "Button",
+                    "id": "6d86a1fc-c234-4b11-874e-069e30ce11a2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "CharacterMenu",
+                    "type": "Button",
+                    "id": "8a7750c9-cd5f-4173-9b51-335c21368ebd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "EquipmentMenu",
+                    "type": "Button",
+                    "id": "6df29046-b516-418e-87ea-6ea4daafa300",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
                     "name": "",
-                    "id": "c6d9fa90-2013-4675-821e-3a8e99ace72a",
+                    "id": "e4a969ed-08e5-4e0d-85aa-435ae02b6d6f",
                     "path": "<Keyboard>/tab",
                     "interactions": "",
                     "processors": "",
@@ -250,7 +234,7 @@
                 },
                 {
                     "name": "",
-                    "id": "7aa2d082-d7b7-4d78-abaa-4e7b9c362518",
+                    "id": "046cb291-453e-41c1-8d06-73967c3fb5c0",
                     "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
@@ -261,18 +245,7 @@
                 },
                 {
                     "name": "",
-                    "id": "553d5ed8-8feb-4a66-8c09-68a073365027",
-                    "path": "<Keyboard>/j",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "JourneyMenu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1bdd7d1a-a0ee-414b-bcf3-11c67a312104",
+                    "id": "f21544f2-2f0b-479b-956f-431a3b3a5888",
                     "path": "<Keyboard>/b",
                     "interactions": "Hold",
                     "processors": "",
@@ -283,7 +256,18 @@
                 },
                 {
                     "name": "",
-                    "id": "d255ea34-d2f9-48a6-be57-87249f1cd8b0",
+                    "id": "5eb7fecd-c063-405d-8f49-df8cd5ddc055",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JourneyMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4359b362-377c-4c67-b5c3-a7057e2d55ed",
                     "path": "<Keyboard>/m",
                     "interactions": "",
                     "processors": "",
@@ -294,7 +278,186 @@
                 },
                 {
                     "name": "",
-                    "id": "100158f2-2c3c-4afe-b1a1-b8c7d155648e",
+                    "id": "7f3cf129-6e78-4191-8045-bb61ea475cd7",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FacultiesMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PlayerBuilding",
+            "id": "b749afd2-40a6-4412-9e6a-2d393d659937",
+            "actions": [
+                {
+                    "name": "VerticalRotation",
+                    "type": "Button",
+                    "id": "f52694d6-3a31-4a72-8ae3-e285a4207bde",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "HorizontalRotation",
+                    "type": "Button",
+                    "id": "42974bb1-f4da-4ff7-a834-b606f1a05629",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Cancel",
+                    "type": "Button",
+                    "id": "5cfa411c-5496-4ef1-9787-938b92404ff0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a80b8936-c42d-42ff-ad0d-2a233f812651",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "VerticalRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "262be9ab-b4dd-4178-aaf5-b011106db9fb",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "VerticalRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "06aae37e-6a0b-4f28-9e9c-aa68b82c0cec",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b21ffede-36a5-4b80-a86f-9961779cafa2",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f69cfd9-b766-49cd-a228-d1dcec36b4e6",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65334884-8720-4ef0-80b0-bdde4d377511",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PlayerCharacterCombat",
+            "id": "9b021f48-dc27-4227-8c70-f1719ecaabbe",
+            "actions": [
+                {
+                    "name": "AttackA",
+                    "type": "Button",
+                    "id": "96ec7881-ba61-4c9d-b8ad-9647f36c8d20",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "AttackB",
+                    "type": "Button",
+                    "id": "68a664b4-4b64-4e25-a363-db2fe41b0409",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e1bd43e9-6aee-49be-b10b-b2102adb04b2",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackA",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b53e26f7-0cc6-40d9-baf4-ba4cdf4e80db",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PlayerCharacterAction",
+            "id": "c863dcc8-d259-4f1e-9150-8c842415ad1a",
+            "actions": [
+                {
+                    "name": "ActionB",
+                    "type": "Button",
+                    "id": "2a69c00b-ac13-4d8f-a449-5d1a52ca69f0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ActionA",
+                    "type": "Button",
+                    "id": "e91cd2b4-3876-46e6-a4d8-a799206c3310",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "952b208b-2683-445c-b054-5b68d1b2db41",
                     "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
@@ -305,56 +468,12 @@
                 },
                 {
                     "name": "",
-                    "id": "3d19a70e-6e0a-49db-a845-e7030e1da5b9",
+                    "id": "54be63e1-2297-41fb-8c77-43aa67c6dd5b",
                     "path": "<Keyboard>/v",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "ActionB",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b140c9a5-45f8-46b8-b4ee-8041b94f75b7",
-                    "path": "<Keyboard>/n",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "FacultiesMenu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "865ae6c6-d9f4-4a02-9407-35b5d5c16b28",
-                    "path": "<Keyboard>/t",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "BuildingPlacement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a5386bbe-b93d-4ca2-8a0f-d1e2e02795e3",
-                    "path": "<Keyboard>/g",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "BuildingPlacement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "99d60496-1513-464c-891f-799ddc1692a5",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "BuildingPlacement",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

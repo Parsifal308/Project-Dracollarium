@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f63673b125a7e145b2695d230cb8f36, type: 3}
+  m_Name: '[9301]DevArmor'
+  m_EditorClassIdentifier: 
+  itemID: 0
+  itemName: Dev Armor
+  description: 
+  icon: {fileID: 0}
+  cost: 0
+  quality: 0
+  durability: 0
+  size: 0
+  strengthReq: 0
+  volitionReq: 0
+  dexteryReq: 0
+  enduranceReq: 0
+  concentrationReq: 0
+  strengthMod: 0
+  volitionMod: 0
+  dexteryMod: 0
+  enduranceMod: 0
+  concentrationMod: 0
+  armorType: 6
+  armorPiece: 0

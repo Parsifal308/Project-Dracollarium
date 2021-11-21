@@ -4,19 +4,34 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerDracollariumAnimation : MonoBehaviour{
+    #region FIELDS
     private Animator animator;
-    private PlayerManager playerManager;
-
+    private Controller_PlayerManager playerGlobalController;
+    #endregion
+    #region METHODS
     public void SetMovementAnimationBoolean(object sender, EventArgs e){
-        if (playerManager.PlayerInput.IsMoving)
-        {
+        if ((sender as IMovement).IsMoving){
             animator.SetBool("isMoving", true);
+        }else{
+            animator.SetBool("isMoving", false);
+        }
+        if ((sender as IMovement).IsSprinting)
+        {
+            animator.SetBool("isSprinting", true);
         }
         else
         {
-            animator.SetBool("isMoving", false);
+            animator.SetBool("isSprinting", false);
         }
-        if (playerManager.PlayerInput.IsRunning)
+        if ((sender as IMovement).IsWalking)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
+        if ((sender as IMovement).IsRunning)
         {
             animator.SetBool("isRunning", true);
         }
@@ -25,14 +40,14 @@ public class PlayerDracollariumAnimation : MonoBehaviour{
             animator.SetBool("isRunning", false);
         }
     }
-    public void SetMovementInput(object sender, EventArgs e)
-    {
-        animator.SetFloat("MovementX", Mathf.Lerp(animator.GetFloat("MovementX"), playerManager.PlayerInput.MovementInput.x, 0.05f));
-        animator.SetFloat("MovementZ", Mathf.Lerp(animator.GetFloat("MovementZ"), playerManager.PlayerInput.MovementInput.z, 0.05f));
+    public void SetMovementInput(object sender, EventArgs e){
+        animator.SetFloat("MovementX", Mathf.Lerp(animator.GetFloat("MovementX"), (sender as IMovement).MoveInput.x, 0.05f));
+        animator.SetFloat("MovementZ", Mathf.Lerp(animator.GetFloat("MovementZ"), (sender as IMovement).MoveInput.y, 0.05f));
     }
     private void Start(){
         animator = GetComponentInChildren<Animator>();
-        playerManager = GetComponent<PlayerManager>();
+        playerGlobalController = GetComponent<Controller_PlayerManager>();
         animator.updateMode = AnimatorUpdateMode.Normal;
     }
+    #endregion
 }
