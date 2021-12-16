@@ -81,9 +81,150 @@ ModelImporter:
   - first:
       74: 7578530069920838986
     second: Dracollarium_Run_void
+  - first:
+      74: 6109186088983016092
+    second: Dracollarium_Run_01 (1)
+  - first:
+      74: 5180710283449582786
+    second: '[Armature] Dracollarium|Dracollarium_Walk_01'
+  - first:
+      74: -2713577570860940755
+    second: '[Armature] Dracollarium|Dracollarium_Run_04'
+  - first:
+      74: 6838502012586066378
+    second: '[Armature] Dracollarium|Action'
+  - first:
+      74: -6358261705216694329
+    second: '[Armature] Dracollarium|Dracollarium_Run_02.001'
+  - first:
+      74: -595020530573309217
+    second: Dracollarium_Run_01.001
+  - first:
+      74: -4933601463065405128
+    second: Dracollarium_Run_04.001
+  - first:
+      74: 4112567303899057462
+    second: Dracollarium_Run_02.001
+  - first:
+      74: 165380700909332819
+    second: Dracollarium_Run_03.001
+  - first:
+      74: -3910206947184769932
+    second: Dracollarium_Idle_01.001
+  - first:
+      74: 2498736979788733362
+    second: Dracollarium_Idle_02.001
+  - first:
+      74: -3561908116699503917
+    second: Dracollarium_Idle_03.001
+  - first:
+      74: 435181276622675771
+    second: Dracollarium_Walk_01.001
+  - first:
+      74: 80624843316068325
+    second: Dracollarium_Walk_02.001
+  - first:
+      74: 1131634082263882099
+    second: Dracollarium_Walk_03.001
+  - first:
+      74: 6301221560122098908
+    second: Dracollarium_Walk_04.001
+  - first:
+      74: -449039301144061083
+    second: Dracollarium_Idle_001
+  - first:
+      74: 4295144242270147485
+    second: Dracollarium_Run_001
+  - first:
+      74: 3921094538507472362
+    second: Dracollarium_Run_002
+  - first:
+      74: 3369264094154974073
+    second: Dracollarium_Run_003
+  - first:
+      74: -3746439453011825768
+    second: Dracollarium_Run_004
+  - first:
+      74: -5217169803623590203
+    second: '[Armature] Dracollarium|Dracollarium@Idle_001'
+  - first:
+      74: 5390251068922432961
+    second: '[Armature] Dracollarium|Dracollarium@Run_001'
+  - first:
+      74: -5095642610788748449
+    second: '[Armature] Dracollarium|Dracollarium@Idle_003 (1)'
+  - first:
+      74: 3612481488067591589
+    second: '[Armature] Dracollarium|Dracollarium@Idle_002'
+  - first:
+      74: -4582117329527785695
+    second: '[Armature] Dracollarium|Dracollarium@Run_004 (1)'
+  - first:
+      74: 1520338160052092087
+    second: '[Armature] Dracollarium|Dracollarium@Run_005'
+  - first:
+      74: -8437346495302940748
+    second: '[Armature] Dracollarium|Dracollarium@Run_006'
+  - first:
+      74: 7270871740039009041
+    second: '[Armature] Dracollarium|Dracollarium@Run_007'
+  - first:
+      74: -6407901568080477026
+    second: '[Armature] Dracollarium|Dracollarium@Run_008'
+  - first:
+      74: -7402762730843621592
+    second: '[Armature] Dracollarium|Dracollarium@Build_001'
+  - first:
+      74: -7456605645221311125
+    second: '[Armature] Dracollarium|Dracollarium@Build_002'
+  - first:
+      74: -2685224585050946662
+    second: '[Armature] Dracollarium|@Dracollarium@Chop_001'
+  - first:
+      74: -8843142388199269248
+    second: '[Armature] Dracollarium|Dracollarium@Walk_02.001'
+  - first:
+      74: 9091752895283171239
+    second: Dracollarium|@Run_003
+  - first:
+      74: -3746189190635057693
+    second: Dracollarium|@Idle_001
+  - first:
+      74: -7521892524776238884
+    second: Dracollarium|@Run_001
+  - first:
+      74: 8250878826497794268
+    second: Dracollarium|@Run_002
+  - first:
+      74: -4726952443106587784
+    second: Dracollarium|@Run_004
+  - first:
+      74: 7634462589901108365
+    second: Dracollarium|@Run_005
+  - first:
+      74: 1985548553503940167
+    second: Dracollarium|@Run_006
+  - first:
+      74: 2579317343090642778
+    second: Dracollarium|@Run_007
+  - first:
+      74: -1750781497495008737
+    second: Dracollarium|@Run_008
+  - first:
+      74: -1244781228716188045
+    second: Dracollarium|@Build_001
+  - first:
+      74: -2031875738559930024
+    second: Dracollarium|@Build_002
+  - first:
+      74: -7847046213903712390
+    second: Dracollarium|@Chop_001
+  - first:
+      74: 730764861632453749
+    second: Dracollarium|@Grab_01
   externalObjects: {}
   materials:
-    materialImportMode: 2
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -101,7 +242,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -110,8 +251,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Dracollarium_Idle_01
-      takeName: Dracollarium_Idle_01
+      name: Dracollarium|@Idle_001
+      takeName: Dracollarium|@Idle_001
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -139,8 +280,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Idle_02
-      takeName: Dracollarium_Idle_02
+      name: Dracollarium|@Run_001
+      takeName: Dracollarium|@Run_001
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -168,8 +309,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Idle_03
-      takeName: Dracollarium_Idle_03
+      name: Dracollarium|@Run_002
+      takeName: Dracollarium|@Run_002
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -180,7 +321,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -197,8 +338,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Run_01
-      takeName: Dracollarium_Run_01
+      name: Dracollarium|@Run_003
+      takeName: Dracollarium|@Run_003
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -209,7 +350,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -226,8 +367,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Run_02
-      takeName: Dracollarium_Run_02
+      name: Dracollarium|@Run_004
+      takeName: Dracollarium|@Run_004
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -238,7 +379,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -255,8 +396,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Run_03
-      takeName: Dracollarium_Run_03
+      name: Dracollarium|@Run_005
+      takeName: Dracollarium|@Run_005
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -267,7 +408,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -284,8 +425,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Run_04
-      takeName: Dracollarium_Run_04
+      name: Dracollarium|@Run_006
+      takeName: Dracollarium|@Run_006
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -296,7 +437,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -313,8 +454,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Walk_01
-      takeName: Dracollarium_Walk_01
+      name: Dracollarium|@Run_007
+      takeName: Dracollarium|@Run_007
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -325,7 +466,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -342,8 +483,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Walk_02
-      takeName: Dracollarium_Walk_02
+      name: Dracollarium|@Run_008
+      takeName: Dracollarium|@Run_008
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -354,7 +495,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -371,8 +512,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Walk_03
-      takeName: Dracollarium_Walk_03
+      name: Dracollarium|@Build_001
+      takeName: Dracollarium|@Build_001
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -383,7 +524,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -400,8 +541,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Walk_04
-      takeName: Dracollarium_Walk_04
+      name: Dracollarium|@Build_002
+      takeName: Dracollarium|@Build_002
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -412,7 +553,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -429,37 +570,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_TPose
-      takeName: Dracollarium_TPose
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Dracollarium_Walk_05
-      takeName: Dracollarium_Walk_05
+      name: Dracollarium|@Chop_001
+      takeName: Dracollarium|@Chop_001
       internalID: 0
       firstFrame: 0
       lastFrame: 30
@@ -470,7 +582,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -487,214 +599,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dracollarium_Walk_06
-      takeName: Dracollarium_Walk_06
+      name: Dracollarium|@Grab_01
+      takeName: Dracollarium|@Grab_01
       internalID: 0
       firstFrame: 0
       lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Dracollarium_Walk_07
-      takeName: Dracollarium_Walk_07
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Dracollarium_Walk_08
-      takeName: Dracollarium_Walk_08
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Dracollarium_Run_05
-      takeName: Dracollarium_Run_05
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Dracollarium_Run_06
-      takeName: Dracollarium_Run_06
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Dracollarium_Run_07
-      takeName: Dracollarium_Run_07
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Dracollarium_Run_08
-      takeName: Dracollarium_Run_08
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Dracollarium_Run_void
-      takeName: Dracollarium_Run_01
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 0
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -754,7 +663,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
+    tangentImportMode: 2
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
@@ -781,7 +690,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 

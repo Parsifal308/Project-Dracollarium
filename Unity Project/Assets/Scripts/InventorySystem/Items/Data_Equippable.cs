@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Data_Equippable : MonoBehaviour, I_Item{
+public abstract class Data_Equippable : MonoBehaviour, I_ItemData{
     [Header("EQUIPPABLE INFORMATION:"), Space(10)]
     [SerializeField] protected float usedSpace;
     [SerializeField] protected float currentDurability;
@@ -16,5 +16,5 @@ public abstract class Data_Equippable : MonoBehaviour, I_Item{
 
     abstract public Database_Item GetData { get; }
 
-    float I_Item.UsedSpace { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+    float I_ItemData.UsedSpace { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 }

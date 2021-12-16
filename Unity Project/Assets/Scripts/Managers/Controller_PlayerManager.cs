@@ -13,25 +13,25 @@ public class Controller_PlayerManager : MonoBehaviour {
     [Header("GRAPHIC USER INTERFACE: "), Space(10)]
     //[SerializeField] private GameObject equipmentPanel;
     //[SerializeField] private GameObject buildingPanel;
-    [SerializeField] private BuildingMenu buildingMenu;
-    [SerializeField] private EquipmentMenu equipmentMenu;
+    [SerializeField] private Menu buildingMenu;
+    [SerializeField] private Menu equipmentMenu;
     [SerializeField] private PauseMenu pauseMenu;
 
     [Header("MOVEMENT SCRIPTS:"), Space(10)]
-    [SerializeField] private PlayerMovement_Shoulder focusedMovement;
-    [SerializeField] private PlayerMovement_Free freeMovement;
+    [SerializeField] private Movement_Focused focusedMovement;
+    [SerializeField] private Movement_Free freeMovement;
     [SerializeField] private PlayerDracollariumAnimation playerDracollariumAnimation;
     private IMovement currentMovementScript;
 
     [Header("CAMERA SCRIPTS:"), Space(10)]
-    [SerializeField] private PlayerCameraLookAround lookAroundCam;
-    [SerializeField] private PlayerCamera_Shoulder focusedLookCam;
+    [SerializeField] private Camera_LookAround lookAroundCam;
+    [SerializeField] private Camera_PlayerShoulder focusedLookCam;
     private ICamera currentCameraScript;
 
     [Header("PLAYER:"), Space(25)]
-    [SerializeField] private PlayerEquipment playerEquipment;
-    [SerializeField] private PlayerStats playerStats;
-    [SerializeField] private PlayerItemPickup playerItemPickUp;
+    [SerializeField] private Player_Equipment playerEquipment;
+    [SerializeField] private Player_Stats playerStats;
+    [SerializeField] private Player_ItemPickup playerItemPickUp;
     [SerializeField] private ModularBuilding playerModularBuilding;
     private IFabricate[] fabricationActions;
 
@@ -42,21 +42,21 @@ public class Controller_PlayerManager : MonoBehaviour {
     #region PROPERTIES
     public ICamera CurrentCameraScript { get { return currentCameraScript; } }
     public Controller_PlayerActions PlayerActionsController { get { return playerActionsController; } }
-    public BuildingMenu BuildingMenu { get { return buildingMenu; }set{ buildingMenu = value; } }
+    public Menu BuildingMenu { get { return buildingMenu; }set{ buildingMenu = value; } }
     public PlayerDracollariumAnimation PlayerDracollariumAnimation { get { return playerDracollariumAnimation; } set { playerDracollariumAnimation = value; } }
-    public EquipmentMenu EquipmentMenu { get { return equipmentMenu; } set { equipmentMenu = value; } }
+    public Menu EquipmentMenu { get { return equipmentMenu; } set { equipmentMenu = value; } }
     public PauseMenu PauseMenu { get { return pauseMenu; } set { pauseMenu = value; } }
     public PlayerInput PlayerInput { get { return playerInput; } }
-    public PlayerStats PlayerStats { get { return playerStats; } }
-    public PlayerMovement_Shoulder FocusedMovement { get { return focusedMovement; } }
-    public PlayerMovement_Free FreeMovement { get { return freeMovement; } }
-    public PlayerCameraLookAround LookAroundCam { get { return lookAroundCam; } }
-    public PlayerCamera_Shoulder FocusedLookCam { get { return focusedLookCam; } }
+    public Player_Stats PlayerStats { get { return playerStats; } }
+    public Movement_Focused FocusedMovement { get { return focusedMovement; } }
+    public Movement_Free FreeMovement { get { return freeMovement; } }
+    public Camera_LookAround LookAroundCam { get { return lookAroundCam; } }
+    public Camera_PlayerShoulder FocusedLookCam { get { return focusedLookCam; } }
     public ICamera CurrentCamera { get { return currentCameraScript; } set { currentCameraScript = value; } }
     public IMovement CurrentMovementScript { get { return currentMovementScript; } set { currentMovementScript = value; } }
     //public GameObject BuildingPanel { get { return buildingPanel; } set { buildingPanel = value; } }
     //public GameObject EquipmentPanel { get { return equipmentPanel; } set { equipmentPanel = value; } }
-    public PlayerItemPickup PlayerItemPickup { get { return playerItemPickUp; } set { playerItemPickUp = value; } }
+    public Player_ItemPickup PlayerItemPickup { get { return playerItemPickUp; } set { playerItemPickUp = value; } }
     public ModularBuilding PlayerModularBuilding { get { return playerModularBuilding; } set { playerModularBuilding = value; } }
     #endregion
 
@@ -182,6 +182,7 @@ public class Controller_PlayerManager : MonoBehaviour {
         currentCameraScript = FocusedLookCam;
         currentMovementScript = FocusedMovement;
         playerActionsController = GetComponent<Controller_PlayerActions>();
+        Cursor.lockState = CursorLockMode.Confined;
     }
     #endregion
 

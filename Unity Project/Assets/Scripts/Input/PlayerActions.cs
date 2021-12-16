@@ -260,7 +260,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""f21544f2-2f0b-479b-956f-431a3b3a5888"",
                     ""path"": ""<Keyboard>/b"",
-                    ""interactions"": ""Hold"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""BuildMenu"",

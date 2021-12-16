@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Data_Consumable : MonoBehaviour, I_Item{
+public class Data_Consumable : MonoBehaviour, I_ItemData{
     [Header("CONSUMABLE INFORMATION:"), Space(10)]
     [SerializeField] private Database_Consumable consumableData;
     [SerializeField] private float currentDurability;

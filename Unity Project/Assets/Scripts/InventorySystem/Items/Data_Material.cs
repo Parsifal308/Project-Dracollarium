@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Data_Material : MonoBehaviour ,I_Item{
+public class Data_Material : MonoBehaviour ,I_ItemData{
     [Header("MATERIAL INFORMATION:"), Space(10)]
     [SerializeField] private Database_Material materialData;
     [SerializeField] private float quality;

@@ -18,8 +18,8 @@ TagManager:
   - BuildTerrain
   - ModularBuilding
   - Items
-  - 
-  - 
+  - "1\xBA Canvas"
+  - "2\xBA Canvas"
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Base Canvas
+    uniqueID: 2342123601
+    locked: 0
+  - name: Individual Canvas
+    uniqueID: 1702999539
     locked: 0

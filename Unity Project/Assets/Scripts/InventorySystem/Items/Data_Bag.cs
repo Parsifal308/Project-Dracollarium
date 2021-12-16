@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Data_Bag : Data_Container, I_Item {
+public class Data_Bag : Data_Container, I_ItemData {
     [Header("BAG INFORMATION:"), Space(10)]
     [SerializeField] private Database_Bag bagData;
     [SerializeField] private float effectIntensity;

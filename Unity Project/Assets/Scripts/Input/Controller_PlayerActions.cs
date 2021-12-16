@@ -88,6 +88,7 @@ public class Controller_PlayerActions : MonoBehaviour{
 
         movement.performed += playerGlobalController.FocusedMovement.Run;
         movement.canceled += playerGlobalController.FocusedMovement.Run;
+        movement.started += playerGlobalController.PlayerItemPickup.DisableCanvases;
         jump.performed += playerGlobalController.FocusedMovement.Jump;
         run.performed += playerGlobalController.FocusedMovement.Sprint;
         run.canceled += playerGlobalController.FocusedMovement.Sprint;
@@ -98,8 +99,8 @@ public class Controller_PlayerActions : MonoBehaviour{
         mousePosition.performed += playerGlobalController.FocusedLookCam.MousePosition;
         actionA.performed += playerGlobalController.PlayerItemPickup.ActionA;
         actionB.performed += playerGlobalController.PlayerItemPickup.ActionB;
-        buildMenu.performed += playerGlobalController.BuildingMenu.BuildMenuKey;
-        equipmentMenu.performed += playerGlobalController.EquipmentMenu.EquipmentMenuKey;
+        buildMenu.performed += playerGlobalController.BuildingMenu.MenuKey;
+        equipmentMenu.performed += playerGlobalController.EquipmentMenu.MenuKey;
     }
 
 
