@@ -218,6 +218,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Cancel",
+                    "type": "Button",
+                    "id": "72c5d177-27a2-4220-b05a-74611a105acb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -284,6 +292,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "FacultiesMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "273a0c91-9390-4307-bc3f-90b29ebd221d",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -406,6 +425,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Aim",
+                    "type": "Button",
+                    "id": "9303e959-bb97-4e49-ae53-dfae53234f7f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -430,6 +457,17 @@
                     "action": "AttackB",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "94b3a73a-dd51-4f71-bcf7-f4573afae4c6",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -437,6 +475,14 @@
             "name": "PlayerCharacterAction",
             "id": "c863dcc8-d259-4f1e-9150-8c842415ad1a",
             "actions": [
+                {
+                    "name": "ActionA",
+                    "type": "Button",
+                    "id": "e91cd2b4-3876-46e6-a4d8-a799206c3310",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
                 {
                     "name": "ActionB",
                     "type": "Button",
@@ -446,15 +492,132 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ActionA",
+                    "name": "ActionC",
                     "type": "Button",
-                    "id": "e91cd2b4-3876-46e6-a4d8-a799206c3310",
+                    "id": "cecef904-b380-4bb1-be09-4f2615121a9a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ActionD",
+                    "type": "Button",
+                    "id": "cf412005-6441-43da-adbb-93abed98e43c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Grab",
+                    "type": "Button",
+                    "id": "f611b35d-c06a-4586-a220-b3464c8ba745",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "DropLeftItem",
+                    "type": "Button",
+                    "id": "6764478b-14ad-4e8b-a8db-1632ab966891",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "DropRightItem",
+                    "type": "Button",
+                    "id": "a1e2b58d-baac-4588-bb54-24935974b752",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Take",
+                    "type": "Button",
+                    "id": "5497d63e-2181-4239-98ce-00962c57b383",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
             ],
             "bindings": [
+                {
+                    "name": "",
+                    "id": "54be63e1-2297-41fb-8c77-43aa67c6dd5b",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActionB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Button With One Modifier",
+                    "id": "80df146d-8fc9-44cc-9cca-1c576b22927f",
+                    "path": "ButtonWithOneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropLeftItem",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "0d07ea92-267e-4b88-bd35-88deb747e38a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropLeftItem",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button",
+                    "id": "e0afb05e-9de1-4a1b-a931-6964eb017f1b",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropLeftItem",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Button With One Modifier",
+                    "id": "e0d9fd50-9df2-4615-abc1-d0ff80921769",
+                    "path": "ButtonWithOneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropRightItem",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "18991c67-b0f6-44d1-8dca-c38ebbca3044",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropRightItem",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button",
+                    "id": "bdafe7a9-e14e-47af-beee-62fcfb961fe1",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropRightItem",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
                 {
                     "name": "",
                     "id": "952b208b-2683-445c-b054-5b68d1b2db41",
@@ -468,12 +631,67 @@
                 },
                 {
                     "name": "",
-                    "id": "54be63e1-2297-41fb-8c77-43aa67c6dd5b",
-                    "path": "<Keyboard>/v",
+                    "id": "7f18016b-3eca-4aad-9ffa-fd835ddf1106",
+                    "path": "<Keyboard>/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ActionB",
+                    "action": "ActionC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "18d8bc24-56a4-4f42-8154-c1bc296ccafd",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActionD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Button With One Modifier",
+                    "id": "c9d0920d-4d9c-4753-9562-5130aa445c2a",
+                    "path": "ButtonWithOneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "f3d6dd0b-8be6-41b8-9fd5-f4329cab07b7",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button",
+                    "id": "756d74cd-8fbe-476f-a3f3-af59e4709421",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "f960ca5f-de63-4554-869f-5407b8f9e572",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Take",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

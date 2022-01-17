@@ -24,5 +24,6 @@ enum weaponType{
     ThrowingAxe,
     Boomstick,
     Tool,
+    Shield,
     DEVELOPMENT
 }

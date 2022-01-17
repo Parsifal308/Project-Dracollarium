@@ -11,7 +11,7 @@ public class Movement_Free : MonoBehaviour {
     private void Start(){
         playerManager = GetComponent<Controller_PlayerManager>();
         controller = GetComponentInChildren<CharacterController>();   //Obtiene el componente CharacterController de este objeto
-        OnPlayerMovement += GetComponent<PlayerDracollariumAnimation>().SetMovementAnim; //Subscribe el metodo del componente PlayerAnimation.cs a este evento
+        OnPlayerMovement += GetComponent<Player_Animation_Dracollarium>().SetMovementAnim; //Subscribe el metodo del componente PlayerAnimation.cs a este evento
 
     }
     #region METHODS

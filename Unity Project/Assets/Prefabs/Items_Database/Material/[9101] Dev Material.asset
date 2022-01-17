@@ -16,6 +16,7 @@ MonoBehaviour:
   itemName: Dev Material
   description: 
   icon: {fileID: 0}
+  prefab: {fileID: 7395421463154465528, guid: 61298c76c3a59774da1ba92bcbabf912, type: 3}
   materialType: 1
   cost: 0
   quality: 0

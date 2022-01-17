@@ -16,6 +16,7 @@ MonoBehaviour:
   itemName: Dev Armor
   description: 
   icon: {fileID: 0}
+  prefab: {fileID: 6412363771856869594, guid: 17f820e2d9bf5f94aa724f46f84df3a4, type: 3}
   cost: 0
   quality: 0
   durability: 0

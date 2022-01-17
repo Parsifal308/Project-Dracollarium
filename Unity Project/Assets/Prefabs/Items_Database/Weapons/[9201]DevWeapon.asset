@@ -17,6 +17,7 @@ MonoBehaviour:
   description: Developper weapon for testing purpose. If you are not a dev, you should
     not have this.....What are you doing with this?!?!?....ooooh you cheater!! ;)
   icon: {fileID: 0}
+  prefab: {fileID: 1110578386500777820, guid: e64e23927dcc6024ca4cf6b634cb860f, type: 3}
   cost: 1234
   quality: 8000
   durability: 100

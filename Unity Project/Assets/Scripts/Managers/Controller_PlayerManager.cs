@@ -3,6 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Player_Equipment))]
+[RequireComponent(typeof(Player_Stats))]
+[RequireComponent(typeof(Player_ItemPickup))]
+[RequireComponent(typeof(Player_ModularBuilding))]
+[RequireComponent(typeof(Camera_PlayerShoulder))]
+[RequireComponent(typeof(Player_Movement_Focused))]
+[RequireComponent(typeof(Player_Animation_Dracollarium))]
+[RequireComponent(typeof(Controller_PlayerActions))]
 public class Controller_PlayerManager : MonoBehaviour {
 
     #region FIELDS
@@ -13,14 +21,19 @@ public class Controller_PlayerManager : MonoBehaviour {
     [Header("GRAPHIC USER INTERFACE: "), Space(10)]
     //[SerializeField] private GameObject equipmentPanel;
     //[SerializeField] private GameObject buildingPanel;
-    [SerializeField] private Menu buildingMenu;
-    [SerializeField] private Menu equipmentMenu;
-    [SerializeField] private PauseMenu pauseMenu;
+    [SerializeField] private GUI_Menu menuBuilding;
+    [SerializeField] private GUI_Menu menuBuildingCategory;
+    [SerializeField] private GUI_Menu menuBuildingModule;
+    [SerializeField] private GUI_Menu menuEquipment;
+    [SerializeField] private GameObject menuEquipmentContent;
+    [SerializeField] private PauseMenu menuPause;
+    [SerializeField] private GUI_Menu menuInventory;
+   // [SerializeField] private 
 
     [Header("MOVEMENT SCRIPTS:"), Space(10)]
-    [SerializeField] private Movement_Focused focusedMovement;
+    [SerializeField] private Player_Movement_Focused focusedMovement;
     [SerializeField] private Movement_Free freeMovement;
-    [SerializeField] private PlayerDracollariumAnimation playerDracollariumAnimation;
+    [SerializeField] private Player_Animation_Dracollarium playerDracollariumAnimation;
     private IMovement currentMovementScript;
 
     [Header("CAMERA SCRIPTS:"), Space(10)]
@@ -32,23 +45,30 @@ public class Controller_PlayerManager : MonoBehaviour {
     [SerializeField] private Player_Equipment playerEquipment;
     [SerializeField] private Player_Stats playerStats;
     [SerializeField] private Player_ItemPickup playerItemPickUp;
-    [SerializeField] private ModularBuilding playerModularBuilding;
+    [SerializeField] private Player_ModularBuilding playerModularBuilding;
     private IFabricate[] fabricationActions;
 
-    [Header("PLAYER MODE:"), Space(5)]
+    [Header("PLAYER MODES:"), Space(5)]
     [SerializeField] private GameMode playerGameMode;
+    [SerializeField] private bool buildingMode;
+
+    [Header("AXIS REFERENCES:"), Space(5)]
+    [SerializeField] protected GameObject dropLocation;
     #endregion
 
     #region PROPERTIES
+    public GameObject DropPosition { get { return dropLocation; } }
+    public GameObject MenuEquipmentContent { get { return menuEquipmentContent; } }
+    public Player_Equipment PlayerEquipment { get { return playerEquipment; } }
     public ICamera CurrentCameraScript { get { return currentCameraScript; } }
     public Controller_PlayerActions PlayerActionsController { get { return playerActionsController; } }
-    public Menu BuildingMenu { get { return buildingMenu; }set{ buildingMenu = value; } }
-    public PlayerDracollariumAnimation PlayerDracollariumAnimation { get { return playerDracollariumAnimation; } set { playerDracollariumAnimation = value; } }
-    public Menu EquipmentMenu { get { return equipmentMenu; } set { equipmentMenu = value; } }
-    public PauseMenu PauseMenu { get { return pauseMenu; } set { pauseMenu = value; } }
+    public GUI_Menu BuildingMenu { get { return menuBuilding; }set{ menuBuilding = value; } }
+    public Player_Animation_Dracollarium PlayerDracollariumAnimation { get { return playerDracollariumAnimation; } set { playerDracollariumAnimation = value; } }
+    public GUI_Menu EquipmentMenu { get { return menuEquipment; } set { menuEquipment = value; } }
+    public PauseMenu PauseMenu { get { return menuPause; } set { menuPause = value; } }
     public PlayerInput PlayerInput { get { return playerInput; } }
     public Player_Stats PlayerStats { get { return playerStats; } }
-    public Movement_Focused FocusedMovement { get { return focusedMovement; } }
+    public Player_Movement_Focused FocusedMovement { get { return focusedMovement; } }
     public Movement_Free FreeMovement { get { return freeMovement; } }
     public Camera_LookAround LookAroundCam { get { return lookAroundCam; } }
     public Camera_PlayerShoulder FocusedLookCam { get { return focusedLookCam; } }
@@ -57,7 +77,7 @@ public class Controller_PlayerManager : MonoBehaviour {
     //public GameObject BuildingPanel { get { return buildingPanel; } set { buildingPanel = value; } }
     //public GameObject EquipmentPanel { get { return equipmentPanel; } set { equipmentPanel = value; } }
     public Player_ItemPickup PlayerItemPickup { get { return playerItemPickUp; } set { playerItemPickUp = value; } }
-    public ModularBuilding PlayerModularBuilding { get { return playerModularBuilding; } set { playerModularBuilding = value; } }
+    public Player_ModularBuilding PlayerModularBuilding { get { return playerModularBuilding; } set { playerModularBuilding = value; } }
     #endregion
 
     #region METHODS
@@ -88,6 +108,7 @@ public class Controller_PlayerManager : MonoBehaviour {
     public void EnableItemCollection(object sender, EventArgs e){
         try{
             Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Enabling player items collection system.....");
+            playerItemPickUp.enabled = true;
             Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Player items collection system ENABLED.");
         }
         catch (Exception ex){
@@ -104,6 +125,16 @@ public class Controller_PlayerManager : MonoBehaviour {
             Debug.LogError("----->[ERROR] A '" + ex.GetType() + " has ocurred.");
         }
     }
+
+    public void DisableAllMenus(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        menuBuilding.DisableMenu();
+        menuBuildingCategory.DisableMenu();
+        menuBuildingModule.DisableMenu();
+        menuEquipment.DisableMenu();
+        menuInventory.DisableMenu();
+    }
+
     public void DisableBuildingPositioning(){
         try{
             Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Disabling player building positioning.....");
@@ -164,7 +195,6 @@ public class Controller_PlayerManager : MonoBehaviour {
             Debug.LogError("----->[ERROR] an error of type '" + ex.GetType() + "' has ocurred");
         }
     }
-
     public void PositionBuilding(GameObject building){
         try{
             Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Positioning building...");
@@ -178,11 +208,11 @@ public class Controller_PlayerManager : MonoBehaviour {
     #region UNITY METHODS
     private void Start(){
         fabricationActions = gameObject.GetComponents<IFabricate>();
-        playerDracollariumAnimation = GetComponent<PlayerDracollariumAnimation>();
+        playerDracollariumAnimation = GetComponent<Player_Animation_Dracollarium>();
         currentCameraScript = FocusedLookCam;
         currentMovementScript = FocusedMovement;
         playerActionsController = GetComponent<Controller_PlayerActions>();
-        Cursor.lockState = CursorLockMode.Confined;
+        //Cursor.lockState = CursorLockMode.Confined;
     }
     #endregion
 

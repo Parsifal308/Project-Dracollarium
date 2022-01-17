@@ -231,6 +231,14 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Cancel"",
+                    ""type"": ""Button"",
+                    ""id"": ""72c5d177-27a2-4220-b05a-74611a105acb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -297,6 +305,17 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""FacultiesMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""273a0c91-9390-4307-bc3f-90b29ebd221d"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cancel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -419,6 +438,14 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Aim"",
+                    ""type"": ""Button"",
+                    ""id"": ""9303e959-bb97-4e49-ae53-dfae53234f7f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -443,6 +470,17 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""action"": ""AttackB"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""94b3a73a-dd51-4f71-bcf7-f4573afae4c6"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -450,6 +488,14 @@ public class @PlayerActions : IInputActionCollection, IDisposable
             ""name"": ""PlayerCharacterAction"",
             ""id"": ""c863dcc8-d259-4f1e-9150-8c842415ad1a"",
             ""actions"": [
+                {
+                    ""name"": ""ActionA"",
+                    ""type"": ""Button"",
+                    ""id"": ""e91cd2b4-3876-46e6-a4d8-a799206c3310"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
                 {
                     ""name"": ""ActionB"",
                     ""type"": ""Button"",
@@ -459,15 +505,132 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""ActionA"",
+                    ""name"": ""ActionC"",
                     ""type"": ""Button"",
-                    ""id"": ""e91cd2b4-3876-46e6-a4d8-a799206c3310"",
+                    ""id"": ""cecef904-b380-4bb1-be09-4f2615121a9a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ActionD"",
+                    ""type"": ""Button"",
+                    ""id"": ""cf412005-6441-43da-adbb-93abed98e43c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Grab"",
+                    ""type"": ""Button"",
+                    ""id"": ""f611b35d-c06a-4586-a220-b3464c8ba745"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""DropLeftItem"",
+                    ""type"": ""Button"",
+                    ""id"": ""6764478b-14ad-4e8b-a8db-1632ab966891"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""DropRightItem"",
+                    ""type"": ""Button"",
+                    ""id"": ""a1e2b58d-baac-4588-bb54-24935974b752"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Take"",
+                    ""type"": ""Button"",
+                    ""id"": ""5497d63e-2181-4239-98ce-00962c57b383"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
             ],
             ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""54be63e1-2297-41fb-8c77-43aa67c6dd5b"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ActionB"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Button With One Modifier"",
+                    ""id"": ""80df146d-8fc9-44cc-9cca-1c576b22927f"",
+                    ""path"": ""ButtonWithOneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DropLeftItem"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""0d07ea92-267e-4b88-bd35-88deb747e38a"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DropLeftItem"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""button"",
+                    ""id"": ""e0afb05e-9de1-4a1b-a931-6964eb017f1b"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DropLeftItem"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Button With One Modifier"",
+                    ""id"": ""e0d9fd50-9df2-4615-abc1-d0ff80921769"",
+                    ""path"": ""ButtonWithOneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DropRightItem"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""18991c67-b0f6-44d1-8dca-c38ebbca3044"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DropRightItem"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""button"",
+                    ""id"": ""bdafe7a9-e14e-47af-beee-62fcfb961fe1"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DropRightItem"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
                 {
                     ""name"": """",
                     ""id"": ""952b208b-2683-445c-b054-5b68d1b2db41"",
@@ -481,12 +644,67 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""54be63e1-2297-41fb-8c77-43aa67c6dd5b"",
-                    ""path"": ""<Keyboard>/v"",
+                    ""id"": ""7f18016b-3eca-4aad-9ffa-fd835ddf1106"",
+                    ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""ActionB"",
+                    ""action"": ""ActionC"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""18d8bc24-56a4-4f42-8154-c1bc296ccafd"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ActionD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Button With One Modifier"",
+                    ""id"": ""c9d0920d-4d9c-4753-9562-5130aa445c2a"",
+                    ""path"": ""ButtonWithOneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Grab"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""f3d6dd0b-8be6-41b8-9fd5-f4329cab07b7"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Grab"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""button"",
+                    ""id"": ""756d74cd-8fbe-476f-a3f3-af59e4709421"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Grab"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f960ca5f-de63-4554-869f-5407b8f9e572"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Take"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -511,6 +729,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         m_PlayerMenus_BuildMenu = m_PlayerMenus.FindAction("BuildMenu", throwIfNotFound: true);
         m_PlayerMenus_CharacterMenu = m_PlayerMenus.FindAction("CharacterMenu", throwIfNotFound: true);
         m_PlayerMenus_EquipmentMenu = m_PlayerMenus.FindAction("EquipmentMenu", throwIfNotFound: true);
+        m_PlayerMenus_Cancel = m_PlayerMenus.FindAction("Cancel", throwIfNotFound: true);
         // PlayerBuilding
         m_PlayerBuilding = asset.FindActionMap("PlayerBuilding", throwIfNotFound: true);
         m_PlayerBuilding_VerticalRotation = m_PlayerBuilding.FindAction("VerticalRotation", throwIfNotFound: true);
@@ -520,10 +739,17 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         m_PlayerCharacterCombat = asset.FindActionMap("PlayerCharacterCombat", throwIfNotFound: true);
         m_PlayerCharacterCombat_AttackA = m_PlayerCharacterCombat.FindAction("AttackA", throwIfNotFound: true);
         m_PlayerCharacterCombat_AttackB = m_PlayerCharacterCombat.FindAction("AttackB", throwIfNotFound: true);
+        m_PlayerCharacterCombat_Aim = m_PlayerCharacterCombat.FindAction("Aim", throwIfNotFound: true);
         // PlayerCharacterAction
         m_PlayerCharacterAction = asset.FindActionMap("PlayerCharacterAction", throwIfNotFound: true);
-        m_PlayerCharacterAction_ActionB = m_PlayerCharacterAction.FindAction("ActionB", throwIfNotFound: true);
         m_PlayerCharacterAction_ActionA = m_PlayerCharacterAction.FindAction("ActionA", throwIfNotFound: true);
+        m_PlayerCharacterAction_ActionB = m_PlayerCharacterAction.FindAction("ActionB", throwIfNotFound: true);
+        m_PlayerCharacterAction_ActionC = m_PlayerCharacterAction.FindAction("ActionC", throwIfNotFound: true);
+        m_PlayerCharacterAction_ActionD = m_PlayerCharacterAction.FindAction("ActionD", throwIfNotFound: true);
+        m_PlayerCharacterAction_Grab = m_PlayerCharacterAction.FindAction("Grab", throwIfNotFound: true);
+        m_PlayerCharacterAction_DropLeftItem = m_PlayerCharacterAction.FindAction("DropLeftItem", throwIfNotFound: true);
+        m_PlayerCharacterAction_DropRightItem = m_PlayerCharacterAction.FindAction("DropRightItem", throwIfNotFound: true);
+        m_PlayerCharacterAction_Take = m_PlayerCharacterAction.FindAction("Take", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -652,6 +878,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerMenus_BuildMenu;
     private readonly InputAction m_PlayerMenus_CharacterMenu;
     private readonly InputAction m_PlayerMenus_EquipmentMenu;
+    private readonly InputAction m_PlayerMenus_Cancel;
     public struct PlayerMenusActions
     {
         private @PlayerActions m_Wrapper;
@@ -662,6 +889,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         public InputAction @BuildMenu => m_Wrapper.m_PlayerMenus_BuildMenu;
         public InputAction @CharacterMenu => m_Wrapper.m_PlayerMenus_CharacterMenu;
         public InputAction @EquipmentMenu => m_Wrapper.m_PlayerMenus_EquipmentMenu;
+        public InputAction @Cancel => m_Wrapper.m_PlayerMenus_Cancel;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMenus; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -689,6 +917,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @EquipmentMenu.started -= m_Wrapper.m_PlayerMenusActionsCallbackInterface.OnEquipmentMenu;
                 @EquipmentMenu.performed -= m_Wrapper.m_PlayerMenusActionsCallbackInterface.OnEquipmentMenu;
                 @EquipmentMenu.canceled -= m_Wrapper.m_PlayerMenusActionsCallbackInterface.OnEquipmentMenu;
+                @Cancel.started -= m_Wrapper.m_PlayerMenusActionsCallbackInterface.OnCancel;
+                @Cancel.performed -= m_Wrapper.m_PlayerMenusActionsCallbackInterface.OnCancel;
+                @Cancel.canceled -= m_Wrapper.m_PlayerMenusActionsCallbackInterface.OnCancel;
             }
             m_Wrapper.m_PlayerMenusActionsCallbackInterface = instance;
             if (instance != null)
@@ -711,6 +942,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @EquipmentMenu.started += instance.OnEquipmentMenu;
                 @EquipmentMenu.performed += instance.OnEquipmentMenu;
                 @EquipmentMenu.canceled += instance.OnEquipmentMenu;
+                @Cancel.started += instance.OnCancel;
+                @Cancel.performed += instance.OnCancel;
+                @Cancel.canceled += instance.OnCancel;
             }
         }
     }
@@ -770,12 +1004,14 @@ public class @PlayerActions : IInputActionCollection, IDisposable
     private IPlayerCharacterCombatActions m_PlayerCharacterCombatActionsCallbackInterface;
     private readonly InputAction m_PlayerCharacterCombat_AttackA;
     private readonly InputAction m_PlayerCharacterCombat_AttackB;
+    private readonly InputAction m_PlayerCharacterCombat_Aim;
     public struct PlayerCharacterCombatActions
     {
         private @PlayerActions m_Wrapper;
         public PlayerCharacterCombatActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @AttackA => m_Wrapper.m_PlayerCharacterCombat_AttackA;
         public InputAction @AttackB => m_Wrapper.m_PlayerCharacterCombat_AttackB;
+        public InputAction @Aim => m_Wrapper.m_PlayerCharacterCombat_Aim;
         public InputActionMap Get() { return m_Wrapper.m_PlayerCharacterCombat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -791,6 +1027,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @AttackB.started -= m_Wrapper.m_PlayerCharacterCombatActionsCallbackInterface.OnAttackB;
                 @AttackB.performed -= m_Wrapper.m_PlayerCharacterCombatActionsCallbackInterface.OnAttackB;
                 @AttackB.canceled -= m_Wrapper.m_PlayerCharacterCombatActionsCallbackInterface.OnAttackB;
+                @Aim.started -= m_Wrapper.m_PlayerCharacterCombatActionsCallbackInterface.OnAim;
+                @Aim.performed -= m_Wrapper.m_PlayerCharacterCombatActionsCallbackInterface.OnAim;
+                @Aim.canceled -= m_Wrapper.m_PlayerCharacterCombatActionsCallbackInterface.OnAim;
             }
             m_Wrapper.m_PlayerCharacterCombatActionsCallbackInterface = instance;
             if (instance != null)
@@ -801,6 +1040,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @AttackB.started += instance.OnAttackB;
                 @AttackB.performed += instance.OnAttackB;
                 @AttackB.canceled += instance.OnAttackB;
+                @Aim.started += instance.OnAim;
+                @Aim.performed += instance.OnAim;
+                @Aim.canceled += instance.OnAim;
             }
         }
     }
@@ -809,14 +1051,26 @@ public class @PlayerActions : IInputActionCollection, IDisposable
     // PlayerCharacterAction
     private readonly InputActionMap m_PlayerCharacterAction;
     private IPlayerCharacterActionActions m_PlayerCharacterActionActionsCallbackInterface;
-    private readonly InputAction m_PlayerCharacterAction_ActionB;
     private readonly InputAction m_PlayerCharacterAction_ActionA;
+    private readonly InputAction m_PlayerCharacterAction_ActionB;
+    private readonly InputAction m_PlayerCharacterAction_ActionC;
+    private readonly InputAction m_PlayerCharacterAction_ActionD;
+    private readonly InputAction m_PlayerCharacterAction_Grab;
+    private readonly InputAction m_PlayerCharacterAction_DropLeftItem;
+    private readonly InputAction m_PlayerCharacterAction_DropRightItem;
+    private readonly InputAction m_PlayerCharacterAction_Take;
     public struct PlayerCharacterActionActions
     {
         private @PlayerActions m_Wrapper;
         public PlayerCharacterActionActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @ActionB => m_Wrapper.m_PlayerCharacterAction_ActionB;
         public InputAction @ActionA => m_Wrapper.m_PlayerCharacterAction_ActionA;
+        public InputAction @ActionB => m_Wrapper.m_PlayerCharacterAction_ActionB;
+        public InputAction @ActionC => m_Wrapper.m_PlayerCharacterAction_ActionC;
+        public InputAction @ActionD => m_Wrapper.m_PlayerCharacterAction_ActionD;
+        public InputAction @Grab => m_Wrapper.m_PlayerCharacterAction_Grab;
+        public InputAction @DropLeftItem => m_Wrapper.m_PlayerCharacterAction_DropLeftItem;
+        public InputAction @DropRightItem => m_Wrapper.m_PlayerCharacterAction_DropRightItem;
+        public InputAction @Take => m_Wrapper.m_PlayerCharacterAction_Take;
         public InputActionMap Get() { return m_Wrapper.m_PlayerCharacterAction; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -826,22 +1080,58 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface != null)
             {
-                @ActionB.started -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionB;
-                @ActionB.performed -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionB;
-                @ActionB.canceled -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionB;
                 @ActionA.started -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionA;
                 @ActionA.performed -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionA;
                 @ActionA.canceled -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionA;
+                @ActionB.started -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionB;
+                @ActionB.performed -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionB;
+                @ActionB.canceled -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionB;
+                @ActionC.started -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionC;
+                @ActionC.performed -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionC;
+                @ActionC.canceled -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionC;
+                @ActionD.started -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionD;
+                @ActionD.performed -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionD;
+                @ActionD.canceled -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnActionD;
+                @Grab.started -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnGrab;
+                @Grab.performed -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnGrab;
+                @Grab.canceled -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnGrab;
+                @DropLeftItem.started -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnDropLeftItem;
+                @DropLeftItem.performed -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnDropLeftItem;
+                @DropLeftItem.canceled -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnDropLeftItem;
+                @DropRightItem.started -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnDropRightItem;
+                @DropRightItem.performed -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnDropRightItem;
+                @DropRightItem.canceled -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnDropRightItem;
+                @Take.started -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnTake;
+                @Take.performed -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnTake;
+                @Take.canceled -= m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface.OnTake;
             }
             m_Wrapper.m_PlayerCharacterActionActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @ActionB.started += instance.OnActionB;
-                @ActionB.performed += instance.OnActionB;
-                @ActionB.canceled += instance.OnActionB;
                 @ActionA.started += instance.OnActionA;
                 @ActionA.performed += instance.OnActionA;
                 @ActionA.canceled += instance.OnActionA;
+                @ActionB.started += instance.OnActionB;
+                @ActionB.performed += instance.OnActionB;
+                @ActionB.canceled += instance.OnActionB;
+                @ActionC.started += instance.OnActionC;
+                @ActionC.performed += instance.OnActionC;
+                @ActionC.canceled += instance.OnActionC;
+                @ActionD.started += instance.OnActionD;
+                @ActionD.performed += instance.OnActionD;
+                @ActionD.canceled += instance.OnActionD;
+                @Grab.started += instance.OnGrab;
+                @Grab.performed += instance.OnGrab;
+                @Grab.canceled += instance.OnGrab;
+                @DropLeftItem.started += instance.OnDropLeftItem;
+                @DropLeftItem.performed += instance.OnDropLeftItem;
+                @DropLeftItem.canceled += instance.OnDropLeftItem;
+                @DropRightItem.started += instance.OnDropRightItem;
+                @DropRightItem.performed += instance.OnDropRightItem;
+                @DropRightItem.canceled += instance.OnDropRightItem;
+                @Take.started += instance.OnTake;
+                @Take.performed += instance.OnTake;
+                @Take.canceled += instance.OnTake;
             }
         }
     }
@@ -863,6 +1153,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         void OnBuildMenu(InputAction.CallbackContext context);
         void OnCharacterMenu(InputAction.CallbackContext context);
         void OnEquipmentMenu(InputAction.CallbackContext context);
+        void OnCancel(InputAction.CallbackContext context);
     }
     public interface IPlayerBuildingActions
     {
@@ -874,10 +1165,17 @@ public class @PlayerActions : IInputActionCollection, IDisposable
     {
         void OnAttackA(InputAction.CallbackContext context);
         void OnAttackB(InputAction.CallbackContext context);
+        void OnAim(InputAction.CallbackContext context);
     }
     public interface IPlayerCharacterActionActions
     {
-        void OnActionB(InputAction.CallbackContext context);
         void OnActionA(InputAction.CallbackContext context);
+        void OnActionB(InputAction.CallbackContext context);
+        void OnActionC(InputAction.CallbackContext context);
+        void OnActionD(InputAction.CallbackContext context);
+        void OnGrab(InputAction.CallbackContext context);
+        void OnDropLeftItem(InputAction.CallbackContext context);
+        void OnDropRightItem(InputAction.CallbackContext context);
+        void OnTake(InputAction.CallbackContext context);
     }
 }

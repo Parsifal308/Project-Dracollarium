@@ -12,7 +12,7 @@ public class Data_Consumable : MonoBehaviour, I_ItemData{
     public float CurrentDurability { get { return currentDurability; } set { currentDurability = value; } }
     public float EffectIntensity { get { return effectIntensity; } set { effectIntensity = value; } }
     public float Quality { get { return quality; } set { quality = value; } }
-    public List<ItemStateStats> ItemsContainedData => throw new System.NotImplementedException();
     public Database_Item GetData { get { return consumableData; } }
-    public float UsedSpace { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+    public float UsedSpace { get; set; } = -1;
+    public List<ItemStateStats> ItemsContainedData { get; } = null;
 }

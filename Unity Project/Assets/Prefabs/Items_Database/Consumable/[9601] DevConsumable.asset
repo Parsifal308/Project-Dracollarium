@@ -16,6 +16,7 @@ MonoBehaviour:
   itemName: Dev Consumable
   description: 
   icon: {fileID: 0}
+  prefab: {fileID: 2034599327560689862, guid: f12614711a2306d42860ab0ddf63f429, type: 3}
   consumableType: 5
   cost: 0
   quality: 0

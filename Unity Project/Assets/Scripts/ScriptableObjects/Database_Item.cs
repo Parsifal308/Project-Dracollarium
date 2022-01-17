@@ -9,8 +9,10 @@ public class Database_Item : ScriptableObject{
     [TextArea(5, 10)]
     [SerializeField] private string description;
     [SerializeField] private Sprite icon;
+    [SerializeField] private GameObject prefab;
 
-    public int GetID { get { return itemID; } }
-    public string GetName { get { return itemName; } }
-    public string GetDescription { get { return description; } }
+    public int ItemID { get { return itemID; } }
+    public string ItemName { get { return itemName; } }
+    public string Description { get { return description; } }
+    public GameObject Prefab { get { return prefab; } }
 }

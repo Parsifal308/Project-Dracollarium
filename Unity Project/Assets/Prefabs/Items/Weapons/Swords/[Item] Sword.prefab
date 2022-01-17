@@ -60,6 +60,7 @@ MonoBehaviour:
   currentDurability: 100
   effectIntensity: 2
   quality: 3
+  prefabDirectory: Assets/Prefabs/Items/Weapons/Swords/[Item] Sword
   weaponData: {fileID: 11400000, guid: d9fe877f2fe014045ad53c4864f718c7, type: 2}
 --- !u!1001 &263734328320051725
 PrefabInstance:
@@ -74,27 +75,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.605677
+      value: -6.617
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: 0.4867307
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.325835
+      value: 7.227
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.93701404
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.3492918
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_LocalRotation.z
@@ -106,7 +107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 40.888
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -119,7 +120,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b64917580b82847419b042650e08ebc2, type: 3}
       propertyPath: m_Name
       value: '[Item] Sword'

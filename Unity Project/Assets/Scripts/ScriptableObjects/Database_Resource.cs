@@ -6,10 +6,12 @@ using UnityEngine;
 public class Database_Resource : ScriptableObject{
     [Header("RESOURCE  DATA:"), Space(10)]
 
+    [SerializeField] private string prefabDirectory;
     [SerializeField] private ArrayList itemsDropped;
     [Space(10)]
     [SerializeField] private resourceType resourceType;
     [TextArea(5, 10)]
+    [SerializeField] private string description;
     [SerializeField] private float quality;
     [Space(30)]
     [SerializeField] private float maxResistance;

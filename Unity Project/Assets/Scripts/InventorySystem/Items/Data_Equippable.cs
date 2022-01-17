@@ -8,13 +8,12 @@ public abstract class Data_Equippable : MonoBehaviour, I_ItemData{
     [SerializeField] protected float currentDurability;
     [SerializeField] protected float effectIntensity;
     [SerializeField] protected float quality;
+    [SerializeField] protected string prefabDirectory;
 
     public float CurrentDurability { get { return currentDurability; } set { currentDurability = value; } }
     public float EffectIntensity { get { return effectIntensity; } set { effectIntensity = value; } }
     public float Quality { get { return quality; } set { quality = value; } }
-    public List<ItemStateStats> ItemsContainedData => throw new System.NotImplementedException();
-
     abstract public Database_Item GetData { get; }
-
-    float I_ItemData.UsedSpace { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+    public float UsedSpace { get { return usedSpace; } set { usedSpace = value; } }
+    public List<ItemStateStats> ItemsContainedData { get; } = null;
 }

@@ -125,9 +125,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: -216676487899506994, guid: e295fcd96b555f44b9ec7ea94b55309a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: -216676487899506994, guid: e295fcd96b555f44b9ec7ea94b55309a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: -216676487899506994, guid: e295fcd96b555f44b9ec7ea94b55309a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e295fcd96b555f44b9ec7ea94b55309a, type: 3}
       propertyPath: m_Name
-      value: '[Item] Bag'
+      value: '[Item] Bag Variant'
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e295fcd96b555f44b9ec7ea94b55309a, type: 3}
       propertyPath: m_Layer
