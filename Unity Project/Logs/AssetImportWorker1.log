@@ -1,0 +1,130 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.5f1 (8095aa901b9b) revision 8426922'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1466; Version 2009; 64bit' Language: 'es' Physical Memory: 8140 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Program Files\Unity\2020.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Proyectos/Dracollarium/Project-Dracollarium/Unity Project
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+62493
+Successfully changed project path to: D:/Proyectos/Dracollarium/Project-Dracollarium/Unity Project
+D:/Proyectos/Dracollarium/Project-Dracollarium/Unity Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 198.82 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.5f1 (8095aa901b9b)
+[Subsystems] Discovering subsystems at path D:/Program Files/Unity/2020.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Proyectos/Dracollarium/Project-Dracollarium/Unity Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   
+    VRAM:     8171 MB
+    Driver:   30.0.13023.1012
+Initialize mono
+Mono path[0] = 'D:/Program Files/Unity/2020.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/Unity/2020.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Program Files/Unity/2020.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files/Unity/2020.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002247 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 162.24 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.223 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006504 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 182.87 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  3.396 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4316 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 216.4 MB.
+System memory in use after: 216.6 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4759.
+Total: 5.248000 ms (FindLiveObjects: 0.993600 ms CreateObjectMapping: 0.260600 ms MarkObjects: 3.883100 ms  DeleteObjects: 0.108700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Wall 01 Variant.prefab
+  artifactKey: Guid(309c22d2446cd99438ddff9c1aefbcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Wall 01 Variant.prefab using Guid(309c22d2446cd99438ddff9c1aefbcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+ -> (artifact id: '7f99c080b4020aaad084082ddcfa296c') in 1.822118 seconds
+  Import took 1.838642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.430603 seconds.
+  path: Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Door 01 Variant.prefab
+  artifactKey: Guid(b1b82fc3bc579aa4fadca549d2298594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Door 01 Variant.prefab using Guid(b1b82fc3bc579aa4fadca549d2298594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a77b2d8b6fe69895a6dcaa5dfd1677') in 0.197367 seconds
+  Import took 0.213714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.650604 seconds.
+  path: Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Wall 01 Variant.prefab
+  artifactKey: Guid(309c22d2446cd99438ddff9c1aefbcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Wall 01 Variant.prefab using Guid(309c22d2446cd99438ddff9c1aefbcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6748bf962a65c2d836e5ca61c1592b29') in 0.137214 seconds
+  Import took 0.153552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2297.917593 seconds.
+  path: Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Window 01 Variant.prefab
+  artifactKey: Guid(b2ae24eb9e731884b9c33e6a58a3f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Window 01 Variant.prefab using Guid(b2ae24eb9e731884b9c33e6a58a3f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20e35f8d6c34f3e81c3ac8520d696ac') in 0.205159 seconds
+  Import took 0.222328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 133.674875 seconds.
+  path: Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Window 01 Variant.prefab
+  artifactKey: Guid(b2ae24eb9e731884b9c33e6a58a3f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Window 01 Variant.prefab using Guid(b2ae24eb9e731884b9c33e6a58a3f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ead43e3fe08db51b8b87edfc03d09eb8') in 0.114859 seconds
+  Import took 0.131655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.776367 seconds.
+  path: Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Window 01 Variant.prefab
+  artifactKey: Guid(b2ae24eb9e731884b9c33e6a58a3f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Window 01 Variant.prefab using Guid(b2ae24eb9e731884b9c33e6a58a3f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dbac333b98e22867fdc5c819d4ab3a5') in 0.183882 seconds
+  Import took 0.201509 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

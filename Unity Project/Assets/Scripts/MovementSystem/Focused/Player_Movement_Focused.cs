@@ -11,6 +11,7 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
     public event EventHandler OnPlayerMovement;
     private CharacterController characterController;
     private Vector2 moveInput;
+    private float gravity;
     private bool isMoving;
     private bool isRunning;
     private bool isSprinting;
@@ -36,6 +37,8 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
     }
 
     private void Update(){
+        gravity -= 9.81f * Time.deltaTime;
+        characterController.Move(new Vector3(0, gravity, 0));
         if (moveInput != Vector2.zero){
             isMoving = true;
 

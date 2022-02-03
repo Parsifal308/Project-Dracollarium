@@ -10,13 +10,17 @@ using UnityEngine;
 [RequireComponent(typeof(Camera_PlayerShoulder))]
 [RequireComponent(typeof(Player_Movement_Focused))]
 [RequireComponent(typeof(Player_Animation_Dracollarium))]
-[RequireComponent(typeof(Controller_PlayerActions))]
+[RequireComponent(typeof(Controller_PlayerActions_Actions))]
 public class Controller_PlayerManager : MonoBehaviour {
 
     #region FIELDS
     [Header("INPUTS:"), Space(10)]
     [SerializeField] private PlayerInput playerInput;
-    [SerializeField] private Controller_PlayerActions playerActionsController;
+    [SerializeField] private Controller_PlayerActions_Actions controller_PlayerActionsMap_Actions;
+    [SerializeField] private Controller_PlayerActions_Building controller_PlayerActions_Building;
+    [SerializeField] private Controller_PlayerActions_CharacterMovement controller_PlayerActions_Movement;
+    [SerializeField] private Controller_PlayerActions_Menu controller_PlayerActions_Menu;
+    [SerializeField] private Controller_PlayerActions_PlayerCombat controller_PlayerActions_Combat;
 
     [Header("GRAPHIC USER INTERFACE: "), Space(10)]
     //[SerializeField] private GameObject equipmentPanel;
@@ -61,7 +65,9 @@ public class Controller_PlayerManager : MonoBehaviour {
     public GameObject MenuEquipmentContent { get { return menuEquipmentContent; } }
     public Player_Equipment PlayerEquipment { get { return playerEquipment; } }
     public ICamera CurrentCameraScript { get { return currentCameraScript; } }
-    public Controller_PlayerActions PlayerActionsController { get { return playerActionsController; } }
+    public Controller_PlayerActions_Actions Controller_PlayerActions_Actions { get { return controller_PlayerActionsMap_Actions; } }
+    public Controller_PlayerActions_CharacterMovement Controller_PlayerActions_CharacterMovement { get { return controller_PlayerActions_Movement; } }
+    public Controller_PlayerActions_Building Controller_PlayerActions_Building { get { return controller_PlayerActions_Building; } }
     public GUI_Menu BuildingMenu { get { return menuBuilding; }set{ menuBuilding = value; } }
     public Player_Animation_Dracollarium PlayerDracollariumAnimation { get { return playerDracollariumAnimation; } set { playerDracollariumAnimation = value; } }
     public GUI_Menu EquipmentMenu { get { return menuEquipment; } set { menuEquipment = value; } }
@@ -211,7 +217,11 @@ public class Controller_PlayerManager : MonoBehaviour {
         playerDracollariumAnimation = GetComponent<Player_Animation_Dracollarium>();
         currentCameraScript = FocusedLookCam;
         currentMovementScript = FocusedMovement;
-        playerActionsController = GetComponent<Controller_PlayerActions>();
+        controller_PlayerActionsMap_Actions = GetComponent<Controller_PlayerActions_Actions>();
+        controller_PlayerActions_Building = GetComponent<Controller_PlayerActions_Building>();
+        controller_PlayerActions_Movement = GetComponent<Controller_PlayerActions_CharacterMovement>();
+        controller_PlayerActions_Menu = GetComponent<Controller_PlayerActions_Menu>();
+        controller_PlayerActions_Combat = GetComponent<Controller_PlayerActions_PlayerCombat>();
         //Cursor.lockState = CursorLockMode.Confined;
     }
     #endregion

@@ -46,8 +46,8 @@ public class Camera_PlayerShoulder : MonoBehaviour, ICamera{
     
     private void Update(){
         if (isMouseEnabled){
-            mouseX += playerGlobalController.PlayerActionsController.MouseDelta.ReadValue<Vector2>().x * playerGlobalController.CurrentCameraScript.CameraSensibility;
-            mouseY += playerGlobalController.PlayerActionsController.MouseDelta.ReadValue<Vector2>().y * playerGlobalController.CurrentCameraScript.CameraSensibility;
+            mouseX += playerGlobalController.Controller_PlayerActions_CharacterMovement.MouseDelta.ReadValue<Vector2>().x * playerGlobalController.CurrentCameraScript.CameraSensibility;
+            mouseY += playerGlobalController.Controller_PlayerActions_CharacterMovement.MouseDelta.ReadValue<Vector2>().y * playerGlobalController.CurrentCameraScript.CameraSensibility;
             mouseY = Mathf.Clamp(mouseY, -25f, 25f);
             rotationTarget.transform.localRotation = Quaternion.Euler(-mouseY, mouseX + 90f, 0);
 

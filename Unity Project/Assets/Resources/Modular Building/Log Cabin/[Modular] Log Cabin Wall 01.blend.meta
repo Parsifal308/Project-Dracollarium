@@ -3,7 +3,27 @@ guid: f3ee3e638b92cad4a995817d0d39762e
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Enviroment] Tree_01_Bark.1001'
+    second: {fileID: 2100000, guid: 6cae3646a5eaebe4fb7e768fc96a9926, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Enviroment] Tree_01_Bark.1002'
+    second: {fileID: 2100000, guid: 10e24b6188f4d1545a0623340f6ea46a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Enviroment] Tree_01_Bark.1003'
+    second: {fileID: 2100000, guid: 7f9338f56cfdc604aa8d1838da13c885, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Enviroment] Tree_01_Bark.1004'
+    second: {fileID: 2100000, guid: 026444f68495f3d4d8b9fdae033fbf1e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -65,8 +85,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 20
-    normalImportMode: 0
+    normalSmoothAngle: 65
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0

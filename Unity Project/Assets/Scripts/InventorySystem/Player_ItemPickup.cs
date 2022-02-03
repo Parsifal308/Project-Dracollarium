@@ -257,7 +257,7 @@ public class Player_ItemPickup : MonoBehaviour{
             canvasActions.transform.position = itemHit.transform.position + positionGap;
             RotateCanvas(canvasActions);
 
-            guidingText.text = "Press [" + controller_PlayerManager.PlayerActionsController.Grab.bindings[0].effectivePath + "] to collect\n[" + itemHit.transform.GetComponent<I_ItemData>().GetData.ItemName + "]";
+            guidingText.text = "Press [" + controller_PlayerManager.Controller_PlayerActions_Actions.Grab.bindings[0].effectivePath + "] to collect\n[" + itemHit.transform.GetComponent<I_ItemData>().GetData.ItemName + "]";
         }
         else
         {

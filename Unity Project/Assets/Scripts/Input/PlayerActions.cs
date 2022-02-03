@@ -348,6 +348,14 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""LeftClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""c7bc5fb5-1d54-4bb2-828c-20e2ad8c3c16"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -414,6 +422,17 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""869ff873-a096-410c-9b8f-3db1f83990c1"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftClick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -735,6 +754,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         m_PlayerBuilding_VerticalRotation = m_PlayerBuilding.FindAction("VerticalRotation", throwIfNotFound: true);
         m_PlayerBuilding_HorizontalRotation = m_PlayerBuilding.FindAction("HorizontalRotation", throwIfNotFound: true);
         m_PlayerBuilding_Cancel = m_PlayerBuilding.FindAction("Cancel", throwIfNotFound: true);
+        m_PlayerBuilding_LeftClick = m_PlayerBuilding.FindAction("LeftClick", throwIfNotFound: true);
         // PlayerCharacterCombat
         m_PlayerCharacterCombat = asset.FindActionMap("PlayerCharacterCombat", throwIfNotFound: true);
         m_PlayerCharacterCombat_AttackA = m_PlayerCharacterCombat.FindAction("AttackA", throwIfNotFound: true);
@@ -956,6 +976,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerBuilding_VerticalRotation;
     private readonly InputAction m_PlayerBuilding_HorizontalRotation;
     private readonly InputAction m_PlayerBuilding_Cancel;
+    private readonly InputAction m_PlayerBuilding_LeftClick;
     public struct PlayerBuildingActions
     {
         private @PlayerActions m_Wrapper;
@@ -963,6 +984,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         public InputAction @VerticalRotation => m_Wrapper.m_PlayerBuilding_VerticalRotation;
         public InputAction @HorizontalRotation => m_Wrapper.m_PlayerBuilding_HorizontalRotation;
         public InputAction @Cancel => m_Wrapper.m_PlayerBuilding_Cancel;
+        public InputAction @LeftClick => m_Wrapper.m_PlayerBuilding_LeftClick;
         public InputActionMap Get() { return m_Wrapper.m_PlayerBuilding; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -981,6 +1003,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @Cancel.started -= m_Wrapper.m_PlayerBuildingActionsCallbackInterface.OnCancel;
                 @Cancel.performed -= m_Wrapper.m_PlayerBuildingActionsCallbackInterface.OnCancel;
                 @Cancel.canceled -= m_Wrapper.m_PlayerBuildingActionsCallbackInterface.OnCancel;
+                @LeftClick.started -= m_Wrapper.m_PlayerBuildingActionsCallbackInterface.OnLeftClick;
+                @LeftClick.performed -= m_Wrapper.m_PlayerBuildingActionsCallbackInterface.OnLeftClick;
+                @LeftClick.canceled -= m_Wrapper.m_PlayerBuildingActionsCallbackInterface.OnLeftClick;
             }
             m_Wrapper.m_PlayerBuildingActionsCallbackInterface = instance;
             if (instance != null)
@@ -994,6 +1019,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @Cancel.started += instance.OnCancel;
                 @Cancel.performed += instance.OnCancel;
                 @Cancel.canceled += instance.OnCancel;
+                @LeftClick.started += instance.OnLeftClick;
+                @LeftClick.performed += instance.OnLeftClick;
+                @LeftClick.canceled += instance.OnLeftClick;
             }
         }
     }
@@ -1160,6 +1188,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         void OnVerticalRotation(InputAction.CallbackContext context);
         void OnHorizontalRotation(InputAction.CallbackContext context);
         void OnCancel(InputAction.CallbackContext context);
+        void OnLeftClick(InputAction.CallbackContext context);
     }
     public interface IPlayerCharacterCombatActions
     {
