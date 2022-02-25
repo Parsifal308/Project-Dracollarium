@@ -10,11 +10,11 @@ PrefabInstance:
     - target: {fileID: 2770432405160415471, guid: dc053a91395f76242a90996012166d9e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ca98f6c782b3615429f2eb63ffe4325b, type: 2}
+      objectReference: {fileID: 2100000, guid: 9d1abfdaa658a1442984ad9079f42606, type: 2}
     - target: {fileID: 2770432405160415471, guid: dc053a91395f76242a90996012166d9e, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: ca98f6c782b3615429f2eb63ffe4325b, type: 2}
+      objectReference: {fileID: 2100000, guid: 9d1abfdaa658a1442984ad9079f42606, type: 2}
     - target: {fileID: 3907331468301347712, guid: dc053a91395f76242a90996012166d9e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -33,15 +33,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3907331468301347712, guid: dc053a91395f76242a90996012166d9e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 526.6
+      value: 93.09973
       objectReference: {fileID: 0}
     - target: {fileID: 3907331468301347712, guid: dc053a91395f76242a90996012166d9e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 120.27724
+      value: 79.13145
       objectReference: {fileID: 0}
     - target: {fileID: 3907331468301347712, guid: dc053a91395f76242a90996012166d9e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 235.7
+      value: 12.587631
       objectReference: {fileID: 0}
     - target: {fileID: 3907331468301347712, guid: dc053a91395f76242a90996012166d9e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -73,7 +73,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4427726625466937658, guid: dc053a91395f76242a90996012166d9e, type: 3}
       propertyPath: m_Name
-      value: '[Rock] Common Rock_03 Variant Variant'
+      value: '[Rock] Common Rock_03 Variant'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427726625466937658, guid: dc053a91395f76242a90996012166d9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc053a91395f76242a90996012166d9e, type: 3}

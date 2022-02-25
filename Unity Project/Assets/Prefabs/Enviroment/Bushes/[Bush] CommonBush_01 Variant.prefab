@@ -13,15 +13,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd61f89cbdd186541970a174919f851a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.11
+      value: 650.74023
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd61f89cbdd186541970a174919f851a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.36
+      value: 105.39757
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd61f89cbdd186541970a174919f851a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.96
+      value: 237.42917
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd61f89cbdd186541970a174919f851a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53,15 +53,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2590306845080214832, guid: cd61f89cbdd186541970a174919f851a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cd61f89cbdd186541970a174919f851a, type: 3}
       propertyPath: m_Name
-      value: '[Bush] CommonBush_01'
+      value: '[Bush] CommonBush_01 Variant'
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cd61f89cbdd186541970a174919f851a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1209892342780653562, guid: cd61f89cbdd186541970a174919f851a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -73,11 +73,32 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1ab44488f33734f4fa5f9470726c601a, type: 2}
     - target: {fileID: 5081985411489717905, guid: cd61f89cbdd186541970a174919f851a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5930462894334801602, guid: cd61f89cbdd186541970a174919f851a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd61f89cbdd186541970a174919f851a, type: 3}
+--- !u!1 &1699749507410360206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cd61f89cbdd186541970a174919f851a, type: 3}
+  m_PrefabInstance: {fileID: 1970273135103822559}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7334898706714467457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699749507410360206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76abc15796ec5fc47ac9b0c46d1cdb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xRotationRange: 0
+  yRotationRange: 0
+  zRotationRange: 0
+  scaleRange: 2

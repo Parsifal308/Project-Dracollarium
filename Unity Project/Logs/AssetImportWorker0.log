@@ -1,10 +1,10 @@
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.5f1 (8095aa901b9b) revision 8426922'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.1466; Version 2009; 64bit' Language: 'es' Physical Memory: 8140 MB
+Built from '2021.2/staging' branch; Version is '2021.2.11f1 (e50cafbb4399) revision 15010991'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'es' Physical Memory: 8140 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
- COMMAND LINE ARGUMENTS:
-D:\Program Files\Unity\2020.3.5f1\Editor\Unity.exe
+COMMAND LINE ARGUMENTS:
+D:\Program Files\Unity\2021.2.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,297 +15,317 @@ D:/Proyectos/Dracollarium/Project-Dracollarium/Unity Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62493
+54876
 Successfully changed project path to: D:/Proyectos/Dracollarium/Project-Dracollarium/Unity Project
 D:/Proyectos/Dracollarium/Project-Dracollarium/Unity Project
-Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 208.34 ms, found 4 plugins.
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 224.07 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.5f1 (8095aa901b9b)
-[Subsystems] Discovering subsystems at path D:/Program Files/Unity/2020.3.5f1/Editor/Data/Resources/UnitySubsystems
+Initialize engine version: 2021.2.11f1 (e50cafbb4399)
+[Subsystems] Discovering subsystems at path D:/Program Files/Unity/2021.2.11f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Proyectos/Dracollarium/Project-Dracollarium/Unity Project/Assets
-GfxDevice: creating device client; threaded=0
+GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: Radeon RX 580 Series (ID=0x67df)
-    Vendor:   
+    Vendor:   ATI
     VRAM:     8171 MB
     Driver:   30.0.13023.1012
 Initialize mono
-Mono path[0] = 'D:/Program Files/Unity/2020.3.5f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Program Files/Unity/2020.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Program Files/Unity/2020.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
+Mono path[0] = 'D:/Program Files/Unity/2021.2.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/Unity/2021.2.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Program Files/Unity/2021.2.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56608
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Program Files/Unity/2020.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002376 seconds.
+Register platform support module: D:/Program Files/Unity/2021.2.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007751 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 196.82 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 177.19 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.861 seconds
+- Completed reload, in  1.363 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1364ms)
+		BeginReloadAssembly (203ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (974ms)
+			LoadAssemblies (202ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (288ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (532ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (177ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (244ms)
+				ProcessInitializeOnLoadMethodAttributes (83ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007872 seconds.
+Registered in 0.012698 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 184.85 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 174.74 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  3.800 seconds
+- Completed reload, in  3.841 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3843ms)
+		BeginReloadAssembly (219ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (3427ms)
+			LoadAssemblies (181ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (620ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (182ms)
+			SetupLoadedEditorAssemblies (2341ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (175ms)
+				BeforeProcessingInitializeOnLoad (172ms)
+				ProcessInitializeOnLoadAttributes (1861ms)
+				ProcessInitializeOnLoadMethodAttributes (103ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 2.08 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 2.10 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4316 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 216.4 MB.
-System memory in use after: 216.6 MB.
+Unloading 5144 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (3.5 MB). Loaded Objects now: 5585.
+Memory consumption went from 265.8 MB to 262.3 MB.
+Total: 9.871300 ms (FindLiveObjects: 0.838300 ms CreateObjectMapping: 0.386900 ms MarkObjects: 7.046800 ms  DeleteObjects: 1.596900 ms)
 
-Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4759.
-Total: 6.596600 ms (FindLiveObjects: 0.830700 ms CreateObjectMapping: 0.797600 ms MarkObjects: 4.857400 ms  DeleteObjects: 0.109500 ms)
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Door 01 Variant.prefab
-  artifactKey: Guid(b1b82fc3bc579aa4fadca549d2298594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Door 01 Variant.prefab using Guid(b1b82fc3bc579aa4fadca549d2298594) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
- -> (artifact id: '59ccbb0c460a7ff3b7c1023fb39f1180') in 2.406489 seconds
-  Import took 2.426123 seconds .
-
+  Time since last request: 93925.991283 seconds.
+  path: Assets/Resources/Doodads/Textures
+  artifactKey: Guid(4b4620ab262183f4980267fb486ab282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Doodads/Textures using Guid(4b4620ab262183f4980267fb486ab282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0ab6c76956813228ab1702a5d82c6d5') in 0.024636 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 206.008022 seconds.
-  path: Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Window 01 Variant.prefab
-  artifactKey: Guid(b2ae24eb9e731884b9c33e6a58a3f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Window 01 Variant.prefab using Guid(b2ae24eb9e731884b9c33e6a58a3f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70cf2eb55dd13dcbec55b3a0729db69d') in 0.133403 seconds
-  Import took 0.149889 seconds .
-
+  Time since last request: 1.034131 seconds.
+  path: Assets/Resources/Doodads/Textures/[Texture] Wood Plank 01-02_NormalMap.png
+  artifactKey: Guid(bcf21153f46fd8a439c2806ce7199a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Doodads/Textures/[Texture] Wood Plank 01-02_NormalMap.png using Guid(bcf21153f46fd8a439c2806ce7199a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf1ca95b92fb9f5fc32f6700f3a0388') in 0.177559 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.331922 seconds.
-  path: Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Wall Half 01 Variant.prefab
-  artifactKey: Guid(bc0bd8f1e9539464e94f8a81df240e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Wall Half 01 Variant.prefab using Guid(bc0bd8f1e9539464e94f8a81df240e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6bb79aec991aa8b88886c7ae509a2f7') in 0.051126 seconds
-  Import took 0.062916 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008331 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.77 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  2.869 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.37 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4039 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 212.2 MB.
-System memory in use after: 212.5 MB.
-
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 4900.
-Total: 7.998100 ms (FindLiveObjects: 1.607500 ms CreateObjectMapping: 0.634700 ms MarkObjects: 5.697900 ms  DeleteObjects: 0.055100 ms)
-
+  Time since last request: 14.333675 seconds.
+  path: Assets/Resources/Doodads/Textures/[Texture] Wood Plank 01-02_NormalMap.png
+  artifactKey: Guid(bcf21153f46fd8a439c2806ce7199a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Doodads/Textures/[Texture] Wood Plank 01-02_NormalMap.png using Guid(bcf21153f46fd8a439c2806ce7199a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2651f95b95fe4390697fa48b2cb0ad10') in 0.085317 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 66.296948 seconds.
-  path: Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Window 01 Variant.prefab
-  artifactKey: Guid(b2ae24eb9e731884b9c33e6a58a3f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ModularBuilding/WoodLogsModules/[Modular] Log Cabin Window 01 Variant.prefab using Guid(b2ae24eb9e731884b9c33e6a58a3f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8311570529df4b746d1e51f5ad3478a4') in 1.197143 seconds
-  Import took 1.213984 seconds .
-
+  Time since last request: 1512.257317 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/Large Rock 05 Variant.prefab
+  artifactKey: Guid(5c8247dfc852acf4690eb3375069007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/Large Rock 05 Variant.prefab using Guid(5c8247dfc852acf4690eb3375069007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f5d4dde9ac823f2cdd37828f7a6f26d') in 1.520931 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008240 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono/lib/libdl
-* Assertion at ..\mono\mini\mini-generic-sharing.c:877, condition `oti' not met
-
-Crash!!!
-SymInit: Symbol-SearchPath: 'D:/Program Files/Unity/2020.3.5f1/Editor/Data/Mono;.;D:\Proyectos\Dracollarium\Project-Dracollarium\Unity Project;D:\Program Files\Unity\2020.3.5f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 534, UserName: 'Guillermo Marinero'
-OS-Version: 10.0.0
-D:\Program Files\Unity\2020.3.5f1\Editor\Unity.exe:Unity.exe (00007FF677640000), size: 134795264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.5.38314
-C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFD0EC30000), size: 2052096 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFD0E380000), size: 778240 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFD0C4D0000), size: 2916352 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFD0C7A0000), size: 1400832 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1320
-C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFD0C9C0000), size: 1048576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.789
-C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFD0D1F0000), size: 1708032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
-C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFD0C990000), size: 139264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFD0CC70000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
-D:\Program Files\Unity\2020.3.5f1\Editor\optix.6.0.0.dll:optix.6.0.0.dll (00007FFCFFF70000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.0.0.0
-D:\Program Files\Unity\2020.3.5f1\Editor\OpenImageDenoise.dll:OpenImageDenoise.dll (00007FFCCF2A0000), size: 43806720 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFD0CAC0000), size: 1101824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-D:\Program Files\Unity\2020.3.5f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFCD8AE0000), size: 8974336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.0.0.0
-C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFD0CBD0000), size: 643072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.789
-C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFD0E8A0000), size: 712704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFD0D4D0000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.19041.546
-C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFD0E4A0000), size: 638976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFD0CF50000), size: 1200128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-D:\Program Files\Unity\2020.3.5f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 6414336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
-C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFD0DC30000), size: 7618560 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-D:\Program Files\Unity\2020.3.5f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFCDECA0000), size: 1306624 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFD0DAA0000), size: 348160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
-C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFD0CE50000), size: 438272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFD0D3A0000), size: 1220608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
-D:\Program Files\Unity\2020.3.5f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFCD95E0000), size: 1609728 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\WLDAP32.dll:WLDAP32.dll (00007FFD0E950000), size: 352256 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\System32\combase.dll:combase.dll (00007FFD0E540000), size: 3493888 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1348
-C:\WINDOWS\System32\Normaliz.dll:Normaliz.dll (00007FFD0D1E0000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-D:\Program Files\Unity\2020.3.5f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFD08270000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.1812.6001
-C:\WINDOWS\System32\IMM32.dll:IMM32.dll (00007FFD0EA70000), size: 196608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFD0D570000), size: 4661248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1237
-C:\WINDOWS\System32\cfgmgr32.dll:cfgmgr32.dll (00007FFD0C3D0000), size: 319488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
-C:\WINDOWS\System32\bcrypt.dll:bcrypt.dll (00007FFD0C340000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
-D:\Program Files\Unity\2020.3.5f1\Editor\tbb.dll:tbb.dll (00007FFCF2140000), size: 413696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2017.0.2016.1004
-C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFD0EAA0000), size: 839680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.985
-C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFD0C370000), size: 393216 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFCFDB10000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.30.30704.0
-C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFCE7E00000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
-C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFD0B790000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFCCD510000), size: 581632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.30.30704.0
-C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFCC9D20000), size: 1200128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
-C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFD064E0000), size: 1097728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1320
-C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFD0ABF0000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-D:\Program Files\Unity\2020.3.5f1\Editor\RadeonImageFilters.dll:RadeonImageFilters.dll (00007FFCD9370000), size: 2535424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.1.0
-C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFD024E0000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-D:\Program Files\Unity\2020.3.5f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFCD63E0000), size: 8978432 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.0
-C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFD024D0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\MSVCP120.dll:MSVCP120.dll (00007FFCF2090000), size: 679936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.40664.0
-C:\WINDOWS\SYSTEM32\MSVCR120.dll:MSVCR120.dll (00007FFCED950000), size: 978944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.40664.0
-C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFD07230000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.30.30704.0
-D:\Program Files\Unity\2020.3.5f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFCF2280000), size: 483328 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.20342
-C:\WINDOWS\SYSTEM32\Secur32.dll:Secur32.dll (00007FFCF6D80000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FFD081A0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1
-C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL:CRYPTBASE.DLL (00007FFD0BD00000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFD0C200000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
-D:\Program Files\Unity\2020.3.5f1\Editor\OpenRL.dll:OpenRL.dll (000002005AD70000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
-C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (00000000703E0000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
-C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (00000000704C0000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
-D:\Program Files\Unity\2020.3.5f1\Editor\embree.dll:embree.dll (00007FFCB4DB0000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
-C:\WINDOWS\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FFD0BAF0000), size: 434176 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-D:\Program Files\Unity\2020.3.5f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (000002005B9C0000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
-C:\WINDOWS\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFD0BF20000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFD0A250000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\System32\bcryptPrimitives.dll:bcryptPrimitives.dll (00007FFD0C900000), size: 532480 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1415
-C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFD09D50000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
-C:\WINDOWS\System32\shcore.dll:shcore.dll (00007FFD0E9B0000), size: 708608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1387
-C:\WINDOWS\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFD0A450000), size: 7950336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-C:\WINDOWS\SYSTEM32\Wldp.dll:Wldp.dll (00007FFD0BD90000), size: 188416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1320
-C:\WINDOWS\SYSTEM32\profapi.dll:profapi.dll (00007FFD0C280000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
-C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFD0D9F0000), size: 692224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
-C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFD07F60000), size: 253952 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
-C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFD02EF0000), size: 65536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
-C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFD0EA60000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.610
-C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFD03F20000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFD04480000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFD0B7E0000), size: 831488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1320
-C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFCF9990000), size: 520192 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1466
-C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFCF9800000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFD08E10000), size: 2506752 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
-C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFD0AC30000), size: 999424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
-C:\WINDOWS\System32\DriverStore\FileRepository\u0373652.inf_amd64_97d024528a122d1a\B372726\aticfx64.dll:aticfx64.dll (00007FFD02510000), size: 1802240 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 30.0.13023.1012
-C:\WINDOWS\System32\DriverStore\FileRepository\u0373652.inf_amd64_97d024528a122d1a\B372726\atiuxp64.dll:atiuxp64.dll (00007FFD02490000), size: 233472 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 30.0.13023.1012
-C:\WINDOWS\System32\DriverStore\FileRepository\u0373652.inf_amd64_97d024528a122d1a\B372726\atidxx64.dll:atidxx64.dll (00007FFD00550000), size: 32731136 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 30.0.13023.1012
-C:\WINDOWS\SYSTEM32\apphelp.dll:apphelp.dll (00007FFD09B90000), size: 589824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1320
-C:\WINDOWS\SYSTEM32\amdihk64.dll:amdihk64.dll (00007FFD00520000), size: 196608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.0.0.1788
-C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFD02EB0000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\D3DSCache.dll:D3DSCache.dll (00007FFD004F0000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
-C:\WINDOWS\SYSTEM32\USERENV.dll:USERENV.dll (00007FFD0C240000), size: 188416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.572
-C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFCED0F0000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1320
-C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFCF85E0000), size: 598016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
-C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFCEC900000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1320
-C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFCE8EC0000), size: 1093632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFCE91D0000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
-C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2111.5-0\MpOav.dll:MpOav.dll (00007FFCE8AF0000), size: 499712 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 4.18.2111.5
-C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FFCCC2D0000), size: 147456 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.2.6.0
-D:\Program Files\Unity\2020.3.5f1\Editor\radeonrays.dll:radeonrays.dll (00007FFCD2580000), size: 552960 (result: 0), SymType: '-deferred-', PDB: ''
-D:\Program Files\Unity\2020.3.5f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFCC41E0000), size: 7790592 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\PSAPI.DLL:PSAPI.DLL (00007FFD0DC20000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\ProgramData\Microsoft\VisualStudio\Setup\x64\Microsoft.VisualStudio.Setup.Configuration.Native.dll:Microsoft.VisualStudio.Setup.Configuration.Native.dll (00007FFCD2530000), size: 327680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.4492.23473
-C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFD0BCE0000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFD0B400000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1052
-D:\Proyectos\Dracollarium\Project-Dracollarium\Unity Project\Library\PackageCache\com.unity.burst@1.3.7\.Runtime\burst-llvm-9.dll:burst-llvm-9.dll (00007FFCA1CC0000), size: 35176448 (result: 0), SymType: '-deferred-', PDB: ''
-D:\Proyectos\Dracollarium\Project-Dracollarium\Unity Project\Library\BurstCache\JIT\32493ecc98b65ccb6bb51921bd12cb34.dll:32493ecc98b65ccb6bb51921bd12cb34.dll (00007FFCF0E10000), size: 16384 (result: 0), SymType: '-deferred-', PDB: ''
-D:\Proyectos\Dracollarium\Project-Dracollarium\Unity Project\Library\BurstCache\JIT\7e6bcf2232add21cb1d53ea542de1492.dll:7e6bcf2232add21cb1d53ea542de1492.dll (00007FFCF0E00000), size: 16384 (result: 0), SymType: '-deferred-', PDB: ''
-D:\Proyectos\Dracollarium\Project-Dracollarium\Unity Project\Assets\Allegorithmic\Plugins\Substance\Substance Engine\Editor\SubstanceLink\substance_link.dll:substance_link.dll (00007FFCF0DF0000), size: 57344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 0.5.1.0
-C:\WINDOWS\SYSTEM32\PROPSYS.dll:PROPSYS.dll (00007FFD07B70000), size: 1007616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.19041.1023
-C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\comctl32.dll:comctl32.dll (00007FFCFBAB0000), size: 2727936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.10.19041.1110
-C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFD03A50000), size: 1785856 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
-C:\Windows\System32\thumbcache.dll:thumbcache.dll (00007FFCF5C80000), size: 417792 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
-C:\WINDOWS\SYSTEM32\policymanager.dll:policymanager.dll (00007FFD06C80000), size: 655360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1387
-C:\WINDOWS\SYSTEM32\msvcp110_win.dll:msvcp110_win.dll (00007FFD0B490000), size: 565248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
-C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFD05320000), size: 1982464 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.867
-
-========== OUTPUTTING STACK TRACE ==================
-
-0x00007FFD0C504F69 (KERNELBASE) RaiseException
-0x00007FFCC41F6025 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\utils\mono-log-common.c:142] mono_log_write_logfile 
-0x00007FFCC41E4CC3 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\eglib\goutput.c:141] monoeg_assertion_message 
-0x00007FFCC43F0059 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\mini\mini-generic-sharing.c:2534] fill_runtime_generic_context 
-0x00007FFCC43F4A21 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\mini\mini-generic-sharing.c:2596] mono_class_fill_runtime_generic_context 
-0x00007FFCC43EBE42 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\mini\mini-trampolines.c:1078] mono_rgctx_lazy_fetch_trampoline 
-  ERROR: SymGetSymFromAddr64, GetLastError: 'No se puede encontrar el módulo especificado.' (Address: 00000202149108C3)
-  ERROR: SymGetModuleInfo64, GetLastError: 'Error en una rutina de inicialización de biblioteca de vínculos dinámicos (DLL).' (Address: 00000202149108C3)
-0x00000202149108C3 ((<unknown>)) (function-name not available)
-0x000002024035A3BB (Mono JIT Code) System.Collections.ObjectModel.ReadOnlyCollection`1<T_REF>:GetEnumerator ()
-0x000002024192FAF3 (Mono JIT Code) [D:\Proyectos\Dracollarium\Project-Dracollarium\Unity Project\Library\PackageCache\com.unity.render-pipelines.core@10.4.0\Runtime\Volume\VolumeComponent.cs:115] UnityEngine.Rendering.VolumeComponent:OnDisable () 
-0x000002025D038140 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
-0x00007FFCC430E640 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\mini\mini-runtime.c:2812] mono_jit_runtime_invoke 
-0x00007FFCC4292AC2 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\metadata\object.c:2921] do_runtime_invoke 
-0x00007FFCC429BB1F (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\metadata\object.c:2968] mono_runtime_invoke 
-0x00007FF6791CAB74 (Unity) scripting_method_invoke
-0x00007FF6791C34C5 (Unity) ScriptingInvocation::Invoke
-0x00007FF6791C38EE (Unity) ScriptingInvocation::InvokeChecked
-0x00007FF679240486 (Unity) SerializableManagedRef::CallMethod
-0x00007FF679194F56 (Unity) MonoBehaviour::WillUnloadScriptableObject
-0x00007FF67918F20A (Unity) MonoManager::RemoveBehavioursFromManager
-0x00007FF679185FE8 (Unity) MonoManager::BeginReloadAssembly
-0x00007FF67918EFF5 (Unity) MonoManager::ReloadAssembly
-0x00007FF67A53B791 (Unity) LoadDomainAndUserAssemblies
-0x00007FF67A53BC3E (Unity) LoadUserAssemblies
-0x00007FF67A970558 (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
-0x00007FF67AA3B752 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
-0x00007FF67AA3D8B0 (Unity) asio::detail::win_iocp_io_service::do_one
-0x00007FF67AA4103E (Unity) asio::io_service::run
-0x00007FF67A9B70C0 (Unity) RunAssetImportWorkerClientV2
-0x00007FF67A9B7110 (Unity) RunAssetImporterV2
-0x00007FF679EC2C96 (Unity) Application::InitializeProject
-0x00007FF67A8435F2 (Unity) WinMain
-0x00007FF67C6BEB56 (Unity) __scrt_common_main_seh
-0x00007FFD0E397034 (KERNEL32) BaseThreadInitThunk
-0x00007FFD0EC82651 (ntdll) RtlUserThreadStart
-
-========== END OF STACKTRACE ===========
-
-A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
- * C:/Users/GUILLE~1/AppData/Local/Temp/Unity/Editor/Crashes
+Received Import Request.
+  Time since last request: 22.133133 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock 05 Variant.prefab
+  artifactKey: Guid(5c8247dfc852acf4690eb3375069007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock 05 Variant.prefab using Guid(5c8247dfc852acf4690eb3375069007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d9dd806d0b2ac2d7e8d07a3f9b8672') in 0.047636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.741199 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/Large Rock 06 Variant.prefab
+  artifactKey: Guid(3a9bc5f7cdb49c14cbb09ac7e3ebb317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/Large Rock 06 Variant.prefab using Guid(3a9bc5f7cdb49c14cbb09ac7e3ebb317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '085db3a1197c241be75796926baec6b0') in 0.046235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.601878 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock 06 Variant.prefab
+  artifactKey: Guid(3a9bc5f7cdb49c14cbb09ac7e3ebb317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock 06 Variant.prefab using Guid(3a9bc5f7cdb49c14cbb09ac7e3ebb317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd02a841a39741b8776de8b40dfd3d120') in 0.039596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.933598 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/Large Rock 07 Variant.prefab
+  artifactKey: Guid(a756bb8beb659634983ab8296f93b496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/Large Rock 07 Variant.prefab using Guid(a756bb8beb659634983ab8296f93b496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c18fdcbe86bc6689fd7d7143111c1d') in 0.044655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.643362 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_07 Variant.prefab
+  artifactKey: Guid(a756bb8beb659634983ab8296f93b496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_07 Variant.prefab using Guid(a756bb8beb659634983ab8296f93b496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a4ee7398af4cb2e032b6620bf4c254') in 0.035305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.309378 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_06 Variant.prefab
+  artifactKey: Guid(3a9bc5f7cdb49c14cbb09ac7e3ebb317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_06 Variant.prefab using Guid(3a9bc5f7cdb49c14cbb09ac7e3ebb317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4968d77d89cd3f678497e55222ceb1f8') in 0.036055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.082776 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_05 Variant.prefab
+  artifactKey: Guid(5c8247dfc852acf4690eb3375069007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_05 Variant.prefab using Guid(5c8247dfc852acf4690eb3375069007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c8c0a8a7139f78a6f8456e27117275') in 0.036868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.683970 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_02 Variant.prefab
+  artifactKey: Guid(97f3d992a18261a47bd86e674cdcc8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_02 Variant.prefab using Guid(97f3d992a18261a47bd86e674cdcc8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '367614e85f31e06c0345bed9f8ee6f44') in 0.080750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.627820 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_03 Variant.prefab
+  artifactKey: Guid(dc053a91395f76242a90996012166d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_03 Variant.prefab using Guid(dc053a91395f76242a90996012166d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f11cb7e8ecb99c28bd175cfb2cec830') in 0.075452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.780300 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_01 Variant.prefab
+  artifactKey: Guid(372b3346608fe8a4bad1e374e2216cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_01 Variant.prefab using Guid(372b3346608fe8a4bad1e374e2216cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2bbe3f07f89e60948c9d64fb7b535f5') in 0.057973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.891241 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_08 Variant.prefab
+  artifactKey: Guid(7db9319874175f9459b1744b19ff3825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_08 Variant.prefab using Guid(7db9319874175f9459b1744b19ff3825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd7c1bac004566c2e376d8ed4546dba') in 0.045404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.453333 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_09 Variant.prefab
+  artifactKey: Guid(79d511659dd32c547887bfbe4653cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_09 Variant.prefab using Guid(79d511659dd32c547887bfbe4653cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5de5c36782bafdfd62e761a27a8ac68') in 0.043485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.742848 seconds.
+  path: Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_10 Variant.prefab
+  artifactKey: Guid(15a9ac80f34e19f4fb5b830ab3c0b55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Rocks/[Rock] Common Rock_10 Variant.prefab using Guid(15a9ac80f34e19f4fb5b830ab3c0b55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7429876693b87c5a42675545181d69') in 0.042147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 539.295617 seconds.
+  path: Assets/Prefabs/Enviroment/Large Rocks/Large Rock 01 Variant.prefab
+  artifactKey: Guid(3c6e2f9b8ff58194f98ec190e03385a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Large Rocks/Large Rock 01 Variant.prefab using Guid(3c6e2f9b8ff58194f98ec190e03385a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9dd0045c3cf347eceab00989d01834') in 0.043683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.617656 seconds.
+  path: Assets/Prefabs/Enviroment/Large Rocks/Large Rock 02 Variant.prefab
+  artifactKey: Guid(c92863f695604cd4da26e2c622a6616c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Large Rocks/Large Rock 02 Variant.prefab using Guid(c92863f695604cd4da26e2c622a6616c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '488770fbe0d21b9587370a12e98e9772') in 0.054434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.435350 seconds.
+  path: Assets/Prefabs/Enviroment/Large Rocks/Large Rock 03 Variant.prefab
+  artifactKey: Guid(f70b56b614dce4e4d8361c6f49d5072d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Large Rocks/Large Rock 03 Variant.prefab using Guid(f70b56b614dce4e4d8361c6f49d5072d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f890a2833f5a0e1cfc23fe96f580a1e') in 0.039868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.970268 seconds.
+  path: Assets/Prefabs/Enviroment/Large Rocks/Large Rock 04 Variant.prefab
+  artifactKey: Guid(20518bc5cb6878f438e4e77a23fcb332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Large Rocks/Large Rock 04 Variant.prefab using Guid(20518bc5cb6878f438e4e77a23fcb332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac898dc56889ac0eee943e5115598e4') in 0.039562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 142.274203 seconds.
+  path: Assets/Prefabs/Enviroment/Large Rocks/[Rock] Common Rock_02 Variant Variant.prefab
+  artifactKey: Guid(0f937d909cc6eb54ca892e06ce5243e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Large Rocks/[Rock] Common Rock_02 Variant Variant.prefab using Guid(0f937d909cc6eb54ca892e06ce5243e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1428a28643c901c785d6dc537460b2f5') in 0.071503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.834180 seconds.
+  path: Assets/Prefabs/Enviroment/Large Rocks/[Rock] Common Rock_03 Variant Variant.prefab
+  artifactKey: Guid(326610ca83620064b9583d72f3617fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Large Rocks/[Rock] Common Rock_03 Variant Variant.prefab using Guid(326610ca83620064b9583d72f3617fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c5df81c150442326521736d03dedab') in 0.054264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.169750 seconds.
+  path: Assets/Prefabs/Enviroment/Large Rocks/Large Rock 03 Variant.prefab
+  artifactKey: Guid(f70b56b614dce4e4d8361c6f49d5072d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enviroment/Large Rocks/Large Rock 03 Variant.prefab using Guid(f70b56b614dce4e4d8361c6f49d5072d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc71cdc526271c969072c355ca43f86b') in 0.035084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 589.061737 seconds.
+  path: Assets/Prefabs/Doodads/Wooden Column 02 Variant.prefab
+  artifactKey: Guid(1eab72ebd263d3f4aa266052d4e79392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Doodads/Wooden Column 02 Variant.prefab using Guid(1eab72ebd263d3f4aa266052d4e79392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a55feeadb5180350ef5dcac66c6574b') in 0.145887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.909090 seconds.
+  path: Assets/Prefabs/Doodads/Wooden Column 02 Variant.prefab
+  artifactKey: Guid(1eab72ebd263d3f4aa266052d4e79392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Doodads/Wooden Column 02 Variant.prefab using Guid(1eab72ebd263d3f4aa266052d4e79392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5edf6ba73e8261b0dea362db8794cccf') in 0.037410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.667253 seconds.
+  path: Assets/Prefabs/Doodads/Wooden Column 04 Variant.prefab
+  artifactKey: Guid(13642808b8fa7e045b3792e283eb69a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Doodads/Wooden Column 04 Variant.prefab using Guid(13642808b8fa7e045b3792e283eb69a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1fb2a0598bc8648ed028b87dcf91f2') in 0.043269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.877961 seconds.
+  path: Assets/Prefabs/Doodads/Wooden Column 03 Variant.prefab
+  artifactKey: Guid(ee9aed9d3d8b91d4992b339788911ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Doodads/Wooden Column 03 Variant.prefab using Guid(ee9aed9d3d8b91d4992b339788911ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bfcb9deade9cae178f24c696c8d9c12') in 0.069639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.405350 seconds.
+  path: Assets/Prefabs/Doodads/Wooden Column 01 Variant.prefab
+  artifactKey: Guid(216f45590f9b4694ea3325d00f3cb9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Doodads/Wooden Column 01 Variant.prefab using Guid(216f45590f9b4694ea3325d00f3cb9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb0769a4cad6773fcf1bdf28e8bdf31') in 0.056728 seconds 

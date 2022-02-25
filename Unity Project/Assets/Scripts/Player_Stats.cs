@@ -10,6 +10,7 @@ public class Player_Stats : MonoBehaviour {
     [SerializeField] private float runSpeed;
     [SerializeField] private float sprintSpeed;
     [SerializeField] private float speedsModifier;
+    [SerializeField] private float combatSpeedMode = 1f;
 
     [Header("CHARACTER HEALTH STATS:"), Space(10)]
     [SerializeField] private float maxHealth;

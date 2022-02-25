@@ -1,19 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!136 &314679455467075742
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7806910812932173392}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.31
-  m_Height: 5
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 2}
 --- !u!1001 &6959980984254550785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -104,3 +90,33 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d7318c931a65de4ba137d8f278fd3bd, type: 3}
   m_PrefabInstance: {fileID: 6959980984254550785}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &314679455467075742
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7806910812932173392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.31
+  m_Height: 5
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 2}
+--- !u!114 &-9187481723914010441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7806910812932173392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76abc15796ec5fc47ac9b0c46d1cdb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xRotationRange: 0
+  yRotationRange: 0
+  zRotationRange: 0
+  scaleRange: 2

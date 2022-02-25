@@ -50,6 +50,7 @@ public class Controller_PlayerManager : MonoBehaviour {
     [SerializeField] private Player_Stats playerStats;
     [SerializeField] private Player_ItemPickup playerItemPickUp;
     [SerializeField] private Player_ModularBuilding playerModularBuilding;
+    [SerializeField] private Player_Combat playerCombat;
     private IFabricate[] fabricationActions;
 
     [Header("PLAYER MODES:"), Space(5)]
@@ -61,6 +62,7 @@ public class Controller_PlayerManager : MonoBehaviour {
     #endregion
 
     #region PROPERTIES
+    public Player_Combat PlayerCombat { get { return playerCombat; } }
     public GameObject DropPosition { get { return dropLocation; } }
     public GameObject MenuEquipmentContent { get { return menuEquipmentContent; } }
     public Player_Equipment PlayerEquipment { get { return playerEquipment; } }

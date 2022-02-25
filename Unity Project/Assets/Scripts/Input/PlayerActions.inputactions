@@ -11,7 +11,8 @@
                     "id": "c3411ab1-5246-4dc1-8039-3826e6445fc6",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Run",
@@ -19,7 +20,8 @@
                     "id": "e979434c-7330-4131-996d-bc14ee9f69fc",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Walk",
@@ -27,7 +29,8 @@
                     "id": "8555bed1-fe10-404f-bd8d-05d924141775",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Jump",
@@ -35,7 +38,8 @@
                     "id": "c1ceffcc-b448-460f-89c9-66d4ff0abc4f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MouseDelta",
@@ -43,7 +47,8 @@
                     "id": "84226c60-17a7-4523-878a-b2c05081f385",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MousePosition",
@@ -51,7 +56,8 @@
                     "id": "5ba347be-2ab1-4111-af5e-40d2450f69bd",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -177,7 +183,8 @@
                     "id": "d6cf9d83-2e9a-4f5b-8f59-4971d06c51f7",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MapMenu",
@@ -185,7 +192,8 @@
                     "id": "fd375436-96a9-4dfe-b30b-a229ef5bc802",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "JourneyMenu",
@@ -193,7 +201,8 @@
                     "id": "1266183a-e0f0-4125-8f79-c79389486bd4",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "BuildMenu",
@@ -201,7 +210,8 @@
                     "id": "6d86a1fc-c234-4b11-874e-069e30ce11a2",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "CharacterMenu",
@@ -209,7 +219,8 @@
                     "id": "8a7750c9-cd5f-4173-9b51-335c21368ebd",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "EquipmentMenu",
@@ -217,7 +228,8 @@
                     "id": "6df29046-b516-418e-87ea-6ea4daafa300",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Cancel",
@@ -225,7 +237,8 @@
                     "id": "72c5d177-27a2-4220-b05a-74611a105acb",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -318,7 +331,8 @@
                     "id": "f52694d6-3a31-4a72-8ae3-e285a4207bde",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "HorizontalRotation",
@@ -326,7 +340,8 @@
                     "id": "42974bb1-f4da-4ff7-a834-b606f1a05629",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Cancel",
@@ -334,7 +349,8 @@
                     "id": "5cfa411c-5496-4ef1-9787-938b92404ff0",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "LeftClick",
@@ -342,7 +358,8 @@
                     "id": "c7bc5fb5-1d54-4bb2-828c-20e2ad8c3c16",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -435,7 +452,8 @@
                     "id": "96ec7881-ba61-4c9d-b8ad-9647f36c8d20",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "AttackB",
@@ -443,7 +461,8 @@
                     "id": "68a664b4-4b64-4e25-a363-db2fe41b0409",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Aim",
@@ -451,7 +470,44 @@
                     "id": "9303e959-bb97-4e49-ae53-dfae53234f7f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FightMode",
+                    "type": "Button",
+                    "id": "f454e755-1e35-47a8-8eb5-209c5b4dfd76",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ExploreMode",
+                    "type": "Button",
+                    "id": "0f8bac52-20d0-41eb-9c8d-547508bb8825",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Reload",
+                    "type": "Button",
+                    "id": "70226106-7591-4adc-9e12-4b3b1ca5021f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AttackDirection",
+                    "type": "Value",
+                    "id": "99f07650-7058-4d0d-a27c-93d71414d39b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -481,12 +537,100 @@
                     "name": "",
                     "id": "94b3a73a-dd51-4f71-bcf7-f4573afae4c6",
                     "path": "<Mouse>/rightButton",
-                    "interactions": "",
+                    "interactions": "Hold",
                     "processors": "",
                     "groups": "",
                     "action": "Aim",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "599b8f66-c1c7-4a91-973d-30037111d4f2",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FightMode",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "59e1f689-0c87-41b8-9de7-a6d19ce3c7c8",
+                    "path": "<Keyboard>/r",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ExploreMode",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0068fde3-c498-45e9-8698-8c2085c02dce",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reload",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Direction",
+                    "id": "11cc5229-7837-408c-bebc-6a008d65ac69",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackDirection",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "8bce9977-d9d8-4c84-a0b2-fc03ffe29a3d",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackDirection",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "69a606ee-6b79-42d1-9bf3-cf8a55aea74b",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackDirection",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "333ac7f3-cdea-4528-927d-c19bc9a21128",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackDirection",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "c1d8d247-e90a-4701-ad68-6b39fab190d7",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackDirection",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },
@@ -500,7 +644,8 @@
                     "id": "e91cd2b4-3876-46e6-a4d8-a799206c3310",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "ActionB",
@@ -508,7 +653,8 @@
                     "id": "2a69c00b-ac13-4d8f-a449-5d1a52ca69f0",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "ActionC",
@@ -516,7 +662,8 @@
                     "id": "cecef904-b380-4bb1-be09-4f2615121a9a",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "ActionD",
@@ -524,7 +671,8 @@
                     "id": "cf412005-6441-43da-adbb-93abed98e43c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Grab",
@@ -532,7 +680,8 @@
                     "id": "f611b35d-c06a-4586-a220-b3464c8ba745",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "DropLeftItem",
@@ -540,7 +689,8 @@
                     "id": "6764478b-14ad-4e8b-a8db-1632ab966891",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "DropRightItem",
@@ -548,7 +698,8 @@
                     "id": "a1e2b58d-baac-4588-bb54-24935974b752",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Take",
@@ -556,7 +707,8 @@
                     "id": "5497d63e-2181-4239-98ce-00962c57b383",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -717,5 +869,22 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }
