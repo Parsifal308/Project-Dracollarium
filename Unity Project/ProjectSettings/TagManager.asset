@@ -13,17 +13,17 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - System/PostProcessing
   - 
-  - BuildTerrain
-  - ModularBuilding
-  - Items
-  - "1\xBA Canvas"
-  - "2\xBA Canvas"
-  - 
-  - 
-  - 
-  - 
+  - Enviroment/BuildTerrain
+  - Enviroment/ModularBuilding
+  - Item/General_Item
+  - Canvas/First
+  - Canvas/Second
+  - Entity/Player
+  - Item/Weapon
+  - Entity/NPC
+  - System/RaycastIgnore
   - 
   - 
   - 

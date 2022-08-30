@@ -11,19 +11,28 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
     public event EventHandler OnPlayerMovement;
     private CharacterController characterController;
     private Vector2 moveInput;
-    private float gravity;
+    [SerializeField] private float gravity;
+    private float horizontalMoveMultiplier = 1;
+    private float frontalMoveMultiplier = 1;
+    [SerializeField] private float dashSpeed= 4;
     private bool isMoving;
     private bool isRunning;
     private bool isSprinting;
     private bool isWalking;
+    private bool isCombating;
+
+    [SerializeField] private float dashDuration;
+    private bool isDashing;
 
     #endregion
 
     #region PROPERTIES
+    public bool IsDashing { get { return isDashing; } set { isDashing = value; } }
     public bool IsMoving { get { return isMoving; } }
     public bool IsRunning { get { return isRunning; } }
     public bool IsSprinting { get { return isSprinting; } }
     public bool IsWalking { get { return isWalking; } }
+    public bool IsCombating { get { return isCombating; } set { isCombating = value; } }
     public Vector2 MoveInput { get { return moveInput; } }
     public CharacterController CharacterController { get { return characterController; } }
 
@@ -41,8 +50,11 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
         characterController.Move(new Vector3(0, gravity, 0));
         if (moveInput != Vector2.zero){
             isMoving = true;
-
-            if (isWalking)
+            if (isCombating)
+            {
+                Movement(playerGlobalController.PlayerStats.CombatSpeed);
+            }
+            else if (isWalking)
             {
                 Movement(playerGlobalController.PlayerStats.WalkSpeed);
             }
@@ -54,6 +66,7 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
             {
                 Movement(playerGlobalController.PlayerStats.RunSpeed);
             }
+            
         }
         else{
             isMoving = false;
@@ -64,9 +77,21 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
 
     #region METHODS
     public void Movement(float speed){
-        characterController.Move((characterController.transform.right * moveInput.y + characterController.transform.forward * (-moveInput.x)) * Time.deltaTime * speed);
-        Rotation();
-        OnPlayerMovement?.Invoke(this, EventArgs.Empty);    //Si los subscriptores del evento no son nulos, entonces se dispara dicho metodo.
+        if (isDashing)
+        {
+            StartCoroutine(DashDuration());
+            StartCoroutine(DashMovement());
+            characterController.Move((characterController.transform.right * dashSpeed) * Time.deltaTime * (speed));
+            Rotation();
+            OnPlayerMovement?.Invoke(this, EventArgs.Empty);
+        }
+        else
+        {
+            characterController.Move((characterController.transform.right * (moveInput.y) * frontalMoveMultiplier + characterController.transform.forward * (-moveInput.x) * horizontalMoveMultiplier) * Time.deltaTime * speed);
+            Rotation();
+            OnPlayerMovement?.Invoke(this, EventArgs.Empty);
+        }
+
     }
     public void Rotation(){
         characterController.transform.rotation = Quaternion.Euler(0f, playerGlobalController.FocusedLookCam.Camera.transform.rotation.eulerAngles.y - 90f, 0f);
@@ -111,5 +136,17 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
     }
     #endregion
 
-
+    IEnumerator DashDuration()
+    {
+        yield return new WaitForSeconds(dashDuration);
+        isDashing = false;
+    }
+    IEnumerator DashMovement()
+    {
+        horizontalMoveMultiplier = 0;
+        frontalMoveMultiplier = 0;
+        yield return new WaitForSeconds(dashDuration*5);
+        horizontalMoveMultiplier = 1;
+        frontalMoveMultiplier = 1;
+    }
 }

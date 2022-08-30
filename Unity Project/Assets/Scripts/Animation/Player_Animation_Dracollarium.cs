@@ -24,9 +24,7 @@ public class Player_Animation_Dracollarium : MonoBehaviour{
     [SerializeField] private GameObject rightHipAxis;
     #endregion
 
-
     public GameObject BackAxis { get { return backAxis; } }
-
 
     #region ANIMATION METHODS
     public void SetMovementAnim(object sender, EventArgs e){
@@ -35,32 +33,25 @@ public class Player_Animation_Dracollarium : MonoBehaviour{
         }else{
             animator.SetBool("isMoving", false);
         }
-        if ((sender as IMovement).IsSprinting)
-        {
+        if ((sender as IMovement).IsSprinting){
             animator.SetBool("isSprinting", true);
         }
-        else
-        {
+        else{
             animator.SetBool("isSprinting", false);
         }
-        if ((sender as IMovement).IsWalking)
-        {
+        if ((sender as IMovement).IsWalking){
             animator.SetBool("isWalking", true);
         }
-        else
-        {
+        else{
             animator.SetBool("isWalking", false);
         }
-        if ((sender as IMovement).IsRunning)
-        {
+        if ((sender as IMovement).IsRunning){
             animator.SetBool("isRunning", true);
         }
-        else
-        {
+        else{
             animator.SetBool("isRunning", false);
         }
     }
-
     public void SetGrabbingAnim(object sender, EventArgs e){
         animator.SetBool("isGrabbing", true);
     }
@@ -71,64 +62,48 @@ public class Player_Animation_Dracollarium : MonoBehaviour{
         (sender as Player_ItemPickup).ObjectReached.transform.rotation = righHandAxis.transform.rotation;
         (sender as Player_ItemPickup).ObjectReached.transform.position = righHandAxis.transform.position;
     }
-    public void ParentItemToLeftHand(object sender, EventArgs e)
-    {
+    public void ParentItemToLeftHand(object sender, EventArgs e){
         (sender as Player_ItemPickup).ObjectReached.GetComponent<Rigidbody>().useGravity = false;
         (sender as Player_ItemPickup).ObjectReached.GetComponent<Rigidbody>().isKinematic = true;
         (sender as Player_ItemPickup).ObjectReached.transform.parent = leftHandAxis.transform;
         (sender as Player_ItemPickup).ObjectReached.transform.rotation = leftHandAxis.transform.rotation;
         (sender as Player_ItemPickup).ObjectReached.transform.position = leftHandAxis.transform.position;
     }
-    public void ParentItemToBack(object sender, EventArgs e)
-    {
+    public void ParentItemToBack(object sender, EventArgs e){
         controller_PlayerManager.PlayerItemPickup.ObjectReached.GetComponent<Rigidbody>().useGravity = false;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.GetComponent<Rigidbody>().isKinematic = true;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.parent = backAxis.transform;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.rotation = backAxis.transform.rotation;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.position = backAxis.transform.position;
     }
-
-
-    public void ParentItemToRightShoulder(object sender, EventArgs e)
-    {
+    public void ParentItemToRightShoulder(object sender, EventArgs e){
         controller_PlayerManager.PlayerItemPickup.ObjectReached.GetComponent<Rigidbody>().useGravity = false;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.GetComponent<Rigidbody>().isKinematic = true;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.parent = rightShoulderAxis.transform;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.rotation = rightShoulderAxis.transform.rotation;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.position = rightShoulderAxis.transform.position;
     }
-    public void ParentItemToLeftShoulder(object sender, EventArgs e)
-    {
+    public void ParentItemToLeftShoulder(object sender, EventArgs e){
         controller_PlayerManager.PlayerItemPickup.ObjectReached.GetComponent<Rigidbody>().useGravity = false;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.GetComponent<Rigidbody>().isKinematic = true;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.parent = leftShoulderAxis.transform;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.rotation = leftShoulderAxis.transform.rotation;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.position = leftShoulderAxis.transform.position;
     }
-    public void ParentItemToLeftHip(object sender, EventArgs e)
-    {
+    public void ParentItemToLeftHip(object sender, EventArgs e){
         controller_PlayerManager.PlayerItemPickup.ObjectReached.GetComponent<Rigidbody>().useGravity = false;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.GetComponent<Rigidbody>().isKinematic = true;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.parent = leftHipAxis.transform;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.rotation = leftHipAxis.transform.rotation;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.position = leftHipAxis.transform.position;
     }
-    public void ParentItemToRightHip(object sender, EventArgs e)
-    {
+    public void ParentItemToRightHip(object sender, EventArgs e){
         controller_PlayerManager.PlayerItemPickup.ObjectReached.GetComponent<Rigidbody>().useGravity = false;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.GetComponent<Rigidbody>().isKinematic = true;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.parent = rightHipAxis.transform;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.rotation = rightHipAxis.transform.rotation;
         controller_PlayerManager.PlayerItemPickup.ObjectReached.transform.position = rightHipAxis.transform.position;
     }
-
-
-
-
-
-
-
-
     public void DropLeftItem(object sender, EventArgs e){
         if (controller_PlayerManager.PlayerEquipment.LeftHandCarry != null){
             controller_PlayerManager.PlayerEquipment.LeftHandCarry.transform.parent = null;
@@ -140,8 +115,6 @@ public class Player_Animation_Dracollarium : MonoBehaviour{
             controller_PlayerManager.PlayerEquipment.LeftHand.transform.GetComponent<Rigidbody>().useGravity = true;
             controller_PlayerManager.PlayerEquipment.LeftHand.transform.GetComponent<Rigidbody>().isKinematic = false;
         }
-
-
     }
     public void DropRightItem(object sender, EventArgs e){
         if (controller_PlayerManager.PlayerEquipment.RightHandCarry != null){
@@ -156,16 +129,20 @@ public class Player_Animation_Dracollarium : MonoBehaviour{
         }
 
     }
-
+    public void HitAttackLight01(object sender, EventArgs e){
+        animator.SetBool("Hit", true);
+        animator.SetBool("Hit_LightAttack", true);
+    }
     #endregion
+
 
     #region MOVEMENT METHODS
     public void SetMovementInput(object sender, EventArgs e){
         animator.SetFloat("MovementX", Mathf.Lerp(animator.GetFloat("MovementX"), (sender as IMovement).MoveInput.x, 0.05f));
         animator.SetFloat("MovementZ", Mathf.Lerp(animator.GetFloat("MovementZ"), (sender as IMovement).MoveInput.y, 0.05f));
     }
-
     #endregion
+
 
     #region UnityMethods
     private void Start(){
