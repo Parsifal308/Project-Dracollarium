@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c5f28c97ab75ba34bbd9d84392160aec
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: c1079453315cc0f43bc3e272a2165d94, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Prefabs/Materials/BSAR/iceland_grassy_cliff.sbsar

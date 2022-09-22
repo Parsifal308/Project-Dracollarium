@@ -53,8 +53,9 @@ public class NPC_BaseBehaviour_AI : MonoBehaviour, I_NPC_AI
         currentBehaviour = Current_Behaviour.None;
     }
 
-    private void Start(){
-        navMeshAgent=GetComponent<NavMeshAgent>();
+    private void Start()
+    {
+        navMeshAgent = GetComponent<NavMeshAgent>();
         controller = GetComponent<NPC_Controller>();
 
         onWalking += controller.AnimationController.Walk;
@@ -68,7 +69,8 @@ public class NPC_BaseBehaviour_AI : MonoBehaviour, I_NPC_AI
         OnOutOfCombat += controller.AnimationController.OutOfCombat;
 
     }
-    private void LateUpdate(){
+    private void LateUpdate()
+    {
         controller.AnimationController.SetMovementZ(navMeshAgent.velocity.normalized.magnitude);
         if (currentBehaviour == Current_Behaviour.RoundPatrollling)
         {
@@ -82,43 +84,45 @@ public class NPC_BaseBehaviour_AI : MonoBehaviour, I_NPC_AI
         {
             controller.ChaseRadius.transform.gameObject.SetActive(false);
         }
-        if (currentBehaviour == Current_Behaviour.ChasingObjective && objective!=null) {
+        if (currentBehaviour == Current_Behaviour.ChasingObjective && objective != null)
+        {
             ChaseObjective(objective, MoveSpeed.Run);
         }
         if (currentBehaviour == Current_Behaviour.RandomPatrolling)
         {
 
         }
-        if(currentBehaviour == Current_Behaviour.LookingObjective && objective != null)
+        if (currentBehaviour == Current_Behaviour.LookingObjective && objective != null)
         {
             transform.LookAt(objective.transform);
         }
-        if(currentBehaviour == Current_Behaviour.Dead)
+        if (currentBehaviour == Current_Behaviour.Dead)
         {
             Die();
         }
-        if(currentBehaviour == Current_Behaviour.AttackingObjective && objective != null)
-        {        
-            ChaseObjective(objective, MoveSpeed.Run);        
-            DestinationReached();                
-            if (isDestinationReached)                
-            {      
-                OnCombatMode?.Invoke(this, EventArgs.Empty);          
-                OnLightAttack?.Invoke(this, EventArgs.Empty);       
+        if (currentBehaviour == Current_Behaviour.AttackingObjective && objective != null)
+        {
+            ChaseObjective(objective, MoveSpeed.Run);
+            DestinationReached();
+            if (isDestinationReached)
+            {
+                OnCombatMode?.Invoke(this, EventArgs.Empty);
+                OnLightAttack?.Invoke(this, EventArgs.Empty);
                 OnLightAttackD3?.Invoke(this, EventArgs.Empty);
             }
             else
             {
                 OnOutOfCombat?.Invoke(this, EventArgs.Empty);
-            }                     
+            }
         }
-        if(currentBehaviour == Current_Behaviour.Idle)
+        if (currentBehaviour == Current_Behaviour.Idle)
         {
 
         }
     }
-    
-    internal void ChaseObjective(GameObject objective, MoveSpeed moveSpeed){
+
+    internal void ChaseObjective(GameObject objective, MoveSpeed moveSpeed)
+    {
         if (!controller.ChaseRadius.transform.gameObject.activeSelf)
         {
             controller.ChaseRadius.transform.gameObject.SetActive(true);
@@ -126,7 +130,7 @@ public class NPC_BaseBehaviour_AI : MonoBehaviour, I_NPC_AI
         if (sensedObject == null)
         {
             this.sensedObject = objective;
-            
+
         }
         navMeshAgent.SetDestination(objective.transform.position);
         switch (moveSpeed)
@@ -157,7 +161,7 @@ public class NPC_BaseBehaviour_AI : MonoBehaviour, I_NPC_AI
             }
             else
             {
-                isDestinationReached = false ;
+                isDestinationReached = false;
             }
         }
     }
@@ -249,13 +253,15 @@ public class NPC_BaseBehaviour_AI : MonoBehaviour, I_NPC_AI
     {
     }
 }
-enum NPC_Behaviour{
+enum NPC_Behaviour
+{
     Neutral,
     Hostile,
     Friendly,
     Nature
 }
-enum Current_Behaviour{
+enum Current_Behaviour
+{
     Idle,
     RandomPatrolling,
     RoundPatrollling,
