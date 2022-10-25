@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 447b48795bac1d54ca858d3bae5891af
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 1156bae707da5b046904912dc62cf914, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Prefabs/Materials/BSAR/oxidized_cliff_rock.sbsar
