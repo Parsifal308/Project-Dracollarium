@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player_Stats : MonoBehaviour {
 
     #region FIELDS
-    [SerializeField] Controller_PlayerManager controller;
+    PlayerManager controller;
     public event EventHandler OnDeath,OnHitLightAttack;
 
     [Header("CHARACTER MOVEMENT STATS:"), Space(10)]
@@ -37,6 +37,7 @@ public class Player_Stats : MonoBehaviour {
 
     [Header("CHARACTER STATES:"), Space(10)]
     [SerializeField] private bool isDead = false;
+    [SerializeField] private bool isGrounded = false;
 
 
     #endregion
@@ -52,7 +53,7 @@ public class Player_Stats : MonoBehaviour {
 
     private void Start()
     {
-        controller = GetComponent<Controller_PlayerManager>();
+        controller = GetComponent<PlayerManager>();
         OnHitLightAttack += controller.PlayerDracollariumAnimation.HitAttackLight01;
     }
 

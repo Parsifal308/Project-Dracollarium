@@ -7,5 +7,4 @@ public class Database_Container : Database_Item{
     [SerializeField] private float size;
 
     public float Size { get { return size; } }
-    public string ItemName { get { return name; } }
 }

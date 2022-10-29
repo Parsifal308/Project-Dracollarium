@@ -12,15 +12,24 @@ using UnityEngine.InputSystem;
 public class GUI_Menu : MonoBehaviour
 {
     #region FIELDS
-    [SerializeField] protected Controller_PlayerManager controller_PlayerManager;
+    [SerializeField] protected PlayerManager controller_PlayerManager;
     private bool isEnabled;
     private event EventHandler OnMenuEnabled;
     private event EventHandler OnMenuDisabled;
     #endregion
 
     #region PROPERTIES
-    public Controller_PlayerManager ControllerPlayerManager { get { return controller_PlayerManager; } }
+    public PlayerManager ControllerPlayerManager { get { return controller_PlayerManager; } }
     public bool IsEnabled { get { return isEnabled; } }
+    #endregion
+
+    #region UNITY METHOD
+    private void Start(){
+        this.transform.gameObject.SetActive(false);
+        controller_PlayerManager = GetComponentInParent<PlayerManager>();
+        OnMenuDisabled += controller_PlayerManager.EnableMouseRotation;
+        OnMenuEnabled += controller_PlayerManager.DisableMouseRotation;
+    }
     #endregion
 
     #region METHODS
@@ -55,17 +64,6 @@ public class GUI_Menu : MonoBehaviour
         catch (Exception ex){
             Debug.LogError("----->[ERROR] A '" + ex.GetType() + " has ocurred.");
         }
-    }
-    
-    #endregion
-    
-
-    #region UNITY METHOD
-    private void Start(){
-        this.transform.gameObject.SetActive(false);
-        controller_PlayerManager = GetComponentInParent<Controller_PlayerManager>();
-        OnMenuDisabled += controller_PlayerManager.EnableMouseRotation;
-        OnMenuEnabled += controller_PlayerManager.DisableMouseRotation;
     }
     #endregion
 }

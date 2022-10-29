@@ -17,7 +17,7 @@ public class Player_ModularBuilding : MonoBehaviour, IFabricate{
     #region FIELDS
     public event EventHandler OnPickingItemsEnabled, OnPickingItemsDisabled;
 
-    private Controller_PlayerManager controller_PlayerManager;
+    private PlayerManager controller_PlayerManager;
 
     [Header("BUILDING SETTINGS:"), Space(10)]
     [SerializeField] private float buildingRotation;
@@ -53,8 +53,8 @@ public class Player_ModularBuilding : MonoBehaviour, IFabricate{
         buildRayLine = GetComponent<LineRenderer>();
         buildTerrainMask = LayerMask.GetMask("BuildTerrain");
         modularBuildingMask = LayerMask.GetMask("ModularBuilding");
-        OnPickingItemsEnabled += GetComponent<Controller_PlayerManager>().EnableItemCollection;
-        OnPickingItemsDisabled += GetComponent<Controller_PlayerManager>().DisableBuildingPositioning;
+        OnPickingItemsEnabled += GetComponent<PlayerManager>().EnableItemCollection;
+        OnPickingItemsDisabled += GetComponent<PlayerManager>().DisableBuildingPositioning;
     }
     private void Update()
     {

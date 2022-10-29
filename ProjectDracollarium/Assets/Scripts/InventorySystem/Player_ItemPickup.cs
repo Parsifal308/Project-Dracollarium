@@ -6,6 +6,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Linq;
 
+//===================================================================================================
+//      ARREGLAR:
+//              Limpiar este script. Que solo se encargue de funcionalidades correspondientes al
+//          sistema de inventario. Hay varias cosas de UI, que no deberian ir aca.
+//
+//===================================================================================================
 
 [RequireComponent(typeof(LineRenderer))]
 public class Player_ItemPickup : MonoBehaviour{
@@ -16,7 +22,7 @@ public class Player_ItemPickup : MonoBehaviour{
     #endregion
 
     #region FIELDS
-    private Controller_PlayerManager controller_PlayerManager;
+    private PlayerManager controller_PlayerManager;
     private GameObject objectReached;
 
     [Header("RAYCASTING SETTINGS:"), Space(10)]
@@ -62,7 +68,7 @@ public class Player_ItemPickup : MonoBehaviour{
     {
         pickUpRayLine = GetComponent<LineRenderer>();
         itemMask = LayerMask.GetMask("Items");
-        controller_PlayerManager = GetComponent<Controller_PlayerManager>();
+        controller_PlayerManager = GetComponent<PlayerManager>();
         OnRightHandItemPickup += controller_PlayerManager.PlayerDracollariumAnimation.SetGrabbingAnim;
         OnRightHandItemPickup += controller_PlayerManager.PlayerDracollariumAnimation.ParentItemToRightHand;
         OnLeftHandItemPickup += controller_PlayerManager.PlayerDracollariumAnimation.SetGrabbingAnim;
@@ -108,6 +114,7 @@ public class Player_ItemPickup : MonoBehaviour{
         }
     }
     #endregion
+
     #region METHOD
     public void DisableCanvases(InputAction.CallbackContext obj)
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Camera_LookAround : MonoBehaviour, ICamera{
     #region FIELDS
-    private Controller_PlayerManager playerManager;
+    private PlayerManager playerManager;
     private Camera playerCamera;
     private GameObject followTarget;
     private GameObject rotationTarget;
@@ -38,7 +38,7 @@ public class Camera_LookAround : MonoBehaviour, ICamera{
     }
     #endregion
     private void Start(){
-        playerManager = GetComponent<Controller_PlayerManager>();
+        playerManager = GetComponent<PlayerManager>();
         playerCamera = Camera.main;
         rotationTarget = new GameObject("[Axis] Free Camera Rotator");
         rotationTarget.transform.SetParent(transform.GetComponentInChildren<CharacterController>().transform);

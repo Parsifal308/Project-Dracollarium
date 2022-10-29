@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class DisableOnKeyCanceled : MonoBehaviour{
     public event EventHandler OnMenuEnabled;
     private void Start(){
-        OnMenuEnabled += GetComponentInParent<Controller_PlayerManager>().EnableMouseRotation;
+        OnMenuEnabled += GetComponentInParent<PlayerManager>().EnableMouseRotation;
     }
     public void DisableMenu(InputAction.CallbackContext value){   
         //invocado cada vez que se presiona tecla de construir desde InputSystem"

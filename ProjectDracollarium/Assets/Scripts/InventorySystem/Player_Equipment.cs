@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 public class Player_Equipment : MonoBehaviour, IEquipment{
-    [SerializeField] Controller_PlayerManager controller_PlayerManager;
+    PlayerManager controller_PlayerManager;
 
     [Header("ARMOR SLOTS:"), Space(10)]
     [SerializeField] Database_Armor head;

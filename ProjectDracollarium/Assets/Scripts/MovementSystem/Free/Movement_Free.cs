@@ -6,10 +6,10 @@ using UnityEngine.InputSystem;
 
 public class Movement_Free : MonoBehaviour {
     public event EventHandler OnPlayerMovement;
-    private Controller_PlayerManager playerManager;
+    private PlayerManager playerManager;
     private CharacterController controller;
     private void Start(){
-        playerManager = GetComponent<Controller_PlayerManager>();
+        playerManager = GetComponent<PlayerManager>();
         controller = GetComponentInChildren<CharacterController>();   //Obtiene el componente CharacterController de este objeto
         OnPlayerMovement += GetComponent<Player_Animation_Dracollarium>().SetMovementAnim; //Subscribe el metodo del componente PlayerAnimation.cs a este evento
 

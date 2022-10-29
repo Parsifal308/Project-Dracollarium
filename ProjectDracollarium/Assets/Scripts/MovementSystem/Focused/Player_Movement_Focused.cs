@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class Player_Movement_Focused : MonoBehaviour , IMovement{
 
     #region FIELDS
-    private Controller_PlayerManager playerGlobalController;
+    private PlayerManager playerGlobalController;
     public event EventHandler OnPlayerMovement;
     private CharacterController characterController;
     private Vector2 moveInput;
@@ -39,7 +39,7 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
     #endregion
     #region UNITY METHODS
     private void Start(){
-        playerGlobalController = transform.GetComponent<Controller_PlayerManager>();
+        playerGlobalController = transform.GetComponent<PlayerManager>();
         characterController = transform.GetComponentInChildren<CharacterController>();
         OnPlayerMovement += playerGlobalController.PlayerDracollariumAnimation.SetMovementAnim;
         OnPlayerMovement += playerGlobalController.PlayerDracollariumAnimation.SetMovementInput;

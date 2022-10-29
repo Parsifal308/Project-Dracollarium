@@ -22,7 +22,7 @@ public class GUI_Button_ItemActions : GUI_Menu{
 
     private void Start()
     {
-        controller_PlayerManager = GetComponentInParent<Controller_PlayerManager>();
+        controller_PlayerManager = GetComponentInParent<PlayerManager>();
         Debug.Log("INTENTADO SUSBSCRIBIR UN METODO A EVENTO");
         OnItemDrop += controller_PlayerManager.PlayerEquipment.Back.DropItemByIndex;
         OnItemDelete += controller_PlayerManager.PlayerEquipment.Back.DeleteItemByIndex;

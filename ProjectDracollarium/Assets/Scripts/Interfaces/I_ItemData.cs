@@ -13,14 +13,14 @@ public interface I_ItemData{
 
 }
 public struct ItemStateStats{
-    public float? currentDurability;
-    public float? usedSpace;
-    public float? effectIntensity;
-    public float? quality;
+    public float currentDurability;
+    public float usedSpace;
+    public float effectIntensity;
+    public float quality;
     public List<ItemStateStats> itemsContained;
-    public Database_Item? data;
+    public Database_Item data;
 
-    public ItemStateStats(float? currentDurability, float? usedSpace, float? effectIntensity, float? quality, List<ItemStateStats> itemsContained, Database_Item? data){
+    public ItemStateStats(float currentDurability, float usedSpace, float effectIntensity, float quality, List<ItemStateStats> itemsContained, Database_Item data){
         this.currentDurability = currentDurability;
         this.usedSpace = usedSpace;
         this.effectIntensity = effectIntensity;
@@ -28,7 +28,7 @@ public struct ItemStateStats{
         this.itemsContained = itemsContained;
         this.data = data;
     }
-    public ItemStateStats(float? currentDurability)
+    public ItemStateStats(float currentDurability)
     {
         this.currentDurability = currentDurability;
         this.usedSpace = 0;
@@ -37,7 +37,7 @@ public struct ItemStateStats{
         this.itemsContained = null;
         this.data = null;
     }
-    public ItemStateStats(Database_Item? data)
+    public ItemStateStats(Database_Item data)
     {
         this.currentDurability = 0;
         this.usedSpace = 0;

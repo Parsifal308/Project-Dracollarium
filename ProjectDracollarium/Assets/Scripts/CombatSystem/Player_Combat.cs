@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class Player_Combat : MonoBehaviour
 {
-    [SerializeField] Controller_PlayerManager controller_PlayerManager;
+    [SerializeField] PlayerManager controller_PlayerManager;
     [Header("ANIMATION SYSTEM:"), Space(10)]
     private Animator animator;
 
@@ -59,7 +59,7 @@ public class Player_Combat : MonoBehaviour
 
     private void Start(){
         animator = GetComponentInChildren<Animator>();
-        controller_PlayerManager = GetComponent<Controller_PlayerManager>();
+        controller_PlayerManager = GetComponent<PlayerManager>();
     }
 
     internal void EnterCombatMode(InputAction.CallbackContext obj){

@@ -4,6 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+//===================================================================================//
+//      ARREGLAR:                                                                    //
+//              Unificar los scripts de camara, para que ambos coexistan en el mismo //
+//          componente. Brindando alguna forma de cambiar entre un modo y el otro    //
+//          facilmente.                                                              //
+//===================================================================================//
+
 public class Camera_PlayerShoulder : MonoBehaviour, ICamera{
     #region FIELDS
     [SerializeField] private float cameraSensibility;
@@ -12,7 +19,7 @@ public class Camera_PlayerShoulder : MonoBehaviour, ICamera{
     private bool isMouseEnabled = true;
     [SerializeField] private float mouseX;
     [SerializeField] private float mouseY;
-    private Controller_PlayerManager playerGlobalController;
+    private PlayerManager playerManager;
     private Camera playerCamera;
     private GameObject followTarget;
     private GameObject rotationTarget;
@@ -36,7 +43,7 @@ public class Camera_PlayerShoulder : MonoBehaviour, ICamera{
     #region UNITY METHODS
     private void Start(){
         playerCamera = Camera.main;
-        playerGlobalController = GetComponent<Controller_PlayerManager>();
+        playerManager = GetComponent<PlayerManager>();
         rotationTarget = new GameObject("[Axis] Focused Camera Rotation Target");
         rotationTarget.transform.SetParent(transform);
         followTarget = new GameObject("[Axis] Focused Camera Follow Target");
@@ -46,8 +53,8 @@ public class Camera_PlayerShoulder : MonoBehaviour, ICamera{
     
     private void Update(){
         if (isMouseEnabled){
-            mouseX += playerGlobalController.Controller_PlayerActions_CharacterMovement.MouseDelta.ReadValue<Vector2>().x * playerGlobalController.CurrentCameraScript.CameraSensibility;
-            mouseY += playerGlobalController.Controller_PlayerActions_CharacterMovement.MouseDelta.ReadValue<Vector2>().y * playerGlobalController.CurrentCameraScript.CameraSensibility;
+            mouseX += playerManager.Controller_PlayerActions_CharacterMovement.MouseDelta.ReadValue<Vector2>().x * playerManager.CurrentCameraScript.CameraSensibility;
+            mouseY += playerManager.Controller_PlayerActions_CharacterMovement.MouseDelta.ReadValue<Vector2>().y * playerManager.CurrentCameraScript.CameraSensibility;
             mouseY = Mathf.Clamp(mouseY, -25f, 25f);
             rotationTarget.transform.localRotation = Quaternion.Euler(-mouseY, mouseX + 90f, 0);
 
@@ -55,13 +62,4 @@ public class Camera_PlayerShoulder : MonoBehaviour, ICamera{
         Lerp();
     }
     #endregion
-    public void MouseDelta(InputAction.CallbackContext obj)
-    {
-        
-    }
-
-    public void MousePosition(InputAction.CallbackContext obj)
-    {
-
-    }
 }

@@ -3,12 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//==============================================================================================
+//  ARREGLAR:
+//          Unificar un metodo que pase parametros numericos al animator, similar a lo que hace
+//      opsive con las abilities
+//
+//          Unificar los metodos para settear el parent de un objeto recogido, que un solo
+//      metodo sirva para cualquier casilla, tan solo pasando parametros.
+//===============================================================================================
 
 public class Player_Animation_Dracollarium : MonoBehaviour{
     #region FIELDS
     [Header("ANIMATION SYSTEM:"), Space(10)]
     private Animator animator;
-    private Controller_PlayerManager controller_PlayerManager;
+    private PlayerManager controller_PlayerManager;
 
     [Header("ANIMATIONS STATES MACHINES:"), Space(10)]
     private SMGrabAnim _SMGrabAnim;
@@ -147,7 +155,7 @@ public class Player_Animation_Dracollarium : MonoBehaviour{
     #region UnityMethods
     private void Start(){
         animator = GetComponentInChildren<Animator>();
-        controller_PlayerManager = GetComponent<Controller_PlayerManager>();
+        controller_PlayerManager = GetComponent<PlayerManager>();
         animator.updateMode = AnimatorUpdateMode.Normal;
     }
     #endregion
