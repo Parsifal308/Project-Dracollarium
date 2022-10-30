@@ -14,7 +14,8 @@ using System.Linq;
 //===================================================================================================
 
 [RequireComponent(typeof(LineRenderer))]
-public class Player_ItemPickup : MonoBehaviour{
+public class Player_ItemPickup : MonoBehaviour
+{
     #region EVENTS
     public event EventHandler OnRightHandItemPickup, OnLeftHandItemPickup, OnRightHandItemDrop, OnLeftHandItemDrop;
     public event EventHandler OnBackItemEquip, OnLeftShoulderEquip, OnRightShoulderEquip, OnLeftHipEquip, OnRightHipEquip;
@@ -27,7 +28,7 @@ public class Player_ItemPickup : MonoBehaviour{
 
     [Header("RAYCASTING SETTINGS:"), Space(10)]
     [SerializeField] private bool isPickingEnabled;
-    [SerializeField] private float actionsCooldown=1;
+    [SerializeField] private float actionsCooldown = 1;
     [SerializeField] private bool isQuickEquipArmor;
     [SerializeField] private bool isQuickEquipWeapon;
     [SerializeField] private bool isQuickEquipBag;
@@ -52,7 +53,7 @@ public class Player_ItemPickup : MonoBehaviour{
 
     #region PROPERTIES
     public GameObject ObjectReached { get { return objectReached; } }
-    public bool IsQuickEquipArmor { get { return isQuickEquipArmor; } set { isQuickEquipArmor = value; } }
+    //public bool IsQuickEquipArmor { get { return isQuickEquipArmor; } set { isQuickEquipArmor = value; } }
     public bool iIQuickEquipWeapon { get { return isQuickEquipWeapon; } set { isQuickEquipWeapon = value; } }
     public bool IsQuickEquipBag { get { return isQuickEquipBag; } set { isQuickEquipBag = value; } }
     public bool IsQuickEquipAccesory { get { return isQuickEquipAccesory; } set { isQuickEquipAccesory = value; } }
@@ -140,7 +141,7 @@ public class Player_ItemPickup : MonoBehaviour{
     }
     public void Take(InputAction.CallbackContext obj)
     {
-        if (isPickingEnabled && controller_PlayerManager.PlayerEquipment.Back != null && isGrabbing==false)
+        if (isPickingEnabled && controller_PlayerManager.PlayerEquipment.Back != null && isGrabbing == false)
         {
             isTaking = true;
             if (Physics.Raycast(pickUpRay, out itemHit, pickUpRange, itemMask))
@@ -182,7 +183,7 @@ public class Player_ItemPickup : MonoBehaviour{
     }
     public void Grab(InputAction.CallbackContext obj)
     {
-        if (isPickingEnabled && isTaking==false)
+        if (isPickingEnabled && isTaking == false)
         {
             isGrabbing = true;
             if (Physics.Raycast(pickUpRay, out itemHit, pickUpRange, itemMask))
