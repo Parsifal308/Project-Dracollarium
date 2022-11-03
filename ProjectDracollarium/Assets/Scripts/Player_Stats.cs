@@ -3,18 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Stats : MonoBehaviour {
+public class Player_Stats : MonoBehaviour
+{
 
     #region FIELDS
-    PlayerManager controller;
-    public event EventHandler OnDeath,OnHitLightAttack;
+    PlayerManager playerManager;
+    public event EventHandler OnDeath, OnHitLightAttack;
 
     [Header("CHARACTER MOVEMENT STATS:"), Space(10)]
-    [SerializeField] private float walkSpeed =1.5f;
-    [SerializeField] private float runSpeed = 4f;
-    [SerializeField] private float sprintSpeed =7f;
-    [SerializeField] private float combatSpeed = 2f;
-    [SerializeField] private float speedsModifier;
+    [SerializeField] private float movementSpeed;
+    [SerializeField] private float walkSpeedModifier = 1.5f;
+    [SerializeField] private float runSpeedModifier = 4f;
+    [SerializeField] private float sprintSpeedModifier = 7f;
+    [SerializeField] private float combatSpeedModifier = 2f;
+    [SerializeField] private float globalSpeedModifier;
     [SerializeField] private float combatSpeedMode = 1f;
 
     [Header("CHARACTER HEALTH STATS:"), Space(10)]
@@ -43,18 +45,19 @@ public class Player_Stats : MonoBehaviour {
     #endregion
 
     #region PROPERTIES
-    public float WalkSpeed { get { return walkSpeed; } set { walkSpeed = value; } }
-    public float RunSpeed { get { return runSpeed; } set { runSpeed = value; } }
-    public float SprintSpeed { get { return sprintSpeed; } set { sprintSpeed = value; } }
+    public float MovementSpeed { get { return movementSpeed; } set { movementSpeed = value; } }
+    public float WalkSpeed { get { return walkSpeedModifier; } set { walkSpeedModifier = value; } }
+    public float RunSpeed { get { return runSpeedModifier; } set { runSpeedModifier = value; } }
+    public float SprintSpeed { get { return sprintSpeedModifier; } set { sprintSpeedModifier = value; } }
     public float MaxHealth { get { return maxHealth; } set { maxHealth = value; } }
     public float CurrentHealth { get { return currentHealth; } set { currentHealth = value; } }
-    public float CombatSpeed { get { return combatSpeed; } }
+    public float CombatSpeed { get { return combatSpeedModifier; } }
     #endregion
 
     private void Start()
     {
-        controller = GetComponent<PlayerManager>();
-        OnHitLightAttack += controller.PlayerDracollariumAnimation.HitAttackLight01;
+        playerManager = GetComponent<PlayerManager>();
+        OnHitLightAttack += playerManager.AnimationsController.HitAttackLight01;
     }
 
     public void TakeDamage(float dmg)

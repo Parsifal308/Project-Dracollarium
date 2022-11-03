@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerActions_Menu : MonoBehaviour
 {
     #region FIELDS
-    private PlayerManager playerGlobalController;
+    private PlayerManager playerManager;
 
     private PlayerActions playerActions;
 
@@ -25,7 +25,7 @@ public class PlayerActions_Menu : MonoBehaviour
     #endregion
     private void Awake(){
         playerActions = new PlayerActions();
-        playerGlobalController = transform.GetComponent<PlayerManager>();
+        playerManager = transform.GetComponent<PlayerManager>();
     }
     private void OnEnable(){
         buildMenu = playerActions.PlayerMenus.BuildMenu;
@@ -44,9 +44,9 @@ public class PlayerActions_Menu : MonoBehaviour
         equipmentMenu.Enable();
         cancelMenu.Enable();
 
-        buildMenu.performed += playerGlobalController.BuildingMenu.MenuKey;
-        equipmentMenu.performed += playerGlobalController.EquipmentMenu.MenuKey;
-        cancelMenu.performed += playerGlobalController.DisableAllMenus;
+        buildMenu.performed += playerManager.UIController.BuildingMenu.MenuKey;
+        equipmentMenu.performed += playerManager.UIController.EquipmentMenu.MenuKey;
+        cancelMenu.performed += playerManager.UIController.DisableAllMenus;
     }
     private void OnDisable(){
         buildMenu.Disable();

@@ -49,8 +49,8 @@ public class Camera_LookAround : MonoBehaviour, ICamera{
         playerCamera.transform.LookAt(rotationTarget.transform);
     }
     private void Update(){
-        playerManager.PlayerInput.CalculateMouseToCameraInput();
-        rotationTarget.transform.localRotation = Quaternion.Euler(-playerManager.PlayerInput.MouseY, playerManager.PlayerInput.MouseX, 0);    
+        //playerManager.PlayerActionsController.CalculateMouseToCameraInput();
+        //rotationTarget.transform.localRotation = Quaternion.Euler(-playerManager.PlayerInput.MouseY, playerManager.PlayerInput.MouseX, 0);    
     }
     private void LateUpdate(){
         LerpCamera();    

@@ -45,7 +45,7 @@ public class GUI_Menu_Inventory : GUI_Menu
         Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Cleaning Inventory GUI Content...");
         try
         {
-            content = ControllerPlayerManager.MenuEquipmentContent.transform.GetComponentsInChildren<Transform>();
+            content = PlayerManager.UIController.MenuEquipmentContent.transform.GetComponentsInChildren<Transform>();
             for (int i = 1; i < content.Length; i++)
             {
                 Destroy(content[i].gameObject);
@@ -64,13 +64,13 @@ public class GUI_Menu_Inventory : GUI_Menu
         backBagButton.GetComponent<Image>().color = Color.green;
         try
         {
-            content = ControllerPlayerManager.MenuEquipmentContent.transform.GetComponentsInChildren<Transform>();
-            for (int i = 0; i < ControllerPlayerManager.PlayerEquipment.Back.ItemsContainedData.Count; i++)
+            content = PlayerManager.UIController.MenuEquipmentContent.transform.GetComponentsInChildren<Transform>();
+            for (int i = 0; i < PlayerManager.PlayerEquipment.Back.ItemsContainedData.Count; i++)
             {
-                Debug.Log(ControllerPlayerManager.PlayerEquipment.Back.ItemsContainedData[i].data.name);
+                Debug.Log(PlayerManager.PlayerEquipment.Back.ItemsContainedData[i].data.name);
                 GameObject item = Instantiate(GUI_bagItemPrefab);
                 item.transform.parent = content[0];
-                item.transform.GetComponentInChildren<TextMeshProUGUI>().text = ControllerPlayerManager.PlayerEquipment.Back.ItemsContainedData[i].data.name;
+                item.transform.GetComponentInChildren<TextMeshProUGUI>().text = PlayerManager.PlayerEquipment.Back.ItemsContainedData[i].data.name;
                 item.GetComponent<GUI_Button_ItemActions>().ItemStoredPosition = i;
             }
         }catch (Exception ex)
@@ -85,7 +85,7 @@ public class GUI_Menu_Inventory : GUI_Menu
         leftShoulderButton.GetComponent<Image>().color = Color.green;
             try
             {
-                foreach (var itemContained in ControllerPlayerManager.PlayerEquipment.LeftShoulder.ItemsContainedData)
+                foreach (var itemContained in PlayerManager.PlayerEquipment.LeftShoulder.ItemsContainedData)
                 {
                     Debug.Log(itemContained.data.name);
                     GameObject item = Instantiate(GUI_bagItemPrefab);
@@ -105,7 +105,7 @@ public class GUI_Menu_Inventory : GUI_Menu
         rightShoulderButton.GetComponent<Image>().color = Color.green;
         try
         {
-            foreach (var itemContained in ControllerPlayerManager.PlayerEquipment.RightShoulder.ItemsContainedData)
+            foreach (var itemContained in PlayerManager.PlayerEquipment.RightShoulder.ItemsContainedData)
             {
                 Debug.Log(itemContained.data.name);
                 GameObject item = Instantiate(GUI_bagItemPrefab);
@@ -125,7 +125,7 @@ public class GUI_Menu_Inventory : GUI_Menu
         try
         {
 
-            foreach (var itemContained in ControllerPlayerManager.PlayerEquipment.LeftHip.ItemsContainedData)
+            foreach (var itemContained in PlayerManager.PlayerEquipment.LeftHip.ItemsContainedData)
             {
                 Debug.Log(itemContained.data.name);
                 GameObject item = Instantiate(GUI_bagItemPrefab);
@@ -144,7 +144,7 @@ public class GUI_Menu_Inventory : GUI_Menu
         rightHipButton.GetComponent<Image>().color = Color.green;
         try
         {
-            foreach (var itemContained in ControllerPlayerManager.PlayerEquipment.RightHip.ItemsContainedData)
+            foreach (var itemContained in PlayerManager.PlayerEquipment.RightHip.ItemsContainedData)
             {
                 Debug.Log(itemContained.data.name);
                 GameObject item = Instantiate(GUI_bagItemPrefab);
@@ -166,33 +166,33 @@ public class GUI_Menu_Inventory : GUI_Menu
     }
     public void SetBagsButtonsInteract()
     {
-        if (ControllerPlayerManager.PlayerEquipment.Back == null){
+        if (PlayerManager.PlayerEquipment.Back == null){
             backBagButton.interactable = false;
         }else{backBagButton.interactable = true;}
 
-        if (ControllerPlayerManager.PlayerEquipment.LeftHip == null){
+        if (PlayerManager.PlayerEquipment.LeftHip == null){
             leftHipButton.interactable = false;
         }else{leftHipButton.interactable = true;}
 
-        if (ControllerPlayerManager.PlayerEquipment.RightHip == null){
+        if (PlayerManager.PlayerEquipment.RightHip == null){
             rightHipButton.interactable = false;
         }else{rightHipButton.interactable = true;}
 
-        if (ControllerPlayerManager.PlayerEquipment.RightShoulder == null){
+        if (PlayerManager.PlayerEquipment.RightShoulder == null){
             rightShoulderButton.interactable = false;
         }else{rightShoulderButton.interactable = true;}
 
-        if (ControllerPlayerManager.PlayerEquipment.LeftShoulder == null){
+        if (PlayerManager.PlayerEquipment.LeftShoulder == null){
             leftShoulderButton.interactable = false;
         }else{leftShoulderButton.interactable = true;}
     }
     public bool CheckForBags()
     {
-        if (ControllerPlayerManager.PlayerEquipment.Back != null ||
-            ControllerPlayerManager.PlayerEquipment.RightShoulder != null ||
-            ControllerPlayerManager.PlayerEquipment.LeftShoulder != null ||
-            ControllerPlayerManager.PlayerEquipment.RightHip != null ||
-            ControllerPlayerManager.PlayerEquipment.LeftHip != null)
+        if (PlayerManager.PlayerEquipment.Back != null ||
+            PlayerManager.PlayerEquipment.RightShoulder != null ||
+            PlayerManager.PlayerEquipment.LeftShoulder != null ||
+            PlayerManager.PlayerEquipment.RightHip != null ||
+            PlayerManager.PlayerEquipment.LeftHip != null)
         {return true;}
         else { return false; } }
         

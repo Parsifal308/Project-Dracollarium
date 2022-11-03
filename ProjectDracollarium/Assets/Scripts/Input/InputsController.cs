@@ -10,7 +10,7 @@ using System;
 ║ to enable and disable the different ActionMaps.             ║
 ╚═════════════════════════════════════════════════════════════╝
 */
-public class PlayerActionsController : MonoBehaviour
+public class InputsController : MonoBehaviour
 {
     #region FIELDS
     private bool scriptEnabled;
@@ -144,17 +144,17 @@ public class PlayerActionsController : MonoBehaviour
         dropLeftItem.performed += playerManager.PlayerItemPickup.Drop;
         dropRightItem.performed += playerManager.PlayerItemPickup.Drop;
         grab.performed += playerManager.PlayerItemPickup.Grab;
-        movement.performed += playerManager.FocusedMovement.Run;
-        movement.canceled += playerManager.FocusedMovement.Run;
+        movement.performed += playerManager.MovementController.Run;
+        movement.canceled += playerManager.MovementController.Run;
         movement.started += playerManager.PlayerItemPickup.DisableCanvases;
-        jump.performed += playerManager.FocusedMovement.Jump;
-        run.performed += playerManager.FocusedMovement.Sprint;
-        run.canceled += playerManager.FocusedMovement.Sprint;
-        walk.performed += playerManager.FocusedMovement.Walk;
-        walk.canceled += playerManager.FocusedMovement.Walk;
-        buildMenu.performed += playerManager.BuildingMenu.MenuKey;
-        equipmentMenu.performed += playerManager.EquipmentMenu.MenuKey;
-        cancelMenu.performed += playerManager.DisableAllMenus;
+        jump.performed += playerManager.MovementController.Jump;
+        run.performed += playerManager.MovementController.Sprint;
+        run.canceled += playerManager.MovementController.Sprint;
+        walk.performed += playerManager.MovementController.Walk;
+        walk.canceled += playerManager.MovementController.Walk;
+        buildMenu.performed += playerManager.UIController.BuildingMenu.MenuKey;
+        equipmentMenu.performed += playerManager.UIController.EquipmentMenu.MenuKey;
+        cancelMenu.performed += playerManager.UIController.DisableAllMenus;
         attackA.performed += playerManager.PlayerCombat.LightAttack;
         attackA.canceled += playerManager.PlayerCombat.ResetLightAttack;
         fightMode.performed += playerManager.PlayerCombat.EnterCombatMode;

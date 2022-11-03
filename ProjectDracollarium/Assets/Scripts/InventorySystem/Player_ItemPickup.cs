@@ -37,6 +37,7 @@ public class Player_ItemPickup : MonoBehaviour
     [SerializeField] private bool isTaking = false;
     [SerializeField] private float pickUpRange = 8f;
     [SerializeField] private string[] masksNames;
+    [SerializeField] GameObject dropPosition;
     private int itemMask;
     private Ray pickUpRay;
     private RaycastHit itemHit;
@@ -62,6 +63,7 @@ public class Player_ItemPickup : MonoBehaviour
     public Canvas CanvasQuickEquip { get { return canvasQuickEquipWeapon; } }
     public Canvas CanvasQuickBag { get { return canvasQuickEquipBag; } }
     public TextMeshProUGUI GuidingText { get { return guidingText; } }
+    public GameObject DropPosition { get { return dropPosition; } set { dropPosition = value; } }
     #endregion
 
     #region UNITY METHODS
@@ -70,21 +72,21 @@ public class Player_ItemPickup : MonoBehaviour
         pickUpRayLine = GetComponent<LineRenderer>();
         itemMask = LayerMask.GetMask("Items");
         controller_PlayerManager = GetComponent<PlayerManager>();
-        OnRightHandItemPickup += controller_PlayerManager.PlayerDracollariumAnimation.SetGrabbingAnim;
-        OnRightHandItemPickup += controller_PlayerManager.PlayerDracollariumAnimation.ParentItemToRightHand;
-        OnLeftHandItemPickup += controller_PlayerManager.PlayerDracollariumAnimation.SetGrabbingAnim;
-        OnLeftHandItemPickup += controller_PlayerManager.PlayerDracollariumAnimation.ParentItemToLeftHand;
+        OnRightHandItemPickup += controller_PlayerManager.AnimationsController.SetGrabbingAnim;
+        OnRightHandItemPickup += controller_PlayerManager.AnimationsController.ParentItemToRightHand;
+        OnLeftHandItemPickup += controller_PlayerManager.AnimationsController.SetGrabbingAnim;
+        OnLeftHandItemPickup += controller_PlayerManager.AnimationsController.ParentItemToLeftHand;
 
-        OnLeftHandItemDrop += controller_PlayerManager.PlayerDracollariumAnimation.DropLeftItem;
-        OnRightHandItemDrop += controller_PlayerManager.PlayerDracollariumAnimation.DropRightItem;
+        OnLeftHandItemDrop += controller_PlayerManager.AnimationsController.DropLeftItem;
+        OnRightHandItemDrop += controller_PlayerManager.AnimationsController.DropRightItem;
 
-        OnBackItemEquip += controller_PlayerManager.PlayerDracollariumAnimation.ParentItemToBack;
-        OnRightShoulderEquip += controller_PlayerManager.PlayerDracollariumAnimation.ParentItemToRightShoulder;
-        OnLeftShoulderEquip += controller_PlayerManager.PlayerDracollariumAnimation.ParentItemToLeftShoulder;
-        OnRightHipEquip += controller_PlayerManager.PlayerDracollariumAnimation.ParentItemToRightHip;
-        OnLeftHipEquip += controller_PlayerManager.PlayerDracollariumAnimation.ParentItemToLeftHip;
+        OnBackItemEquip += controller_PlayerManager.AnimationsController.ParentItemToBack;
+        OnRightShoulderEquip += controller_PlayerManager.AnimationsController.ParentItemToRightShoulder;
+        OnLeftShoulderEquip += controller_PlayerManager.AnimationsController.ParentItemToLeftShoulder;
+        OnRightHipEquip += controller_PlayerManager.AnimationsController.ParentItemToRightHip;
+        OnLeftHipEquip += controller_PlayerManager.AnimationsController.ParentItemToLeftHip;
 
-        OnTakingItem += controller_PlayerManager.PlayerDracollariumAnimation.SetGrabbingAnim;
+        OnTakingItem += controller_PlayerManager.AnimationsController.SetGrabbingAnim;
 
 
     }
@@ -265,7 +267,7 @@ public class Player_ItemPickup : MonoBehaviour
             canvasActions.transform.position = itemHit.transform.position + positionGap;
             RotateCanvas(canvasActions);
 
-            guidingText.text = "Press [" + controller_PlayerManager.Controller_PlayerActions_Actions.Grab.bindings[0].effectivePath + "] to collect\n[" + itemHit.transform.GetComponent<I_ItemData>().GetData.ItemName + "]";
+            guidingText.text = "Press [" + controller_PlayerManager.InputsController.Grab.bindings[0].effectivePath + "] to collect\n[" + itemHit.transform.GetComponent<I_ItemData>().GetData.ItemName + "]";
         }
         else
         {

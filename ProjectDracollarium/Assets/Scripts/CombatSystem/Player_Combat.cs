@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class Player_Combat : MonoBehaviour
 {
-    [SerializeField] PlayerManager controller_PlayerManager;
+    [SerializeField] PlayerManager playerManager;
     [Header("ANIMATION SYSTEM:"), Space(10)]
     private Animator animator;
 
@@ -39,8 +39,8 @@ public class Player_Combat : MonoBehaviour
             lastAttackTime = Time.time;
             animator.SetBool("Attack", true);
             animator.SetBool("NextAttack", true);
-            controller_PlayerManager.FocusedMovement.IsDashing = true;
-            controller_PlayerManager.PlayerEquipment.RightHand.GetComponent<Weapon_Detection>().IsDoingDamage = true;
+            //controller_PlayerManager.FocusedMovement.IsDashing = true; //Dash shit
+            playerManager.PlayerEquipment.RightHand.GetComponent<Weapon_Detection>().IsDoingDamage = true;
 
         }
     }
@@ -48,7 +48,7 @@ public class Player_Combat : MonoBehaviour
         if (combatModeEnabled){
             if (Time.time - (lastAttackTime+0.5f) > attackDelay){
                 animator.SetBool("NextAttack", false);
-                controller_PlayerManager.PlayerEquipment.RightHand.GetComponent<Weapon_Detection>().IsDoingDamage = false;
+                playerManager.PlayerEquipment.RightHand.GetComponent<Weapon_Detection>().IsDoingDamage = false;
             }
         }
     }
@@ -59,13 +59,13 @@ public class Player_Combat : MonoBehaviour
 
     private void Start(){
         animator = GetComponentInChildren<Animator>();
-        controller_PlayerManager = GetComponent<PlayerManager>();
+        playerManager = GetComponent<PlayerManager>();
     }
 
     internal void EnterCombatMode(InputAction.CallbackContext obj){
         combatModeEnabled = true;
         animator.SetBool("CombatMode", true);
-        controller_PlayerManager.FocusedMovement.IsCombating = true;
+        playerManager.MovementController.IsCombating = true;
     }
 
     internal void ResetAttackDirectionZero(InputAction.CallbackContext obj){
@@ -75,7 +75,7 @@ public class Player_Combat : MonoBehaviour
     internal void ExitCombatMode(InputAction.CallbackContext obj){
         combatModeEnabled = false;
         animator.SetBool("CombatMode", false);
-        controller_PlayerManager.FocusedMovement.IsCombating = false;
+        playerManager.MovementController.IsCombating = false;
     }
 
     internal void SetAttackDirection(InputAction.CallbackContext obj){

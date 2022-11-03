@@ -12,23 +12,23 @@ using UnityEngine.InputSystem;
 public class GUI_Menu : MonoBehaviour
 {
     #region FIELDS
-    [SerializeField] protected PlayerManager controller_PlayerManager;
+    [SerializeField] protected PlayerManager playerManager;
     private bool isEnabled;
     private event EventHandler OnMenuEnabled;
     private event EventHandler OnMenuDisabled;
     #endregion
 
     #region PROPERTIES
-    public PlayerManager ControllerPlayerManager { get { return controller_PlayerManager; } }
+    public PlayerManager PlayerManager { get { return playerManager; } }
     public bool IsEnabled { get { return isEnabled; } }
     #endregion
 
     #region UNITY METHOD
     private void Start(){
         this.transform.gameObject.SetActive(false);
-        controller_PlayerManager = GetComponentInParent<PlayerManager>();
-        OnMenuDisabled += controller_PlayerManager.EnableMouseRotation;
-        OnMenuEnabled += controller_PlayerManager.DisableMouseRotation;
+        playerManager = GetComponentInParent<PlayerManager>();
+        OnMenuDisabled += playerManager.EnableMouseRotation;
+        OnMenuEnabled += playerManager.DisableMouseRotation;
     }
     #endregion
 

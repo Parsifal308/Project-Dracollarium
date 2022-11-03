@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerActions_CharacterMovement : MonoBehaviour
 {
     #region FIELDS
-    private PlayerManager playerGlobalController;
+    private PlayerManager playerManager;
 
     private PlayerActions playerActions;
 
@@ -28,7 +28,7 @@ public class PlayerActions_CharacterMovement : MonoBehaviour
     private void Awake()
     {
         playerActions = new PlayerActions();
-        playerGlobalController = transform.GetComponent<PlayerManager>();
+        playerManager = transform.GetComponent<PlayerManager>();
     }
     private void OnEnable(){
         movement = playerActions.PlayerCharacterMovement.Movement;
@@ -45,14 +45,14 @@ public class PlayerActions_CharacterMovement : MonoBehaviour
         mouseDelta.Enable();
         mousePosition.Enable();
 
-        movement.performed += playerGlobalController.FocusedMovement.Run;
-        movement.canceled += playerGlobalController.FocusedMovement.Run;
-        movement.started += playerGlobalController.PlayerItemPickup.DisableCanvases;
-        jump.performed += playerGlobalController.FocusedMovement.Jump;
-        run.performed += playerGlobalController.FocusedMovement.Sprint;
-        run.canceled += playerGlobalController.FocusedMovement.Sprint;
-        walk.performed += playerGlobalController.FocusedMovement.Walk;
-        walk.canceled += playerGlobalController.FocusedMovement.Walk;
+        movement.performed += playerManager.MovementController.Run;
+        movement.canceled += playerManager.MovementController.Run;
+        movement.started += playerManager.PlayerItemPickup.DisableCanvases;
+        jump.performed += playerManager.MovementController.Jump;
+        run.performed += playerManager.MovementController.Sprint;
+        run.canceled += playerManager.MovementController.Sprint;
+        walk.performed += playerManager.MovementController.Walk;
+        walk.canceled += playerManager.MovementController.Walk;
 
     }
     private void OnDisable(){

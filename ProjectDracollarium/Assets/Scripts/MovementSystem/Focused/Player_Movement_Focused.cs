@@ -7,10 +7,10 @@ using UnityEngine.InputSystem;
 public class Player_Movement_Focused : MonoBehaviour , IMovement{
 
     #region FIELDS
-    private PlayerManager playerGlobalController;
+    private PlayerManager playerManager;
     public event EventHandler OnPlayerMovement;
     private CharacterController characterController;
-    private Vector2 moveInput;
+    private Vector2 moveInput; //se puede leer directamente desde el Inputs Controller
     [SerializeField] private float gravity;
     private float horizontalMoveMultiplier = 1;
     private float frontalMoveMultiplier = 1;
@@ -39,10 +39,10 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
     #endregion
     #region UNITY METHODS
     private void Start(){
-        playerGlobalController = transform.GetComponent<PlayerManager>();
+        playerManager = transform.GetComponent<PlayerManager>();
         characterController = transform.GetComponentInChildren<CharacterController>();
-        OnPlayerMovement += playerGlobalController.PlayerDracollariumAnimation.SetMovementAnim;
-        OnPlayerMovement += playerGlobalController.PlayerDracollariumAnimation.SetMovementInput;
+        OnPlayerMovement += playerManager.AnimationsController.SetMovementAnim;
+        OnPlayerMovement += playerManager.AnimationsController.SetMovementInput;
     }
 
     private void Update(){
@@ -52,19 +52,19 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
             isMoving = true;
             if (isCombating)
             {
-                Movement(playerGlobalController.PlayerStats.CombatSpeed);
+                Movement(playerManager.PlayerStats.CombatSpeed);
             }
             else if (isWalking)
             {
-                Movement(playerGlobalController.PlayerStats.WalkSpeed);
+                Movement(playerManager.PlayerStats.WalkSpeed);
             }
             else if (isSprinting)
             {
-                Movement(playerGlobalController.PlayerStats.SprintSpeed);
+                Movement(playerManager.PlayerStats.SprintSpeed);
             }
             else if (isRunning)
             {
-                Movement(playerGlobalController.PlayerStats.RunSpeed);
+                Movement(playerManager.PlayerStats.RunSpeed);
             }
             
         }
@@ -94,7 +94,7 @@ public class Player_Movement_Focused : MonoBehaviour , IMovement{
 
     }
     public void Rotation(){
-        characterController.transform.rotation = Quaternion.Euler(0f, playerGlobalController.FocusedLookCam.Camera.transform.rotation.eulerAngles.y - 90f, 0f);
+        characterController.transform.rotation = Quaternion.Euler(0f, playerManager.CameraController.PlayerCamera.transform.rotation.eulerAngles.y - 90f, 0f);
     }
     #endregion
 

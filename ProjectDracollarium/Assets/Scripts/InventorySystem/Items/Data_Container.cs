@@ -53,7 +53,7 @@ public abstract class Data_Container : MonoBehaviour, I_ItemData{
         }
     }
     public void DropItemByIndex(object sender, EventArgs e){
-        DropItemByIndex((sender as GUI_Button_ItemActions).ItemStoredPosition, (sender as GUI_Button_ItemActions).ControllerPlayerManager.DropPosition);
+        DropItemByIndex((sender as GUI_Button_ItemActions).ItemStoredPosition, (sender as GUI_Button_ItemActions).PlayerManager.PlayerItemPickup.DropPosition);
     }
     #endregion
 }

@@ -16,13 +16,13 @@ public class Movement_Free : MonoBehaviour {
     }
     #region METHODS
     public void Move(float moveSpeed){
-        controller.Move(playerManager.PlayerInput.MovementInput * Time.deltaTime * moveSpeed);  //Mueve el CharacterController usando las propiedades de PlayerInput.cs(Input x Velocidad x Tiempo)
+        controller.Move(playerManager.InputsController.Movement.ReadValue<Vector2>() * Time.deltaTime * moveSpeed);  //Mueve el CharacterController usando las propiedades de PlayerInput.cs(Input x Velocidad x Tiempo)
         OnPlayerMovement?.Invoke(this, EventArgs.Empty);    //Si los subscriptores del evento no son nulos, entonces se dispara dicho metodo.
         Rotate();
     }
     public void Rotate(){
-        if (playerManager.PlayerInput.MovementInput != Vector3.zero){
-            controller.transform.right = playerManager.PlayerInput.MovementInput;   //rota el CharacterController hacia la direccion del Input
+        if (playerManager.InputsController.Movement.ReadValue<Vector2>() != Vector2.zero){
+            controller.transform.right = playerManager.InputsController.Movement.ReadValue<Vector2>();   //rota el CharacterController hacia la direccion del Input
         }
     }
     #endregion
