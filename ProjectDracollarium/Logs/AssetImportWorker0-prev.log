@@ -1,0 +1,457 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'es' Physical Memory: 16299 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2021.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Dracollarium/Project-Dracollarium/ProjectDracollarium
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60518
+Successfully changed project path to: D:/Dracollarium/Project-Dracollarium/ProjectDracollarium
+D:/Dracollarium/Project-Dracollarium/ProjectDracollarium
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 91.01 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Dracollarium/Project-Dracollarium/ProjectDracollarium/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     8170 MB
+    Driver:   31.0.12019.11001
+Initialize mono
+Mono path[0] = 'D:/Unity/2021.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002540 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 80.19 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.470 seconds
+Domain Reload Profiling:
+	ReloadAssembly (470ms)
+		BeginReloadAssembly (55ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (342ms)
+			LoadAssemblies (55ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (72ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (215ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (80ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (70ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005488 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 88.25 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.142 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1143ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (972ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (221ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (571ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (354ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.43 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5849 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 115 unused Assets / (5.0 MB). Loaded Objects now: 6292.
+Memory consumption went from 302.6 MB to 297.6 MB.
+Total: 4.635700 ms (FindLiveObjects: 0.447800 ms CreateObjectMapping: 0.169500 ms MarkObjects: 3.025300 ms  DeleteObjects: 0.992100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 61431.256450 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Old Man Idle.fbx
+  artifactKey: Guid(92eb0b4ab824b0b448f785f890b18d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Old Man Idle.fbx using Guid(92eb0b4ab824b0b448f785f890b18d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb8e5e406ee5e1a2a472bfa47261e0c') in 0.047374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.125800 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Old Man Idle.fbx
+  artifactKey: Guid(92eb0b4ab824b0b448f785f890b18d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Old Man Idle.fbx using Guid(92eb0b4ab824b0b448f785f890b18d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f438f1aecd724588626c75e44a686e76') in 0.007152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 502.120766 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Running Backward.fbx
+  artifactKey: Guid(1e4e24e0f3085f8459a600522418ba6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Running Backward.fbx using Guid(1e4e24e0f3085f8459a600522418ba6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb2e5611b65b0433594cdbe0dc558793') in 0.007827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.635294 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Sneaking Forward.fbx
+  artifactKey: Guid(c67e956a559699042b11666bc1cc3754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Sneaking Forward.fbx using Guid(c67e956a559699042b11666bc1cc3754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287d02ac7b8608c2ba0b6c48ac12fab1') in 0.007672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.605556 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Crouched Walking.fbx
+  artifactKey: Guid(6385f946d458ad34da51473d471589bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Crouched Walking.fbx using Guid(6385f946d458ad34da51473d471589bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358487b972ea0a827d6d1f2ef826213a') in 0.007043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.961797 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Crouched Walking.fbx
+  artifactKey: Guid(6385f946d458ad34da51473d471589bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Crouched Walking.fbx using Guid(6385f946d458ad34da51473d471589bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cecfdd94a4a8fafed064cefe30f44b12') in 0.006036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.891528 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Running Backward.fbx
+  artifactKey: Guid(1e4e24e0f3085f8459a600522418ba6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Running Backward.fbx using Guid(1e4e24e0f3085f8459a600522418ba6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3680b232c2974ddfcfe89d0e4d707710') in 0.008000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.989485 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Running Jump.fbx
+  artifactKey: Guid(655b9cca972252843bb4142b6df39f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Running Jump.fbx using Guid(655b9cca972252843bb4142b6df39f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d29e69a3d33e216fb67e88a88eb3964') in 0.007596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.639502 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Sneaking Forward.fbx
+  artifactKey: Guid(c67e956a559699042b11666bc1cc3754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Sneaking Forward.fbx using Guid(c67e956a559699042b11666bc1cc3754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c4411f1ecb5b15b354a27facf55367') in 0.008039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.128116 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Sprint.fbx
+  artifactKey: Guid(1bc74757f1cf0c345b39cd2eeee9d87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Sprint.fbx using Guid(1bc74757f1cf0c345b39cd2eeee9d87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de5823da34c4ccf60e86e192971799a') in 0.009102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.016829 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack
+  artifactKey: Guid(6af3d534f0d94354bb9d9fe349bdb9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack using Guid(6af3d534f0d94354bb9d9fe349bdb9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b43a1243474281e0025c4b7103331db') in 0.001608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.571963 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/cover to stand (2).fbx
+  artifactKey: Guid(bef6c9ce910ff614f92e6aaf84650991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/cover to stand (2).fbx using Guid(bef6c9ce910ff614f92e6aaf84650991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad1c846c8c90e30207834ebcc35f647') in 0.007423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.587782 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/left turn.fbx
+  artifactKey: Guid(4e049e3b818bb2a47a2c5b4f9cb8a6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/left turn.fbx using Guid(4e049e3b818bb2a47a2c5b4f9cb8a6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83de2fa8372e7e3a03ca17b18dfa10dc') in 0.007438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.313311 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/left turn.fbx
+  artifactKey: Guid(4e049e3b818bb2a47a2c5b4f9cb8a6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/left turn.fbx using Guid(4e049e3b818bb2a47a2c5b4f9cb8a6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57110f3ec9d9370bd7a89c633c8c66e4') in 0.005963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.143252 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/cover to stand.fbx
+  artifactKey: Guid(36d45d56ef6144b44a4a04484ccea245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/cover to stand.fbx using Guid(36d45d56ef6144b44a4a04484ccea245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec898556d51ab07f2cb760a0b21a53a6') in 0.007287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.748126 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/crouched sneaking right.fbx
+  artifactKey: Guid(59186ea69e08e5b4f8e76f31f0c413fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/crouched sneaking right.fbx using Guid(59186ea69e08e5b4f8e76f31f0c413fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4c38b9061eadc109508fbff6dac321') in 0.007282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.606410 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/cover to stand (2).fbx
+  artifactKey: Guid(bef6c9ce910ff614f92e6aaf84650991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/cover to stand (2).fbx using Guid(bef6c9ce910ff614f92e6aaf84650991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dd05fdca200c28a7d3e9055458cabb') in 0.007546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.526728 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/crouched sneaking left.fbx
+  artifactKey: Guid(cb637743c764a1b4499c03a54b23c14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/crouched sneaking left.fbx using Guid(cb637743c764a1b4499c03a54b23c14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9922bdcfa66e8a28636546797aae054') in 0.007468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.282769 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/falling idle.fbx
+  artifactKey: Guid(13389b3d07c600e44b75af997357dd62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/falling idle.fbx using Guid(13389b3d07c600e44b75af997357dd62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98a27bc63f3f4f545da430ba99b6a30') in 0.007858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.971415 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/falling to roll.fbx
+  artifactKey: Guid(024b3c6266910b944a797a2c0e8b68ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/falling to roll.fbx using Guid(024b3c6266910b944a797a2c0e8b68ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bace9a1d6ddce9456dc16932a5c4f8a') in 0.007799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.763089 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/hard landing.fbx
+  artifactKey: Guid(ba30f4629a1d06947a78f2cb8b3d694a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/hard landing.fbx using Guid(ba30f4629a1d06947a78f2cb8b3d694a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa47c288c95abc5110f9baf8ba5662bb') in 0.007563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.745403 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/idle (2).fbx
+  artifactKey: Guid(a96493cf659f6c349b1c1974b921ce38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/idle (2).fbx using Guid(a96493cf659f6c349b1c1974b921ce38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819dfa38f2561995edc6f99e3843a7c7') in 0.010954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.088028 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/idle (3).fbx
+  artifactKey: Guid(67cd9855faacf4049b3d267ab452bb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/idle (3).fbx using Guid(67cd9855faacf4049b3d267ab452bb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e04386e1b45ab09f1a7def638411e5') in 0.007716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.699212 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/idle.fbx
+  artifactKey: Guid(56c1eab5a5dc3e640ae2274f9e0a8c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/idle.fbx using Guid(56c1eab5a5dc3e640ae2274f9e0a8c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfde068d300038b843ecd1435cb13144') in 0.007536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.863232 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/jumping up.fbx
+  artifactKey: Guid(6e00d3eae2e2b714ea4976eb34587199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/jumping up.fbx using Guid(6e00d3eae2e2b714ea4976eb34587199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39bf4c76694690d306ffc6a6278041c3') in 0.007424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.981529 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/left cover sneak.fbx
+  artifactKey: Guid(3e82cecab7226da479f0eff18866babe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/left cover sneak.fbx using Guid(3e82cecab7226da479f0eff18866babe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387d8df87346821d37604419619fa5d4') in 0.007755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.841365 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/right cover sneak.fbx
+  artifactKey: Guid(2ea0f5ff1e3c6474d8ebc6cce6d9d0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/right cover sneak.fbx using Guid(2ea0f5ff1e3c6474d8ebc6cce6d9d0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a846a748997f184cbf840165e91399c') in 0.008211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.483339 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/run to stop.fbx
+  artifactKey: Guid(f4fd24d5b49089f42bfb15c52616f2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/run to stop.fbx using Guid(f4fd24d5b49089f42bfb15c52616f2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebbb4c30f73627f139daaf54684a4389') in 0.009732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.917537 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/running.fbx
+  artifactKey: Guid(51296e086f8cb6049b40bbb594d940b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/running.fbx using Guid(51296e086f8cb6049b40bbb594d940b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b6671a94556cd93adb372989aa2d650') in 0.010032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.667296 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/stand to cover.fbx
+  artifactKey: Guid(67f34f52fec78744693e854bed6a8be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/stand to cover.fbx using Guid(67f34f52fec78744693e854bed6a8be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd203bb47b6eb92d81c0a5ea45b965e') in 0.007469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.245006 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/stand to cover (2).fbx
+  artifactKey: Guid(186f8f1024bb5fd4a8bfdae43f661407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/stand to cover (2).fbx using Guid(186f8f1024bb5fd4a8bfdae43f661407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e3c8986b917271d596e845661b59d2') in 0.007550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.820616 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/walking.fbx
+  artifactKey: Guid(d5dc149280479c140b8b95e3b8da48bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Action Adventure Pack/walking.fbx using Guid(d5dc149280479c140b8b95e3b8da48bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a416345dc25b6d624cc59bf9a3dc317f') in 0.007203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 402.564893 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack
+  artifactKey: Guid(6e07163c2ac8ab94e8dd03b5aa4dbffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack using Guid(6e07163c2ac8ab94e8dd03b5aa4dbffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3551a7d3a81c5527346123cca158682b') in 0.001651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.931818 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack/standing idle.fbx
+  artifactKey: Guid(12fc28c9cdbe9514c9899f647da2934d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack/standing idle.fbx using Guid(12fc28c9cdbe9514c9899f647da2934d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd79dedbe8fa03219e10a58410577f8c') in 0.007923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.700555 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack/Standing Jump.fbx
+  artifactKey: Guid(b7d7b6ea84701b94697194ef0d2ffbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack/Standing Jump.fbx using Guid(b7d7b6ea84701b94697194ef0d2ffbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9de4da82af94a45f5242724ec42771') in 0.007921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.188840 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack/Standing Jump.fbx
+  artifactKey: Guid(b7d7b6ea84701b94697194ef0d2ffbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack/Standing Jump.fbx using Guid(b7d7b6ea84701b94697194ef0d2ffbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdcb108089ac93df604ffc2e5eae662b') in 0.006038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.430981 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack/standing idle.fbx
+  artifactKey: Guid(12fc28c9cdbe9514c9899f647da2934d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack/standing idle.fbx using Guid(12fc28c9cdbe9514c9899f647da2934d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35fc363d11210d7b0f2bab30e80a9331') in 0.007422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.578692 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack/Standing Jump Running Landing.fbx
+  artifactKey: Guid(247f630ad337b994aab6cd585229886b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Magic Locomotion Pack/Standing Jump Running Landing.fbx using Guid(247f630ad337b994aab6cd585229886b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7890acc202ef40158362564a9634550d') in 0.007649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.740821 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack
+  artifactKey: Guid(ff04fb9218df09845a7ae09627f828f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack using Guid(ff04fb9218df09845a7ae09627f828f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979c035be2161fb63fc836f808160d46') in 0.001449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.958138 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/left turn 45.fbx
+  artifactKey: Guid(808f78525f221824a871e70913df32d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/left turn 45.fbx using Guid(808f78525f221824a871e70913df32d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a734780d825489c6a9b0c2967994ae3') in 0.009895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.092608 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant right turn 45.fbx
+  artifactKey: Guid(7952c6ac535e27947b9953297aeb24fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant right turn 45.fbx using Guid(7952c6ac535e27947b9953297aeb24fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07552028bd1914646354719a545a6d2c') in 0.007323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.313614 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant right turn 45.fbx
+  artifactKey: Guid(7952c6ac535e27947b9953297aeb24fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant right turn 45.fbx using Guid(7952c6ac535e27947b9953297aeb24fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc33e79caaaa4198a5170e7e12e03c5') in 0.006236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.847018 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant breathing idle.fbx
+  artifactKey: Guid(fb5e7c7cda2cd1448a883895b9058929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant breathing idle.fbx using Guid(fb5e7c7cda2cd1448a883895b9058929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1154494b773437a4829a2c2f22c5271a') in 0.007864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.965943 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant dying.fbx
+  artifactKey: Guid(f4d0c4e9ba7051c428a57c8221088502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant dying.fbx using Guid(f4d0c4e9ba7051c428a57c8221088502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f459c0db2aeaea60b45c0bc9e33ac45') in 0.007718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.683522 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant flexing muscles.fbx
+  artifactKey: Guid(3b9b493e1688a2146be643a1dfa317f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant flexing muscles.fbx using Guid(3b9b493e1688a2146be643a1dfa317f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05afc4ce2e7e91a83e309df141d2ba5a') in 0.007675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.472868 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant jumping.fbx
+  artifactKey: Guid(b57cc76249eaea54395d0101d5937ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant jumping.fbx using Guid(b57cc76249eaea54395d0101d5937ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e658261d9dfc81aa1748167535a1d5c') in 0.007664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.424337 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant run.fbx
+  artifactKey: Guid(73cff586881980540ab5cf8ebb36fbf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant run.fbx using Guid(73cff586881980540ab5cf8ebb36fbf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5894f24218fdb0121affdfe7c044ad7') in 0.007563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.186920 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant walking.fbx
+  artifactKey: Guid(5ac9fc4608457504b837b4d8dce28c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant walking.fbx using Guid(5ac9fc4608457504b837b4d8dce28c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b0c465b1a198ea3e5ccd5a9353a7a5') in 0.007301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.455950 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant swiping.fbx
+  artifactKey: Guid(c3918028e4a29c24cbc9c05da4a1868f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Creature NPC Pack/mutant swiping.fbx using Guid(c3918028e4a29c24cbc9c05da4a1868f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '205f7b8127047d7e5cf9031ef424433f') in 0.007757 seconds 
