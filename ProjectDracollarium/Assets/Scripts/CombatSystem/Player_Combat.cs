@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class Player_Combat : MonoBehaviour
 {
+    #region FIELDS
     [SerializeField] PlayerManager playerManager;
     [Header("ANIMATION SYSTEM:"), Space(10)]
     private Animator animator;
@@ -32,9 +33,32 @@ public class Player_Combat : MonoBehaviour
     [SerializeField] private float attackDelay = 0.5f;
     [SerializeField] private float attackReset = 0.5f;
     [SerializeField] private float lastAttackTime;
+    #endregion
 
-    internal void LightAttack(InputAction.CallbackContext obj){
-        if (combatModeEnabled && Time.time - lastAttackTime >= attackDelay){
+    #region UNITY METHODS
+    private void Start()
+    {
+        animator = GetComponentInChildren<Animator>();
+        playerManager = GetComponent<PlayerManager>();
+    }
+    private void Update()
+    {
+        if (combatModeEnabled)
+        {
+            if (Time.time - (lastAttackTime + 0.5f) > attackDelay)
+            {
+                animator.SetBool("NextAttack", false);
+                playerManager.PlayerEquipment.RightHand.GetComponent<Weapon_Detection>().IsDoingDamage = false;
+            }
+        }
+    }
+    #endregion
+
+    #region METHODS
+    internal void LightAttack(InputAction.CallbackContext obj)
+    {
+        if (combatModeEnabled && Time.time - lastAttackTime >= attackDelay)
+        {
             isAttacking = true;
             lastAttackTime = Time.time;
             animator.SetBool("Attack", true);
@@ -44,76 +68,80 @@ public class Player_Combat : MonoBehaviour
 
         }
     }
-    private void Update(){
-        if (combatModeEnabled){
-            if (Time.time - (lastAttackTime+0.5f) > attackDelay){
-                animator.SetBool("NextAttack", false);
-                playerManager.PlayerEquipment.RightHand.GetComponent<Weapon_Detection>().IsDoingDamage = false;
-            }
-        }
+    internal void ResetLightAttack(InputAction.CallbackContext obj)
+    {
+        animator.SetBool("Attack", false);
     }
-
-    internal void ResetLightAttack(InputAction.CallbackContext obj){
-            animator.SetBool("Attack", false);
-    }
-
-    private void Start(){
-        animator = GetComponentInChildren<Animator>();
-        playerManager = GetComponent<PlayerManager>();
-    }
-
-    internal void EnterCombatMode(InputAction.CallbackContext obj){
+    internal void EnterCombatMode(InputAction.CallbackContext obj)
+    {
         combatModeEnabled = true;
         animator.SetBool("CombatMode", true);
         playerManager.MovementController.IsCombating = true;
     }
-
-    internal void ResetAttackDirectionZero(InputAction.CallbackContext obj){
+    internal void ResetAttackDirectionZero(InputAction.CallbackContext obj)
+    {
         animator.SetInteger("AttackDirection", 0);
     }
-
-    internal void ExitCombatMode(InputAction.CallbackContext obj){
+    internal void ExitCombatMode(InputAction.CallbackContext obj)
+    {
         combatModeEnabled = false;
         animator.SetBool("CombatMode", false);
         playerManager.MovementController.IsCombating = false;
     }
-
-    internal void SetAttackDirection(InputAction.CallbackContext obj){
+    internal void SetAttackDirection(InputAction.CallbackContext obj)
+    {
         direction = obj.ReadValue<Vector2>();
-        if (direction == d1){
+        if (direction == d1)
+        {
             animator.SetInteger("AttackDirection", 1);
         }
-        else if (direction == d2){
+        else if (direction == d2)
+        {
             animator.SetInteger("AttackDirection", 2);
         }
-        else if (direction == d3){
+        else if (direction == d3)
+        {
             animator.SetInteger("AttackDirection", 3);
         }
-        else if (direction == d4){
+        else if (direction == d4)
+        {
             animator.SetInteger("AttackDirection", 4);
         }
-        else if (direction == d5){
+        else if (direction == d5)
+        {
             animator.SetInteger("AttackDirection", 5);
         }
-        else if (direction == d6){
+        else if (direction == d6)
+        {
             animator.SetInteger("AttackDirection", 6);
         }
-        else if (direction == d7){
+        else if (direction == d7)
+        {
             animator.SetInteger("AttackDirection", 7);
         }
-        else if (direction == d8){
+        else if (direction == d8)
+        {
             animator.SetInteger("AttackDirection", 8);
         }
-        else if (direction == d9){
+        else if (direction == d9)
+        {
             animator.SetInteger("AttackDirection", 9);
         }
     }
-    IEnumerator ResetDirection(){
+    #endregion
+
+
+
+    #region COROUTINES
+    IEnumerator ResetDirection()
+    {
         yield return new WaitForSeconds(attackDirectionDelay);
         animator.SetInteger("AttackDirection", 0);
     }
-    IEnumerator ResetAttackTime(){
+    IEnumerator ResetAttackTime()
+    {
         yield return new WaitForSeconds(attackReset);
         animator.SetBool("Attack", false);
     }
+    #endregion
 }

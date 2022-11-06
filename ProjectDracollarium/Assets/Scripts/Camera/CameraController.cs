@@ -6,23 +6,37 @@ public class CameraController : MonoBehaviour
 {
     #region FIELDS
     private PlayerManager playerManager;
+    [Tooltip("Player's main camera")]
     [SerializeField] private Camera playerCamera;
+    [Tooltip("empty object which the camera will follow by linear interpolation")]
     [SerializeField] private GameObject followTarget;
+    [Tooltip("empty object from which the camera will take the rotation value")]
     [SerializeField] private GameObject rotationTarget;
+    [Tooltip("camera sensitivity value")]
     [SerializeField] private float cameraSensibility = 0.25f;
+    [Tooltip("Minimum Y value for camera rotation")]
     [SerializeField] private float yMinClamp = -25f;
+    [Tooltip("Maximum Y value for camera rotation")]
     [SerializeField] private float yMaxClamp = 25f;
+    [Tooltip("Minimum X value for camera rotation")]
     [SerializeField] private float xMinClamp = -360f;
+    [Tooltip("Maximum X value for camera rotation")]
     [SerializeField] private float xMaxClamp = 360f;
+    [Tooltip("Linear interpolation ratio value for positioning")]
     [SerializeField] private float positionLerp = 0.05f;
+    [Tooltip("Linear interpolation ratio value for rotation")]
     [SerializeField] private float rotationLerp = 0.05f;
-    [SerializeField] private bool disableMouse = true;
+    [Space(10)]
+    [Header("CONTROL VARIABLES:")]
+    [Tooltip("Control flag for mouse enabled")]
+    [ShowOnly][SerializeField] private bool isMouseEnabled = true;
     private Vector2 mouseRotation;
     #endregion
 
     #region PROPERTIES
     public Camera PlayerCamera { get { return playerCamera; } }
     public float CameraSensibility { get { return cameraSensibility; } set { cameraSensibility = value; } }
+    public bool IsMouseEnabled { get { return isMouseEnabled; } set { isMouseEnabled = value; } }
     #endregion
 
 

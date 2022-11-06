@@ -34,16 +34,6 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private InputsController inputsController; //OCULTAR EN EL EDITOR DESPUES
     [SerializeField] private AnimationsController animationsController; //OCULTAR EN EL EDITOR DESPUES
 
-    [Header("OLD COMPONENTES:"), Space(10)]
-    [SerializeField] private Player_Movement_Focused focusedMovement; //UNIFICAR
-    [SerializeField] private Movement_Free freeMovement; //UNIFICAR
-    [SerializeField] private Player_Animation_Dracollarium playerDracollariumAnimation; //RETRABAJAR JUNTO AL NUEVO ANIMATOR
-    private IMovement currentMovementScript;
-    [SerializeField] private Camera_LookAround lookAroundCam; //UNIFICAR Y REEMPLAZAR
-    [SerializeField] private Camera_PlayerShoulder focusedLookCam;//UNIFICAR Y REEMPLAZAR
-    private ICamera currentCameraScript; //ELIMINAR
-    [SerializeField] protected GameObject dropLocation; //MOVER AL PLYAER ITEM PICKUP
-
     [Header("PLAYER SYSTEMS:"), Space(25)]
     [SerializeField] private Player_Equipment playerEquipment;
     [SerializeField] private Player_Stats playerStats;
@@ -159,9 +149,9 @@ public class PlayerManager : MonoBehaviour
     {
         try
         {
-            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Enabling mouse rotation on " + currentCameraScript + " script...");
-            currentCameraScript.IsMouseEnabled = true;
-            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] mouse rotation on " + currentCameraScript + " script ENABLED");
+            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Enabling mouse rotation...");
+            CameraController.IsMouseEnabled = true;
+            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] mouse rotation ENABLED.");
         }
         catch (Exception ex)
         {
@@ -172,9 +162,9 @@ public class PlayerManager : MonoBehaviour
     {
         try
         {
-            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Disabling mouse rotation on " + currentCameraScript + " script...");
-            currentCameraScript.IsMouseEnabled = false;
-            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] mouse rotation on " + currentCameraScript + " script DISABLED");
+            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Disabling mouse rotation...");
+            CameraController.IsMouseEnabled = false;
+            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] mouse rotation DISABLED.");
         }
         catch (Exception ex)
         {
@@ -185,9 +175,9 @@ public class PlayerManager : MonoBehaviour
     {
         try
         {
-            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Enabling mouse rotation on " + currentCameraScript + " script...");
-            currentCameraScript.IsMouseEnabled = true;
-            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] mouse rotation on " + currentCameraScript + " script ENABLED");
+            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Enabling mouse rotation...");
+            CameraController.IsMouseEnabled = true;
+            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] mouse rotation ENABLED.");
         }
         catch (Exception ex)
         {
@@ -198,9 +188,9 @@ public class PlayerManager : MonoBehaviour
     {
         try
         {
-            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Disabling mouse rotation on " + currentCameraScript + " script...");
-            currentCameraScript.IsMouseEnabled = false;
-            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] mouse rotation on " + currentCameraScript + " script DISABLED");
+            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] Disabling mouse rotation script...");
+            CameraController.IsMouseEnabled = false;
+            Debug.LogFormat("<color=#00ff00> {0} </color>", "-->[LOG] mouse rotation DISABLED.");
         }
         catch (Exception ex)
         {
@@ -225,10 +215,13 @@ public class PlayerManager : MonoBehaviour
     private void Awake()
     {
         inputsController = GetComponent<InputsController>();
-        fabricationActions = gameObject.GetComponents<IFabricate>();
-        playerDracollariumAnimation = GetComponent<Player_Animation_Dracollarium>();
+        movementController = GetComponent<MovementController>();
+        animationsController = GetComponent<AnimationsController>();
         uIController = GetComponent<UIController>();
+        cameraController = GetComponent<CameraController>();
+
         playerItemPickUp = GetComponent<Player_ItemPickup>();
+        fabricationActions = gameObject.GetComponents<IFabricate>();
     }
     #endregion
 

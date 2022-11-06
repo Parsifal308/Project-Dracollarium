@@ -7,20 +7,27 @@ using System;
 ╔═════════════════════════════════════════════════════════════╗
 ║     This script is in charge of registering the inputs of   ║
 ║ the Input Actions called PlayerActions. Provides methods    ║
-║ to enable and disable the different ActionMaps.             ║
+║ to enable and disable the different ActionMaps and to       ║
+║ show the inputs values.                                     ║
 ╚═════════════════════════════════════════════════════════════╝
 */
 public class InputsController : MonoBehaviour
 {
     #region FIELDS
     private bool scriptEnabled;
+    [Header("INPUTS ACTIONS MANAGEMENT:")]
+    [Tooltip("Enable/disable the player combat inputs.")]
     [SerializeField] private bool enablePlayerCombatInputs = true;
+    [Tooltip("Enable/disable the player actions inputs.")]
     [SerializeField] private bool enablePlayerActionsInputs = true;
+    [Tooltip("Enable/disable the player menu inputs.")]
     [SerializeField] private bool enablePlayerMenuInputs = true;
+    [Tooltip("Enable/disable the player movement inputs.")]
     [SerializeField] private bool enablePlayerMovementInputs = true;
+    [Tooltip("Enable/disable the player building inputs.")]
     [SerializeField] private bool enablePlayerBuildingInputs = true;
-    [SerializeField] private PlayerManager playerManager;
-    [SerializeField] private PlayerActions playerActions;
+    private PlayerManager playerManager;
+    private PlayerActions playerActions;
     private InputAction actionA;
     private InputAction actionB;
     private InputAction actionC;
@@ -32,7 +39,8 @@ public class InputsController : MonoBehaviour
     private InputAction buildHorizontalRotation;
     private InputAction buildingCancel;
     private InputAction buildingConfirm;
-    private InputAction movement;
+    private InputAction vertical;
+    private InputAction horizontal;
     private InputAction jump;
     private InputAction run;
     private InputAction walk;
@@ -55,6 +63,57 @@ public class InputsController : MonoBehaviour
     private InputAction attackDirection;
     #endregion
 
+    #region CONTROL FIELDS
+    [Space(15), Header("INPUTS VALUES:")]
+    [Tooltip("Select if want to read and show inputs in real time. Only kepp enabled while developing.")]
+    [SerializeField] private bool readInputs = false;
+    [Space(10)]
+    [ShowOnly][SerializeField] private float actionAValue;
+    [ShowOnly][SerializeField] private float actionBValue;
+    [ShowOnly][SerializeField] private float actionCValue;
+    [ShowOnly][SerializeField] private float dropLeftItemValue;
+    [ShowOnly][SerializeField] private float dropRightItemValue;
+    [ShowOnly][SerializeField] private float grabValue;
+    [ShowOnly][SerializeField] private float takeValue;
+    [Space(10)]
+    [ShowOnly][SerializeField] private float buildVerticalRotationValue;
+    [ShowOnly][SerializeField] private float buildHorizontalRotationValue;
+    [ShowOnly][SerializeField] private float buildingCancelValue;
+    [ShowOnly][SerializeField] private float buildingConfirmValue;
+    [Space(10)]
+    [ShowOnly][SerializeField] private float horizontalValue;
+    [ShowOnly][SerializeField] private float verticalValue;
+    [Space(10)]
+    [ShowOnly][SerializeField] private float jumpValue;
+    [ShowOnly][SerializeField] private float runValue;
+    [ShowOnly][SerializeField] private float walkValue;
+    [Space(10)]
+    [ShowOnly][SerializeField] private float mouseDeltaXValue;
+    [ShowOnly][SerializeField] private float mouseDeltaYValue;
+    [Space(5)]
+    [ShowOnly][SerializeField] private float mousePositionXValue;
+    [ShowOnly][SerializeField] private float mousePositionYValue;
+    [Space(10)]
+    [ShowOnly][SerializeField] private float buildMenuValue;
+    [ShowOnly][SerializeField] private float characterMenuValue;
+    [ShowOnly][SerializeField] private float mapMenuValue;
+    [ShowOnly][SerializeField] private float journeyMenuValue;
+    [ShowOnly][SerializeField] private float inventoryMenuValue;
+    [ShowOnly][SerializeField] private float facultiesMenuValue;
+    [ShowOnly][SerializeField] private float equipmentMenuValue;
+    [ShowOnly][SerializeField] private float cancelMenuValue;
+    [Space(10)]
+    [ShowOnly][SerializeField] private float attackAValue;
+    [ShowOnly][SerializeField] private float attackBValue;
+    [ShowOnly][SerializeField] private float fightModeValue;
+    [ShowOnly][SerializeField] private float exploreModeValue;
+    [ShowOnly][SerializeField] private float reloadValue;
+    [ShowOnly][SerializeField] private float aimValue;
+    [Space(5)]
+    [ShowOnly][SerializeField] private float attackDirectionXValue;
+    [ShowOnly][SerializeField] private float attackDirectionYValue;
+    #endregion
+
     #region PROPERTIES
     public bool EnablePlayerCombatInputs { get { return enablePlayerCombatInputs; } set { enablePlayerCombatInputs = value; } }
     public bool EnablePlayerActionsInputs { get { return enablePlayerActionsInputs; } set { enablePlayerActionsInputs = value; } }
@@ -72,7 +131,8 @@ public class InputsController : MonoBehaviour
     public InputAction BuildHorizontalRotation { get { return buildHorizontalRotation; } }
     public InputAction BuildingCancel { get { return buildingCancel; } }
     public InputAction BuildingConfirm { get { return buildingConfirm; } }
-    public InputAction Movement { get { return movement; } }
+    public InputAction Vertical { get { return vertical; } }
+    public InputAction Horizontal { get { return horizontal; } }
     public InputAction Jump { get { return jump; } }
     public InputAction Run { get { return run; } }
     public InputAction Walk { get { return walk; } }
@@ -114,12 +174,15 @@ public class InputsController : MonoBehaviour
         dropRightItem = playerActions.PlayerCharacterAction.DropRightItem;
         grab = playerActions.PlayerCharacterAction.Grab;
         take = playerActions.PlayerCharacterAction.Take;
-        movement = playerActions.PlayerCharacterMovement.Movement;
+
+        vertical = playerActions.PlayerCharacterMovement.Vertical;
+        horizontal = playerActions.PlayerCharacterMovement.Horizontal;
         jump = playerActions.PlayerCharacterMovement.Jump;
         run = playerActions.PlayerCharacterMovement.Run;
         walk = playerActions.PlayerCharacterMovement.Walk;
         mouseDelta = playerActions.PlayerCharacterMovement.MouseDelta;
         mousePosition = playerActions.PlayerCharacterMovement.MousePosition;
+
         buildMenu = playerActions.PlayerMenus.BuildMenu;
         characterMenu = playerActions.PlayerMenus.CharacterMenu;
         mapMenu = playerActions.PlayerMenus.MapMenu;
@@ -127,6 +190,7 @@ public class InputsController : MonoBehaviour
         facultiesMenu = playerActions.PlayerMenus.FacultiesMenu;
         equipmentMenu = playerActions.PlayerMenus.EquipmentMenu;
         cancelMenu = playerActions.PlayerMenus.Cancel;
+
         attackA = playerActions.PlayerCharacterCombat.AttackA;
         attackB = playerActions.PlayerCharacterCombat.AttackB;
         fightMode = playerActions.PlayerCharacterCombat.FightMode;
@@ -134,6 +198,7 @@ public class InputsController : MonoBehaviour
         reload = playerActions.PlayerCharacterCombat.Reload;
         aim = playerActions.PlayerCharacterCombat.Aim;
         attackDirection = playerActions.PlayerCharacterCombat.AttackDirection;
+
         buildVerticalRotation = playerActions.PlayerBuilding.VerticalRotation;
         buildHorizontalRotation = playerActions.PlayerBuilding.HorizontalRotation;
         buildingCancel = playerActions.PlayerBuilding.Cancel;
@@ -144,23 +209,29 @@ public class InputsController : MonoBehaviour
         dropLeftItem.performed += playerManager.PlayerItemPickup.Drop;
         dropRightItem.performed += playerManager.PlayerItemPickup.Drop;
         grab.performed += playerManager.PlayerItemPickup.Grab;
-        movement.performed += playerManager.MovementController.Run;
-        movement.canceled += playerManager.MovementController.Run;
-        movement.started += playerManager.PlayerItemPickup.DisableCanvases;
+        vertical.started += playerManager.PlayerItemPickup.DisableCanvases;
+
+        vertical.performed += playerManager.MovementController.Run;
+        vertical.canceled += playerManager.MovementController.Run;
+        horizontal.performed += playerManager.MovementController.Run;
+        horizontal.canceled += playerManager.MovementController.Run;
         jump.performed += playerManager.MovementController.Jump;
         run.performed += playerManager.MovementController.Sprint;
         run.canceled += playerManager.MovementController.Sprint;
         walk.performed += playerManager.MovementController.Walk;
         walk.canceled += playerManager.MovementController.Walk;
+
         buildMenu.performed += playerManager.UIController.BuildingMenu.MenuKey;
         equipmentMenu.performed += playerManager.UIController.EquipmentMenu.MenuKey;
         cancelMenu.performed += playerManager.UIController.DisableAllMenus;
+
         attackA.performed += playerManager.PlayerCombat.LightAttack;
         attackA.canceled += playerManager.PlayerCombat.ResetLightAttack;
         fightMode.performed += playerManager.PlayerCombat.EnterCombatMode;
         exploreMode.performed += playerManager.PlayerCombat.ExitCombatMode;
         attackDirection.performed += playerManager.PlayerCombat.SetAttackDirection;
         attackDirection.canceled += playerManager.PlayerCombat.ResetAttackDirectionZero;
+
         buildVerticalRotation.started += playerManager.PlayerModularBuilding.StartVerticalRotation;
         buildVerticalRotation.canceled += playerManager.PlayerModularBuilding.StopRotation;
 
@@ -180,6 +251,48 @@ public class InputsController : MonoBehaviour
         DisableMenu();
         DisableMovement();
         scriptEnabled = false;
+    }
+    void Update()
+    {
+        if (readInputs)
+        {
+            actionAValue = actionA.ReadValue<float>();
+            actionBValue = actionB.ReadValue<float>();
+            actionCValue = actionC.ReadValue<float>();
+            dropLeftItemValue = dropLeftItem.ReadValue<float>();
+            dropRightItemValue = dropRightItem.ReadValue<float>();
+            grabValue = grab.ReadValue<float>();
+            takeValue = take.ReadValue<float>();
+            buildVerticalRotationValue = buildVerticalRotation.ReadValue<float>();
+            buildHorizontalRotationValue = buildHorizontalRotation.ReadValue<float>();
+            buildingCancelValue = buildingCancel.ReadValue<float>();
+            buildingConfirmValue = buildingConfirm.ReadValue<float>();
+            verticalValue = vertical.ReadValue<float>();
+            horizontalValue = horizontal.ReadValue<float>();
+            jumpValue = jump.ReadValue<float>();
+            runValue = run.ReadValue<float>();
+            walkValue = walk.ReadValue<float>();
+            mouseDeltaXValue = mouseDelta.ReadValue<Vector2>().x;
+            mouseDeltaYValue = mouseDelta.ReadValue<Vector2>().y;
+            mousePositionXValue = mousePosition.ReadValue<Vector2>().x;
+            mousePositionYValue = mousePosition.ReadValue<Vector2>().y;
+            buildMenuValue = buildMenu.ReadValue<float>();
+            characterMenuValue = characterMenu.ReadValue<float>();
+            mapMenuValue = mapMenu.ReadValue<float>();
+            journeyMenuValue = journeyMenu.ReadValue<float>();
+            //inventoryMenuValue = inventoryMenu.ReadValue<float>(); //no existe este input :v
+            facultiesMenuValue = facultiesMenu.ReadValue<float>();
+            equipmentMenuValue = equipmentMenu.ReadValue<float>();
+            cancelMenuValue = cancelMenu.ReadValue<float>();
+            attackAValue = attackA.ReadValue<float>();
+            attackBValue = attackB.ReadValue<float>();
+            fightModeValue = fightMode.ReadValue<float>();
+            exploreModeValue = exploreMode.ReadValue<float>();
+            reloadValue = reload.ReadValue<float>();
+            aimValue = aim.ReadValue<float>();
+            attackDirectionXValue = attackDirection.ReadValue<Vector2>().x;
+            attackDirectionYValue = attackDirection.ReadValue<Vector2>().y;
+        }
     }
     #endregion
 
@@ -206,7 +319,8 @@ public class InputsController : MonoBehaviour
     }
     public void EnableMovement()
     {
-        movement.Enable();
+        horizontal.Enable();
+        vertical.Enable();
         jump.Enable();
         run.Enable();
         walk.Enable();
@@ -215,7 +329,8 @@ public class InputsController : MonoBehaviour
     }
     public void DisableMovement()
     {
-        movement.Disable();
+        horizontal.Disable();
+        vertical.Disable();
         jump.Disable();
         run.Disable();
         walk.Disable();

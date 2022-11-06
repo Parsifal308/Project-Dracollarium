@@ -10,7 +10,8 @@ public class PlayerActions_CharacterMovement : MonoBehaviour
 
     private PlayerActions playerActions;
 
-    private InputAction movement;
+    private InputAction vertical;
+    private InputAction horizontal;
     private InputAction jump;
     private InputAction run;
     private InputAction walk;
@@ -31,23 +32,24 @@ public class PlayerActions_CharacterMovement : MonoBehaviour
         playerManager = transform.GetComponent<PlayerManager>();
     }
     private void OnEnable(){
-        movement = playerActions.PlayerCharacterMovement.Movement;
+        vertical = playerActions.PlayerCharacterMovement.Vertical;
+        horizontal = playerActions.PlayerCharacterMovement.Horizontal;
         jump = playerActions.PlayerCharacterMovement.Jump;
         run = playerActions.PlayerCharacterMovement.Run;
         walk = playerActions.PlayerCharacterMovement.Walk;
         mouseDelta = playerActions.PlayerCharacterMovement.MouseDelta;
         mousePosition = playerActions.PlayerCharacterMovement.MousePosition;
 
-        movement.Enable();
+        vertical.Enable();
         jump.Enable();
         run.Enable();
         walk.Enable();
         mouseDelta.Enable();
         mousePosition.Enable();
 
-        movement.performed += playerManager.MovementController.Run;
-        movement.canceled += playerManager.MovementController.Run;
-        movement.started += playerManager.PlayerItemPickup.DisableCanvases;
+        vertical.performed += playerManager.MovementController.Run;
+        vertical.canceled += playerManager.MovementController.Run;
+        vertical.started += playerManager.PlayerItemPickup.DisableCanvases;
         jump.performed += playerManager.MovementController.Jump;
         run.performed += playerManager.MovementController.Sprint;
         run.canceled += playerManager.MovementController.Sprint;
@@ -56,7 +58,7 @@ public class PlayerActions_CharacterMovement : MonoBehaviour
 
     }
     private void OnDisable(){
-        movement.Disable();
+        vertical.Disable();
         jump.Disable();
         run.Disable();
         walk.Disable();

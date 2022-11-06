@@ -51,7 +51,7 @@ public class MovementController : MonoBehaviour
 
     internal void Run(InputAction.CallbackContext obj)
     {
-        throw new NotImplementedException();
+        Debug.Log("RUN");
     }
 
     public void PlayerFall(float fallingVelocity)
@@ -61,23 +61,24 @@ public class MovementController : MonoBehaviour
 
     internal void Sprint(InputAction.CallbackContext obj)
     {
-        throw new NotImplementedException();
+        Debug.Log("SPRINT");
     }
 
     internal void Walk(InputAction.CallbackContext obj)
     {
-        throw new NotImplementedException();
+        Debug.Log("WALK");
     }
 
     internal void Jump(InputAction.CallbackContext obj)
     {
-        throw new NotImplementedException();
+        Debug.Log("JUMP");
+        //throw new NotImplementedException();
     }
 
     //from old focused movement script
     public void MovePlayer(float speed)
     {
-        characterController.Move((characterController.transform.right * (playerManager.InputsController.Movement.ReadValue<Vector2>().y) * frontalMoveMultiplier + characterController.transform.forward * (-playerManager.InputsController.Movement.ReadValue<Vector2>().x) * horizontalMoveMultiplier) * Time.deltaTime * speed);
+        characterController.Move((characterController.transform.right * (playerManager.InputsController.Vertical.ReadValue<Vector2>().y) * frontalMoveMultiplier + characterController.transform.forward * (-playerManager.InputsController.Vertical.ReadValue<Vector2>().x) * horizontalMoveMultiplier) * Time.deltaTime * speed);
     }
 
     //from old focused shoulder camera script
