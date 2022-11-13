@@ -9,19 +9,19 @@ public class CameraController : MonoBehaviour
     [Tooltip("Player's main camera")]
     [SerializeField] private Camera playerCamera;
     [Tooltip("empty object which the camera will follow by linear interpolation")]
-    [SerializeField] private GameObject followTarget;
+    [SerializeField] private GameObject cameraPosition;
     [Tooltip("empty object from which the camera will take the rotation value")]
-    [SerializeField] private GameObject rotationTarget;
+    [SerializeField] private GameObject cameraRotation;
     [Tooltip("camera sensitivity value")]
     [SerializeField] private float cameraSensibility = 0.25f;
-    [Tooltip("Minimum Y value for camera rotation")]
-    [SerializeField] private float yMinClamp = -25f;
-    [Tooltip("Maximum Y value for camera rotation")]
-    [SerializeField] private float yMaxClamp = 25f;
-    [Tooltip("Minimum X value for camera rotation")]
-    [SerializeField] private float xMinClamp = -360f;
-    [Tooltip("Maximum X value for camera rotation")]
-    [SerializeField] private float xMaxClamp = 360f;
+    [Tooltip("Minimum Y value for camera rotation. if it is zero then there will be no clamp")]
+    [SerializeField] private float yMinClamp = 0f;
+    [Tooltip("Maximum Y value for camera rotation, if it is zero then there will be no clamp")]
+    [SerializeField] private float yMaxClamp = 0f;
+    [Tooltip("Minimum X value for camera rotation, if it is zero then there will be no clamp")]
+    [SerializeField] private float xMinClamp = 0f;
+    [Tooltip("Maximum X value for camera rotation, if it is zero then there will be no clamp")]
+    [SerializeField] private float xMaxClamp = 0f;
     [Tooltip("Linear interpolation ratio value for positioning")]
     [SerializeField] private float positionLerp = 0.05f;
     [Tooltip("Linear interpolation ratio value for rotation")]
@@ -39,7 +39,7 @@ public class CameraController : MonoBehaviour
     public bool IsMouseEnabled { get { return isMouseEnabled; } set { isMouseEnabled = value; } }
     #endregion
 
-
+    #region UNITY METHODS
     void Start()
     {
         playerManager = GetComponent<PlayerManager>();
@@ -47,35 +47,51 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         ApplyMouseRotation();
-        ClampMouseY(mouseRotation.y);
-        ClampMouseX(mouseRotation.x);
+        mouseRotation.y = ClampMouse(mouseRotation.y, yMinClamp, yMaxClamp);
+        mouseRotation.x = ClampMouse(mouseRotation.x, xMinClamp, xMaxClamp);
         RotateCamera();
         LerpPosition();
     }
+    #endregion
+
+    #region METHODS
+    /// <summary>Returns mouse inputs multiplied by the configured sensitivity.</summary>
     public Vector2 MouseToCameraInput()
     {
         return new Vector2(playerManager.InputsController.MouseDelta.ReadValue<Vector2>().x * cameraSensibility, playerManager.InputsController.MouseDelta.ReadValue<Vector2>().y * cameraSensibility);
     }
-    public float ClampMouseY(float mouseY)
+
+    /// <summary>Clamps the input between two given values.</summary>
+    /// <returns>The clamped value if the min and max are different than zero</returns>
+    public float ClampMouse(float mouseInput, float minClamp, float maxClmap)
     {
-        return Mathf.Clamp(mouseY, yMinClamp, yMaxClamp);
+        if (minClamp != 0f && maxClmap != 0f)
+        {
+            return Mathf.Clamp(mouseInput, minClamp, maxClmap);
+        }
+        else
+        {
+            return mouseInput;
+        }
     }
-    public float ClampMouseX(float mousex)
-    {
-        return Mathf.Clamp(mousex, xMinClamp, xMaxClamp);
-    }
+
+    /// <summary>Moves and rotates the camera according to the position of the cameraPosition and cameraRotation object respectively.</summary>
     public void LerpPosition()
     {
-        playerCamera.transform.position = Vector3.Lerp(playerCamera.transform.position, followTarget.transform.position, positionLerp);
-        playerCamera.transform.rotation = Quaternion.Lerp(playerCamera.transform.rotation, rotationTarget.transform.rotation, rotationLerp);
+        playerCamera.transform.position = Vector3.Lerp(playerCamera.transform.position, cameraPosition.transform.position, positionLerp);
+        playerCamera.transform.rotation = Quaternion.Lerp(playerCamera.transform.rotation, cameraRotation.transform.rotation, rotationLerp);
     }
+
+    /// <summary>Rotates the camera according to the values stored in the local variable mouseRotation.</summary>
     public void RotateCamera()
     {
-        rotationTarget.transform.localRotation = Quaternion.Euler(-mouseRotation.y, mouseRotation.x + 90f, 0);
+        cameraRotation.transform.localRotation = Quaternion.Euler(-mouseRotation.y, mouseRotation.x +90f, 0);
     }
+
+    /// <summary>Saves mouse input in the local variable mouseRotation.</summary>
     public void ApplyMouseRotation()
     {
         mouseRotation += new Vector2(playerManager.InputsController.MouseDelta.ReadValue<Vector2>().x * cameraSensibility, playerManager.InputsController.MouseDelta.ReadValue<Vector2>().y * cameraSensibility);
     }
-
+    #endregion
 }

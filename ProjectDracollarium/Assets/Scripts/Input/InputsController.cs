@@ -14,18 +14,22 @@ using System;
 public class InputsController : MonoBehaviour
 {
     #region FIELDS
-    private bool scriptEnabled;
+    private bool scriptInitialized = false;
+
     [Header("INPUTS ACTIONS MANAGEMENT:")]
     [Tooltip("Enable/disable the player combat inputs.")]
-    [SerializeField] private bool enablePlayerCombatInputs = true;
+    [SerializeField] private bool enablePlayerCombatInputs;
     [Tooltip("Enable/disable the player actions inputs.")]
-    [SerializeField] private bool enablePlayerActionsInputs = true;
+    [SerializeField] private bool enablePlayerActionsInputs;
     [Tooltip("Enable/disable the player menu inputs.")]
-    [SerializeField] private bool enablePlayerMenuInputs = true;
+    [SerializeField] private bool enablePlayerMenuInputs;
     [Tooltip("Enable/disable the player movement inputs.")]
-    [SerializeField] private bool enablePlayerMovementInputs = true;
+    [SerializeField] private bool enablePlayerMovementInputs;
     [Tooltip("Enable/disable the player building inputs.")]
-    [SerializeField] private bool enablePlayerBuildingInputs = true;
+    [SerializeField] private bool enablePlayerBuildingInputs;
+
+    [Space(10), Header("DEBUG:")]
+    [SerializeField] private bool debugLogging = true;
     private PlayerManager playerManager;
     private PlayerActions playerActions;
     private InputAction actionA;
@@ -161,10 +165,15 @@ public class InputsController : MonoBehaviour
         playerActions = new PlayerActions();
         playerManager = GetComponent<PlayerManager>();
     }
+    void Start()
+    {
+        CheckForChanges();
+    }
     private void OnValidate()
     {
-        if (scriptEnabled) CheckForChanges();
+        if (scriptInitialized) CheckForChanges();
     }
+
     private void OnEnable()
     {
         actionA = playerActions.PlayerCharacterAction.ActionA;
@@ -211,10 +220,10 @@ public class InputsController : MonoBehaviour
         grab.performed += playerManager.PlayerItemPickup.Grab;
         vertical.started += playerManager.PlayerItemPickup.DisableCanvases;
 
-        vertical.performed += playerManager.MovementController.Run;
-        vertical.canceled += playerManager.MovementController.Run;
-        horizontal.performed += playerManager.MovementController.Run;
-        horizontal.canceled += playerManager.MovementController.Run;
+        vertical.performed += playerManager.MovementController.Moving;
+        vertical.canceled += playerManager.MovementController.Moving;
+        horizontal.performed += playerManager.MovementController.Moving;
+        horizontal.canceled += playerManager.MovementController.Moving;
         jump.performed += playerManager.MovementController.Jump;
         run.performed += playerManager.MovementController.Sprint;
         run.canceled += playerManager.MovementController.Sprint;
@@ -235,13 +244,14 @@ public class InputsController : MonoBehaviour
         buildVerticalRotation.started += playerManager.PlayerModularBuilding.StartVerticalRotation;
         buildVerticalRotation.canceled += playerManager.PlayerModularBuilding.StopRotation;
 
+        if (debugLogging) { Debug.LogFormat("<color=#FFFF00> {0} </color>", "--->[" + this + "] INPUTS INITIALIZED."); }
         EnableActions();
         EnableBuilding();
         EnableCombat();
         EnableMenu();
         EnableMovement();
 
-        scriptEnabled = true;
+        if (!scriptInitialized) scriptInitialized = true;
     }
     private void OnDisable()
     {
@@ -250,7 +260,6 @@ public class InputsController : MonoBehaviour
         DisableCombat();
         DisableMenu();
         DisableMovement();
-        scriptEnabled = false;
     }
     void Update()
     {
@@ -306,6 +315,10 @@ public class InputsController : MonoBehaviour
         dropRightItem.Enable();
         grab.Enable();
         take.Enable();
+        if (debugLogging)
+        {
+            Debug.LogFormat("<color=#FFFF00> {0} </color>", "-->[" + this + "] Actions inputs enabled.");
+        }
     }
     public void DisableActions()
     {
@@ -316,6 +329,10 @@ public class InputsController : MonoBehaviour
         dropRightItem.Disable();
         grab.Disable();
         take.Disable();
+        if (debugLogging)
+        {
+            Debug.LogFormat("<color=#FFFF00> {0} </color>", "-->[" + this + "] Actions inputs disabled.");
+        }
     }
     public void EnableMovement()
     {
@@ -326,6 +343,10 @@ public class InputsController : MonoBehaviour
         walk.Enable();
         mouseDelta.Enable();
         mousePosition.Enable();
+        if (debugLogging)
+        {
+            Debug.LogFormat("<color=#FFFF00> {0} </color>", "-->[" + this + "] Movement inputs enabled.");
+        }
     }
     public void DisableMovement()
     {
@@ -336,6 +357,10 @@ public class InputsController : MonoBehaviour
         walk.Disable();
         mouseDelta.Disable();
         mousePosition.Disable();
+        if (debugLogging)
+        {
+            Debug.LogFormat("<color=#FFFF00> {0} </color>", "-->[" + this + "] Movement inputs disabled.");
+        }
     }
     public void EnableMenu()
     {
@@ -346,6 +371,10 @@ public class InputsController : MonoBehaviour
         facultiesMenu.Enable();
         equipmentMenu.Enable();
         cancelMenu.Enable();
+        if (debugLogging)
+        {
+            Debug.LogFormat("<color=#FFFF00> {0} </color>", "-->[" + this + "] Menu inputs enabled.");
+        }
     }
     public void DisableMenu()
     {
@@ -356,6 +385,10 @@ public class InputsController : MonoBehaviour
         facultiesMenu.Disable();
         equipmentMenu.Disable();
         cancelMenu.Disable();
+        if (debugLogging)
+        {
+            Debug.LogFormat("<color=#FFFF00> {0} </color>", "-->[" + this + "] Menu inputs disabled.");
+        }
     }
     public void EnableCombat()
     {
@@ -366,6 +399,10 @@ public class InputsController : MonoBehaviour
         aim.Enable();
         reload.Enable();
         attackDirection.Enable();
+        if (debugLogging)
+        {
+            Debug.LogFormat("<color=#FFFF00> {0} </color>", "-->[" + this + "] Combat inputs enabled.");
+        }
     }
     public void DisableCombat()
     {
@@ -376,6 +413,10 @@ public class InputsController : MonoBehaviour
         aim.Disable();
         reload.Disable();
         attackDirection.Disable();
+        if (debugLogging)
+        {
+            Debug.LogFormat("<color=#FFFF00> {0} </color>", "-->[" + this + "] Combat inputs disabled.");
+        }
     }
     public void EnableBuilding()
     {
@@ -383,6 +424,10 @@ public class InputsController : MonoBehaviour
         buildHorizontalRotation.Enable();
         buildingCancel.Enable();
         buildingConfirm.Enable();
+        if (debugLogging)
+        {
+            Debug.LogFormat("<color=#FFFF00> {0} </color>", "-->[" + this + "] Building inputs enabled.");
+        }
     }
     public void DisableBuilding()
     {
@@ -390,6 +435,10 @@ public class InputsController : MonoBehaviour
         buildHorizontalRotation.Disable();
         buildingCancel.Disable();
         buildingConfirm.Disable();
+        if (debugLogging)
+        {
+            Debug.LogFormat("<color=#FFFF00> {0} </color>", "-->[" + this + "] Building inputs disabled.");
+        }
     }
     public void CheckForChanges()
     {
@@ -431,7 +480,7 @@ public class InputsController : MonoBehaviour
         }
         else
         {
-            EnableMovement();
+            DisableMovement();
         }
     }
     private void ChangeInput(object sender, EventArgs e)

@@ -47,8 +47,8 @@ public class PlayerActions_CharacterMovement : MonoBehaviour
         mouseDelta.Enable();
         mousePosition.Enable();
 
-        vertical.performed += playerManager.MovementController.Run;
-        vertical.canceled += playerManager.MovementController.Run;
+        vertical.performed += playerManager.MovementController.Moving;
+        vertical.canceled += playerManager.MovementController.Moving;
         vertical.started += playerManager.PlayerItemPickup.DisableCanvases;
         jump.performed += playerManager.MovementController.Jump;
         run.performed += playerManager.MovementController.Sprint;

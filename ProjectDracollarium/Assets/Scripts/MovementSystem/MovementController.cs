@@ -9,12 +9,11 @@ public class MovementController : MonoBehaviour
     #region FIELDS
     private PlayerManager playerManager;
     private CharacterController characterController;
-
+    [Header("SETTINGS:")]
     [SerializeField] private float horizontalMoveMultiplier = 1;
     [SerializeField] private float frontalMoveMultiplier = 1;
 
-
-    [SerializeField] private float aceleration = -1;
+    [SerializeField] private float gravitationalAceleration = -1;
     [Header("CONTROL VARIABLES:")]
     [ShowOnly][SerializeField] private float fallingVelocity; //Cuando este en el suelo hay que reiniciarlo
     [ShowOnly][SerializeField] private bool isMoving;
@@ -34,11 +33,11 @@ public class MovementController : MonoBehaviour
         playerManager = GetComponent<PlayerManager>();
         characterController = transform.GetComponentInChildren<CharacterController>();
     }
-    void FixedUpdate()
+    void Update()
     {
-        fallingVelocity = CalculateGravity(fallingVelocity, aceleration);
+        fallingVelocity = CalculateGravity(fallingVelocity, gravitationalAceleration);
         PlayerFall(fallingVelocity);
-        MovePlayer(playerManager.PlayerStats.MovementSpeed);
+        if (isMoving) MovePlayer(playerManager.PlayerStats.MovementSpeed);
         RotatePlayer();
     }
     #endregion
@@ -49,9 +48,9 @@ public class MovementController : MonoBehaviour
         return velocity + aceleration * Time.deltaTime;
     }
 
-    internal void Run(InputAction.CallbackContext obj)
+    internal void Moving(InputAction.CallbackContext obj)
     {
-        Debug.Log("RUN");
+        isMoving = true;
     }
 
     public void PlayerFall(float fallingVelocity)
@@ -78,13 +77,13 @@ public class MovementController : MonoBehaviour
     //from old focused movement script
     public void MovePlayer(float speed)
     {
-        characterController.Move((characterController.transform.right * (playerManager.InputsController.Vertical.ReadValue<Vector2>().y) * frontalMoveMultiplier + characterController.transform.forward * (-playerManager.InputsController.Vertical.ReadValue<Vector2>().x) * horizontalMoveMultiplier) * Time.deltaTime * speed);
+        characterController.Move((characterController.transform.right * playerManager.InputsController.Vertical.ReadValue<float>() * frontalMoveMultiplier + characterController.transform.forward * -playerManager.InputsController.Horizontal.ReadValue<float>() * horizontalMoveMultiplier) * Time.deltaTime * speed);
     }
 
     //from old focused shoulder camera script
     public void RotatePlayer()
     {
-        characterController.transform.rotation = Quaternion.Euler(0f, playerManager.CameraController.PlayerCamera.transform.rotation.eulerAngles.y - 90f, 0f);
+        characterController.transform.rotation = Quaternion.Euler(0f, playerManager.CameraController.PlayerCamera.transform.rotation.eulerAngles.y - 90f, 0f);//sumar o restar despues del y
     }
     #endregion
 }
