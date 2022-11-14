@@ -2463,3 +2463,45 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 19426.536920 seconds.
+  path: Assets/Prefabs/Characters/Humanoids/PlayerDracollarium/DracollariumAnimatorController.controller
+  artifactKey: Guid(1bcb1c7d2034346458f66e15f4a6aec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Humanoids/PlayerDracollarium/DracollariumAnimatorController.controller using Guid(1bcb1c7d2034346458f66e15f4a6aec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d160800cb8a5dc13ea374c7e68cc5d') in 0.031201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.839541 seconds.
+  path: Assets/Prefabs/Characters/Humanoids/PlayerDracollarium/DracollariumAnimatorControllerNEW.controller
+  artifactKey: Guid(78dfe120cf07786488777b396c9745d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Humanoids/PlayerDracollarium/DracollariumAnimatorControllerNEW.controller using Guid(78dfe120cf07786488777b396c9745d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd89bf1810c7d16b52cc4c9f760359dd8') in 0.001684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.567280 seconds.
+  path: Assets/Prefabs/Characters/Humanoids/PlayerDracollarium/DracollariumAnimatorControllerWithMixamoAnim.controller
+  artifactKey: Guid(78dfe120cf07786488777b396c9745d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Humanoids/PlayerDracollarium/DracollariumAnimatorControllerWithMixamoAnim.controller using Guid(78dfe120cf07786488777b396c9745d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '524b0a85aa6868c69e53e22b4c08377c') in 0.001789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2766.789670 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Locomotion Pack/left turn.fbx
+  artifactKey: Guid(3d8d10ba42f49aa4d89b10043d78a1a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Locomotion Pack/left turn.fbx using Guid(3d8d10ba42f49aa4d89b10043d78a1a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3a9e5d055e4eeb3a0f2058dd9c1aee') in 0.031203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.002534 seconds.
+  path: Assets/Resources/ThirdParty/Mixamo Animations/Locomotion Pack/right turn 90.fbx
+  artifactKey: Guid(3c2f83bdd078c8343a7c0e1cbaade2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ThirdParty/Mixamo Animations/Locomotion Pack/right turn 90.fbx using Guid(3c2f83bdd078c8343a7c0e1cbaade2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8348cf33e4e8a98a754bf76166d0f3') in 0.012415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.777914 seconds.
+  path: Assets/Prefabs/Characters/Humanoids/PlayerDracollarium/DracollariumAnimatorControllerWithMixamoAnim.controller
+  artifactKey: Guid(78dfe120cf07786488777b396c9745d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Humanoids/PlayerDracollarium/DracollariumAnimatorControllerWithMixamoAnim.controller using Guid(78dfe120cf07786488777b396c9745d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639764a4a88ed5b45b4c9264e73b08c0') in 0.007788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 631.387599 seconds.
+  path: Assets/Prefabs/Characters/Humanoids/PlayerDracollarium/DracollariumAnimatorControllerWithMixamoAnim.controller
+  artifactKey: Guid(78dfe120cf07786488777b396c9745d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Humanoids/PlayerDracollarium/DracollariumAnimatorControllerWithMixamoAnim.controller using Guid(78dfe120cf07786488777b396c9745d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b1197d653cae4dd0100789bc67f9f6') in 0.008309 seconds 
