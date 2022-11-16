@@ -12,9 +12,6 @@ public class AGGlobalSettings : MonoBehaviour {
 	[Range(0.0f, 2.0f)]
 	[Header("Trees Settings")]
 	public float AOIntensity = 1.0f;
-	[Range(0.0f, 2.0f)]
-	public float TranslucencyIntensity = 1.0f;
-	public float TranslucencyDistance = 200.0f;
 	[Space(20)]
 	public bool EnableTintColor = true;
 	float TintToggle = 0.0f;
@@ -52,8 +49,6 @@ public class AGGlobalSettings : MonoBehaviour {
 
 		// Send informations to shaders
 		Shader.SetGlobalFloat ("AG_TreesAO", AOIntensity);
-		Shader.SetGlobalFloat ("AG_TranslucencyIntensity", TranslucencyIntensity);
-		Shader.SetGlobalFloat ("AG_TranslucencyDistance", TranslucencyDistance);
 		Shader.SetGlobalTexture ("AG_TintNoiseTexture", TintNoiseTexture);
 		Shader.SetGlobalFloat ("AG_TintToggle", TintToggle);
 		Shader.SetGlobalFloat ("AG_TintNoiseTile", TintNoiseTile);

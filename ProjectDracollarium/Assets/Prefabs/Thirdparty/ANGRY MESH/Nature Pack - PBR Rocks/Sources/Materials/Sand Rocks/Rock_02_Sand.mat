@@ -4,10 +4,11 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Rock_02_Sand
-  m_Shader: {fileID: 4800000, guid: 7c34f56503d7fdb42b7c3d2515f04a65, type: 3}
+  m_Shader: {fileID: 4800000, guid: d0f7254d46c7d0e4fbfee3f7ffe67411, type: 3}
   m_ShaderKeywords: _DETAILWORLDMAPPING_ON _DETAIL_MULX2 _EMISSION _FLOAT2_ON _KEYWORD3_ON
     _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 5
@@ -246,8 +247,9 @@ Material:
     m_Floats:
     - _AOIntensity: 0.469
     - _AO_Intensity: 0
+    - _AlphaCutoff: 0.5
     - _BaseAOIntensity: 0.25
-    - _BaseSmoothness: 0.498
+    - _BaseSmoothness: 0.47
     - _BumpScale: 1
     - _Contrast: 0.5
     - _ContrastMask: 1
@@ -326,7 +328,7 @@ Material:
     - _node_7069: 0.51
     - _node_9200: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.5841829, b: 0.4444204, a: 1}
+    - _BaseColor: {r: 1, g: 0.681317, b: 0.5235849, a: 1}
     - _COLORRR: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1, g: 1, b: 1, a: 0}
