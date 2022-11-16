@@ -9560,8 +9560,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51feaee960841d04699e6b9eaa2aec8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalMoveMultiplier: 4
-  frontalMoveMultiplier: 4
+  horizontalMoveMultiplier: 1
+  frontalMoveMultiplier: 1
   gravitationalAceleration: -1
   fallingVelocity: 0
   isMoving: 0
@@ -9612,7 +9612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1eb517659fc6841aff804c8a8b6a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
+  movementSpeed: 4
   walkSpeedModifier: 1.5
   runSpeedModifier: 4
   sprintSpeedModifier: 7
@@ -25226,6 +25226,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: ceffc8b195270074db74a9df1127f06e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 78dfe120cf07786488777b396c9745d0, type: 2}
     - target: {fileID: 5886863111216080406, guid: ceffc8b195270074db74a9df1127f06e, type: 3}
       propertyPath: m_Layer
       value: 15
