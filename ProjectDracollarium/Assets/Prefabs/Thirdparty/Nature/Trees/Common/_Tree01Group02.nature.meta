@@ -34,8 +34,8 @@ ScriptedImporter:
       _convertMaterials: 1
       _settings:
       - Id: Optimized Bark Material
-        Shader: Hidden/Nature/Tree Creator Bark Optimized
-        Type: 0
+        Shader: ANGRYMESH/Nature Pack/HDRP/Tree Bark Snow
+        Type: 4
         Override: {instanceID: 0}
         Wind: 1
         Translucency: 1
@@ -47,8 +47,8 @@ ScriptedImporter:
         Colors: []
         Textures: []
       - Id: Optimized Leaf Material
-        Shader: Hidden/Nature/Tree Creator Leaves Optimized
-        Type: 0
+        Shader: ANGRYMESH/Nature Pack/HDRP/Tree Leaf
+        Type: 3
         Override: {instanceID: 0}
         Wind: 1
         Translucency: 1
@@ -65,22 +65,13 @@ ScriptedImporter:
       - Id: diffuse
         TextureQuality: 1
         BoostSharpness: 1
-      - Id: normal_specular
-        TextureQuality: 1
-        BoostSharpness: 1
-      - Id: translucency_gloss
-        TextureQuality: 1
-        BoostSharpness: 1
-      - Id: shadow
-        TextureQuality: 1
-        BoostSharpness: 1
     _meshImportSettings:
       _convertMeshes: 1
       _meshComplexity: 1
       _axisOrientation: 0
       _trunkHasColliders: 0
-      _branchWindScale: 1
-      _leafWindScale: 1
+      _branchWindScale: 0.1
+      _leafWindScale: 2
       _windVariation: 1
       _mergeIntersecting: 0
       _removeDoubleSidedFaces: 1
@@ -88,9 +79,9 @@ ScriptedImporter:
       - Id: Mesh
         SubMeshes:
         - Id: Optimized Bark Material
-          Type: 0
+          Type: 4
         - Id: Optimized Leaf Material
-          Type: 0
+          Type: 3
     _rendererImportSettings:
       _overrideCastShadows: 0
       _castShadows: 1

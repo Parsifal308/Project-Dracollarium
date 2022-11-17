@@ -79,8 +79,8 @@ ScriptedImporter:
       _meshComplexity: 1
       _axisOrientation: 0
       _trunkHasColliders: 0
-      _branchWindScale: 1
-      _leafWindScale: 1
+      _branchWindScale: 0.1
+      _leafWindScale: 2
       _windVariation: 1
       _mergeIntersecting: 0
       _removeDoubleSidedFaces: 1
@@ -88,9 +88,9 @@ ScriptedImporter:
       - Id: Mesh
         SubMeshes:
         - Id: Optimized Bark Material
-          Type: 0
+          Type: 4
         - Id: Optimized Leaf Material
-          Type: 0
+          Type: 3
     _rendererImportSettings:
       _overrideCastShadows: 0
       _castShadows: 1

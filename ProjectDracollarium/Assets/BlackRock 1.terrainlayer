@@ -8,9 +8,9 @@ TerrainLayer:
   m_PrefabAsset: {fileID: 0}
   m_Name: BlackRock 1
   m_DiffuseTexture: {fileID: 2800000, guid: 1ab0f778ee79b014ca7816bf598266be, type: 3}
-  m_NormalMapTexture: {fileID: 2800000, guid: becb41d363c70524e839e425f0f13494, type: 3}
-  m_MaskMapTexture: {fileID: 2800000, guid: 04b7e71ce064d89498d020d34505870b, type: 3}
-  m_TileSize: {x: 5, y: 5}
+  m_NormalMapTexture: {fileID: 2800000, guid: 179efb975cafc2e4d800dcc115b55651, type: 3}
+  m_MaskMapTexture: {fileID: 2800000, guid: 0203598b7e4c82d469835aa6c24ffd9e, type: 3}
+  m_TileSize: {x: 15, y: 15}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
   m_Metallic: 0

@@ -234,7 +234,7 @@ MonoBehaviour:
   DefaultPreset: " <sbspreset pkgurl=\"pkg://black_rock_cliff\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"212390899\" type=\"8\" value=\"10,10\" />\n</sbspreset>\n"
   MaterialShader: HDRP/Lit
-  RenderTextures: 1
+  RenderTextures: 0
   OutputRemaped: 0
   references:
     version: 2
