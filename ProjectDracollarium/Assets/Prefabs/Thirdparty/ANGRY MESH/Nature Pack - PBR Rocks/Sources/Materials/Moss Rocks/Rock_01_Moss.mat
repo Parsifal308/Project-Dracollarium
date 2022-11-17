@@ -2,15 +2,22 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Rock_01_Moss
   m_Shader: {fileID: 4800000, guid: d0f7254d46c7d0e4fbfee3f7ffe67411, type: 3}
-  m_ShaderKeywords: _DETAIL_MULX2 _EMISSION _FLOAT2_ON _METALLICGLOSSMAP _NORMALMAP
-    _TOPNOISE_ON
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _DETAIL_MULX2
+  - _DISABLE_SSR_TRANSPARENT
+  - _EMISSION
+  - _FLOAT2_ON
+  - _METALLICGLOSSMAP
+  - _NORMALMAP
+  - _TOPNOISE_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
