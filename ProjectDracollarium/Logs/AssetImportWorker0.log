@@ -15,7 +15,7 @@ D:/Dracollarium/Project-Dracollarium/ProjectDracollarium
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58211
+64441
 Successfully changed project path to: D:/Dracollarium/Project-Dracollarium/ProjectDracollarium
 D:/Dracollarium/Project-Dracollarium/ProjectDracollarium
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/Dracollarium/Project-Dracollarium/ProjectDracollarium
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 191.56 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 150.96 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path D:/Unity/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,93 +63,93 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56076
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003117 seconds.
+Registered in 0.002866 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 171.06 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 147.61 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.676 seconds
+- Completed reload, in  0.566 seconds
 Domain Reload Profiling:
-	ReloadAssembly (677ms)
-		BeginReloadAssembly (72ms)
+	ReloadAssembly (567ms)
+		BeginReloadAssembly (57ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (513ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (433ms)
+			LoadAssemblies (56ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (106ms)
+			SetupTypeCache (84ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (337ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (289ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (39ms)
+				InitializePlatformSupportModulesInManaged (34ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (171ms)
+				RefreshPlugins (148ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (84ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
+				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009258 seconds.
+Registered in 0.007735 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 182.31 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 152.04 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.881 seconds
+- Completed reload, in  1.547 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1882ms)
-		BeginReloadAssembly (114ms)
+	ReloadAssembly (1547ms)
+		BeginReloadAssembly (93ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (1662ms)
-			LoadAssemblies (109ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1372ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (324ms)
+			SetupTypeCache (246ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (107ms)
-			SetupLoadedEditorAssemblies (912ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (780ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (182ms)
-				BeforeProcessingInitializeOnLoad (112ms)
-				ProcessInitializeOnLoadAttributes (534ms)
-				ProcessInitializeOnLoadMethodAttributes (67ms)
+				RefreshPlugins (152ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (466ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 7.81 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 5.19 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7412 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 141 unused Assets / (6.2 MB). Loaded Objects now: 7877.
-Memory consumption went from 424.5 MB to 418.3 MB.
-Total: 15.338400 ms (FindLiveObjects: 1.567200 ms CreateObjectMapping: 0.478900 ms MarkObjects: 10.190000 ms  DeleteObjects: 3.100400 ms)
+Unloading 7271 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 136 unused Assets / (6.2 MB). Loaded Objects now: 7741.
+Memory consumption went from 418.0 MB to 411.8 MB.
+Total: 9.960200 ms (FindLiveObjects: 1.151900 ms CreateObjectMapping: 0.301200 ms MarkObjects: 5.244500 ms  DeleteObjects: 3.261500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,150 +163,73 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 74082.064121 seconds.
-  path: Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - Common/Shaders
-  artifactKey: Guid(23f9088b87a79a14cbeb074bdaa5e019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - Common/Shaders using Guid(23f9088b87a79a14cbeb074bdaa5e019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20b20f327862b7395aab503eb8d78c08') in 0.022501 seconds 
+  Time since last request: 14457.002763 seconds.
+  path: Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - PBR Rocks/Prefabs Nature/Clover_01.prefab
+  artifactKey: Guid(f1bf5956b87786042b973154d18f8523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - PBR Rocks/Prefabs Nature/Clover_01.prefab using Guid(f1bf5956b87786042b973154d18f8523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b1d519de6f0c40569bb55683230daf6') in 0.591812 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.167528 seconds.
-  path: Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - Common/Shaders/Unity HDRP
-  artifactKey: Guid(20b0e7b77058da0468ef43c2ebea482b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - Common/Shaders/Unity HDRP using Guid(20b0e7b77058da0468ef43c2ebea482b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75162318800f21aa6a7c8d3f778c4ef3') in 0.001921 seconds 
+  Time since last request: 7.815416 seconds.
+  path: Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - PBR Rocks/Skybox
+  artifactKey: Guid(e192687b7c823bd42a8b07af0e16e558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - PBR Rocks/Skybox using Guid(e192687b7c823bd42a8b07af0e16e558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62115c83f877700fbc284d7a9e3998e2') in 0.003781 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.246084 seconds.
-  path: Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - Common/Shaders/Unity HDRP/Detail Props Snow.shader
-  artifactKey: Guid(d0f7254d46c7d0e4fbfee3f7ffe67411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - Common/Shaders/Unity HDRP/Detail Props Snow.shader using Guid(d0f7254d46c7d0e4fbfee3f7ffe67411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5d32bbbcf360f47f476cee01f02e8d') in 0.028015 seconds 
+  Time since last request: 8503.189056 seconds.
+  path: Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - PBR Rocks/Prefabs Rocks Desktop/Moss Rocks/Rock_Group_02_Moss.prefab
+  artifactKey: Guid(f5605754b695a684f997f25413609b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - PBR Rocks/Prefabs Rocks Desktop/Moss Rocks/Rock_Group_02_Moss.prefab using Guid(f5605754b695a684f997f25413609b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '704dede29b4d1e40dab350ea577c9f14') in 0.210832 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.538920 seconds.
-  path: Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - Common/Shaders/Unity HDRP/Detail Props.shader
-  artifactKey: Guid(84237de140c3b5e44ba24d45e6002f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - Common/Shaders/Unity HDRP/Detail Props.shader using Guid(84237de140c3b5e44ba24d45e6002f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9826e0e8b3649b056374f526cf6c43e') in 0.002003 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007814 seconds.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <523a924aba464755b1747653b71e5189>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <523a924aba464755b1747653b71e5189>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <523a924aba464755b1747653b71e5189>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <99feab6f3db6407493924fe4a179a95b>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <523a924aba464755b1747653b71e5189>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <523a924aba464755b1747653b71e5189>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <523a924aba464755b1747653b71e5189>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <99feab6f3db6407493924fe4a179a95b>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.90 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <523a924aba464755b1747653b71e5189>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <523a924aba464755b1747653b71e5189>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <523a924aba464755b1747653b71e5189>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <99feab6f3db6407493924fe4a179a95b>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.907 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1907ms)
-		BeginReloadAssembly (193ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (1619ms)
-			LoadAssemblies (135ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (368ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (136ms)
-			SetupLoadedEditorAssemblies (749ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (151ms)
-				ProcessInitializeOnLoadAttributes (513ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.82 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6840 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 103 unused Assets / (6.2 MB). Loaded Objects now: 7881.
-Memory consumption went from 400.2 MB to 394.0 MB.
-Total: 10.393900 ms (FindLiveObjects: 0.938600 ms CreateObjectMapping: 0.890800 ms MarkObjects: 6.219900 ms  DeleteObjects: 2.343300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 2821.011789 seconds.
+  path: Assets/ALP8310_Assets/Nature Package-Coniferous Environment/VegetationModels/Models/SwampSedgeGreenDetail02.prefab
+  artifactKey: Guid(2194fe2a532f1d04595b207feb00ee6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ALP8310_Assets/Nature Package-Coniferous Environment/VegetationModels/Models/SwampSedgeGreenDetail02.prefab using Guid(2194fe2a532f1d04595b207feb00ee6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255db6f3fc8cf4990ab369ef32b5967d') in 0.209939 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1024.991735 seconds.
-  path: Assets/Resources/Brushes/brush_10.brush
-  artifactKey: Guid(27bf08bd56f5cd640b4f1de2622dbb17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Brushes/brush_10.brush using Guid(27bf08bd56f5cd640b4f1de2622dbb17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fcec07eb1b70ea6c244ee5d85b83659') in 0.072589 seconds 
+  Time since last request: 160.813103 seconds.
+  path: Assets/Prefabs/Thirdparty/Nature/SwampSedge/SwampSedgeGreenDetail0.nature
+  artifactKey: Guid(66d1487c3e3aa0e4e8fbe22b1a7925e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/Nature/SwampSedge/SwampSedgeGreenDetail0.nature using Guid(66d1487c3e3aa0e4e8fbe22b1a7925e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2f90428318124e4495ee4aacf900ef') in 0.055685 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.445640 seconds.
-  path: Assets/Resources/Brushes/brush_1.brush
-  artifactKey: Guid(533c2f6d6c55c164bb4f54c658719e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Brushes/brush_1.brush using Guid(533c2f6d6c55c164bb4f54c658719e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34cd6d80e7d201d6b7a520b3d3a3def8') in 0.019238 seconds 
+  Time since last request: 8.200369 seconds.
+  path: Assets/Prefabs/Thirdparty/Nature/SwampSedge/SwampSedgeGreenDetail0
+  artifactKey: Guid(56484079ae4faca42b94dba114ac0166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/Nature/SwampSedge/SwampSedgeGreenDetail0 using Guid(56484079ae4faca42b94dba114ac0166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79904d9e77f11a87f6cf83c8e968218') in 0.001183 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 823.204277 seconds.
-  path: Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - PBR Rocks/Prefabs Rocks Desktop/Moss Rocks/Rock_01_Moss.prefab
-  artifactKey: Guid(20f0e2d8c498a5e4a850c3fbb6f09e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - PBR Rocks/Prefabs Rocks Desktop/Moss Rocks/Rock_01_Moss.prefab using Guid(20f0e2d8c498a5e4a850c3fbb6f09e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a122645eced064f098670461a9e2f87') in 0.763918 seconds 
+  Time since last request: 27.679593 seconds.
+  path: Assets/Prefabs/Thirdparty/Nature/SwampSedge/SwampSedgeGreenDetail0.nature
+  artifactKey: Guid(66d1487c3e3aa0e4e8fbe22b1a7925e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/Nature/SwampSedge/SwampSedgeGreenDetail0.nature using Guid(66d1487c3e3aa0e4e8fbe22b1a7925e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d98b82950dea32ba4b97012a03ce389') in 0.065232 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5415.757393 seconds.
-  path: Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - PBR Rocks/Prefabs Rocks Desktop/Moss Rocks/Rock_03_Moss.prefab
-  artifactKey: Guid(81c28846f580a564ab1ab751c455e5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Thirdparty/ANGRY MESH/Nature Pack - PBR Rocks/Prefabs Rocks Desktop/Moss Rocks/Rock_03_Moss.prefab using Guid(81c28846f580a564ab1ab751c455e5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d68a1def1a07907a90463db2c95e7b5') in 0.350985 seconds 
+  Time since last request: 207.002779 seconds.
+  path: Assets/Prefabs/Thirdparty/Nature/Grass/GreenGrass01.nature
+  artifactKey: Guid(83f08d6841a8fb540ab493b3c03803b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/Nature/Grass/GreenGrass01.nature using Guid(83f08d6841a8fb540ab493b3c03803b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c74387c8dd4b8fd1b8cb333baf30f00') in 0.252958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.848875 seconds.
+  path: Assets/Prefabs/Thirdparty/Nature/Grass/GreenDryGrass01.nature
+  artifactKey: Guid(1a66fc839c4663f47a5a89180f43b165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/Nature/Grass/GreenDryGrass01.nature using Guid(1a66fc839c4663f47a5a89180f43b165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e424dc21b153d3b0cd3d79d5011620f') in 0.085064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.178361 seconds.
+  path: Assets/Prefabs/Thirdparty/Nature/Grass/GreenGrass02.nature
+  artifactKey: Guid(2d0f138ae49d73942b1ec6bc45f7b5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/Nature/Grass/GreenGrass02.nature using Guid(2d0f138ae49d73942b1ec6bc45f7b5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0d29447af25a1b7769a83daa67ab95') in 0.028530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.145044 seconds.
+  path: Assets/Prefabs/Thirdparty/Nature/Grass/GreenGrass04.nature
+  artifactKey: Guid(8ad77a155d740424ca7001b47c0ef966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/Nature/Grass/GreenGrass04.nature using Guid(8ad77a155d740424ca7001b47c0ef966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f2a1ff49eacce2819b48be3ae536b2') in 0.041697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 219.100173 seconds.
+  path: Assets/Prefabs/Thirdparty/Nature/Grass/Fern/Fern01.nature
+  artifactKey: Guid(ac7e819ec1a5b2649840f329901041c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Thirdparty/Nature/Grass/Fern/Fern01.nature using Guid(ac7e819ec1a5b2649840f329901041c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce7dddb369dd1768978f429e9803163') in 0.072046 seconds 

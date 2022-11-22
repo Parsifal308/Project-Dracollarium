@@ -52,10 +52,10 @@ ScriptedImporter:
       - Id: diffuse
         TextureQuality: 1
         BoostSharpness: 1
-      - Id: shadow
+      - Id: normal_specular
         TextureQuality: 1
         BoostSharpness: 1
-      - Id: normal_specular
+      - Id: shadow
         TextureQuality: 1
         BoostSharpness: 1
       - Id: translucency_gloss
