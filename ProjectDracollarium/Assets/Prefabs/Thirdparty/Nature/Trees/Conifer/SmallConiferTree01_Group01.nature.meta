@@ -35,8 +35,8 @@ ScriptedImporter:
       _settings:
       - Id: Optimized Leaf Material
         Shader: Hidden/Nature/Tree Creator Leaves Optimized
-        Type: 0
-        Override: {instanceID: 0}
+        Type: 6
+        Override: {fileID: 2100000, guid: c6824dc99399cc84e8766c6b5009460b, type: 2}
         Wind: 1
         Translucency: 1
         Interaction: 1
@@ -52,10 +52,10 @@ ScriptedImporter:
       - Id: diffuse
         TextureQuality: 1
         BoostSharpness: 1
-      - Id: shadow
+      - Id: normal_specular
         TextureQuality: 1
         BoostSharpness: 1
-      - Id: normal_specular
+      - Id: shadow
         TextureQuality: 1
         BoostSharpness: 1
       - Id: translucency_gloss

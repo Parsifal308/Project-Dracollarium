@@ -35,8 +35,8 @@ ScriptedImporter:
       _settings:
       - Id: Optimized Bark Material
         Shader: Hidden/Nature/Tree Creator Bark Optimized
-        Type: 0
-        Override: {instanceID: 0}
+        Type: 6
+        Override: {fileID: 2100000, guid: e7874ac0c374d414eaf237c20d668315, type: 2}
         Wind: 1
         Translucency: 1
         Interaction: 1
@@ -48,8 +48,8 @@ ScriptedImporter:
         Textures: []
       - Id: Optimized Leaf Material
         Shader: Hidden/Nature/Tree Creator Leaves Optimized
-        Type: 0
-        Override: {instanceID: 0}
+        Type: 6
+        Override: {fileID: 2100000, guid: f05c6e0c691adac4ca14277a0607ead3, type: 2}
         Wind: 1
         Translucency: 1
         Interaction: 1

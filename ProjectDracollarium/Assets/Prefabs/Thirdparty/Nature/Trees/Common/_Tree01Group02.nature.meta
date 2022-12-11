@@ -35,8 +35,8 @@ ScriptedImporter:
       _settings:
       - Id: Optimized Bark Material
         Shader: ANGRYMESH/Nature Pack/HDRP/Tree Bark Snow
-        Type: 4
-        Override: {instanceID: 0}
+        Type: 6
+        Override: {fileID: 2100000, guid: 00703069b9617e0449b6e88d22ddfb9d, type: 2}
         Wind: 1
         Translucency: 1
         Interaction: 1
@@ -48,8 +48,8 @@ ScriptedImporter:
         Textures: []
       - Id: Optimized Leaf Material
         Shader: ANGRYMESH/Nature Pack/HDRP/Tree Leaf
-        Type: 3
-        Override: {instanceID: 0}
+        Type: 6
+        Override: {fileID: 2100000, guid: 92e2e11b575938348b127bdd904b7396, type: 2}
         Wind: 1
         Translucency: 1
         Interaction: 1

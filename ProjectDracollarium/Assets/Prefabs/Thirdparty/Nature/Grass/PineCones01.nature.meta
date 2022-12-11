@@ -35,8 +35,8 @@ ScriptedImporter:
       _settings:
       - Id: PineCones01
         Shader: Standard (Specular setup)
-        Type: 7
-        Override: {instanceID: 0}
+        Type: 0
+        Override: {fileID: 2100000, guid: c4f915bb69db6884a8d1bf266928974a, type: 2}
         Wind: 1
         Translucency: 1
         Interaction: 1

@@ -35,8 +35,8 @@ ScriptedImporter:
       _settings:
       - Id: Optimized Bark Material
         Shader: Hidden/Nature/Tree Creator Bark Optimized
-        Type: 0
-        Override: {instanceID: 0}
+        Type: 6
+        Override: {fileID: 2100000, guid: 893c4bd25f0a07a4ea794e6e47f3be6a, type: 2}
         Wind: 1
         Translucency: 1
         Interaction: 1
@@ -48,8 +48,8 @@ ScriptedImporter:
         Textures: []
       - Id: Optimized Leaf Material
         Shader: Hidden/Nature/Tree Creator Leaves Optimized
-        Type: 0
-        Override: {instanceID: 0}
+        Type: 6
+        Override: {fileID: 2100000, guid: a8d60a85e9898764eb71e233367fa5f5, type: 2}
         Wind: 1
         Translucency: 1
         Interaction: 1
@@ -79,8 +79,8 @@ ScriptedImporter:
       _meshComplexity: 1
       _axisOrientation: 0
       _trunkHasColliders: 0
-      _branchWindScale: 1
-      _leafWindScale: 1
+      _branchWindScale: 0.25
+      _leafWindScale: 2
       _windVariation: 1
       _mergeIntersecting: 0
       _removeDoubleSidedFaces: 1
@@ -88,9 +88,9 @@ ScriptedImporter:
       - Id: Mesh
         SubMeshes:
         - Id: Optimized Bark Material
-          Type: 0
+          Type: 4
         - Id: Optimized Leaf Material
-          Type: 0
+          Type: 3
     _rendererImportSettings:
       _overrideCastShadows: 0
       _castShadows: 1

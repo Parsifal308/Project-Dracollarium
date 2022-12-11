@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using Dracollarium.Player;
 public class DisableOnKeyCanceled : MonoBehaviour{
     public event EventHandler OnMenuEnabled;
     private void Start(){
