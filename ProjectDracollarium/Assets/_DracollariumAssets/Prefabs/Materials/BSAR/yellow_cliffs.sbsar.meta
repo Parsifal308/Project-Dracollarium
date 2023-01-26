@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2938fc7e5d9093948a22142cd2d34138
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 13e46b8d09b71e6429bfedfa9dc712ae, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Prefabs/Materials/BSAR/yellow_cliffs.sbsar

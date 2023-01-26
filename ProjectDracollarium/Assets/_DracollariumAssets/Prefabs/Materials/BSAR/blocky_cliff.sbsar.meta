@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d7e1d4c9b53112b478fb01452bfaa7e0
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: ecbc6a88e988b934fbb92a96555874e6, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Prefabs/Materials/BSAR/blocky_cliff.sbsar

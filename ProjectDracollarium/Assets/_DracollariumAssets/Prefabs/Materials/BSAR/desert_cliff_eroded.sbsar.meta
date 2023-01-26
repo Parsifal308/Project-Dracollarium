@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ea95bc9ca0b17424980d3d3b31a57439
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 7b63f134d131c4c4db615f7b4ceadd8c, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Prefabs/Materials/BSAR/desert_cliff_eroded.sbsar
