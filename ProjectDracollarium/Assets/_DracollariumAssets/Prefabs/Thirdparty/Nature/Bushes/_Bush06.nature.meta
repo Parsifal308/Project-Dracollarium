@@ -1,0 +1,96 @@
+fileFormatVersion: 2
+guid: a1600b2b9fb89874b9d7fd7a3b9ceb97
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: d2f8ca521d4faaa41b1d31f0f02aec62, type: 3}
+  _source: {instanceID: 0}
+  _format: 0
+  _materialImportSettings:
+    _convertMaterials: 1
+    _settings: []
+  _textureImportSettings:
+    _convertTextures: 0
+    _settings: []
+  _meshImportSettings:
+    _convertMeshes: 1
+    _meshComplexity: 1
+    _axisOrientation: 0
+    _trunkHasColliders: 0
+    _branchWindScale: 1
+    _leafWindScale: 1
+    _windVariation: 1
+    _mergeIntersecting: 0
+    _removeDoubleSidedFaces: 1
+    _settings: []
+  _importSettings:
+    _source: {fileID: 8845699034163296025, guid: a5ef36b05a22b8348b4eae2b04807a3d, type: 3}
+    _format: 0
+    _materialImportSettings:
+      _convertMaterials: 1
+      _settings:
+      - Id: Optimized Bark Material
+        Shader: Hidden/Nature/Tree Creator Bark Optimized
+        Type: 6
+        Override: {fileID: 2100000, guid: e7874ac0c374d414eaf237c20d668315, type: 2}
+        Wind: 1
+        Translucency: 1
+        Interaction: 1
+        Overlay: 1
+        FlipNormals: 1
+        Floats: []
+        Vectors: []
+        Colors: []
+        Textures: []
+      - Id: Optimized Leaf Material
+        Shader: Hidden/Nature/Tree Creator Leaves Optimized
+        Type: 6
+        Override: {fileID: 2100000, guid: f05c6e0c691adac4ca14277a0607ead3, type: 2}
+        Wind: 1
+        Translucency: 1
+        Interaction: 1
+        Overlay: 1
+        FlipNormals: 1
+        Floats: []
+        Vectors: []
+        Colors: []
+        Textures: []
+    _textureImportSettings:
+      _convertTextures: 0
+      _settings:
+      - Id: diffuse
+        TextureQuality: 1
+        BoostSharpness: 1
+      - Id: normal_specular
+        TextureQuality: 1
+        BoostSharpness: 1
+      - Id: shadow
+        TextureQuality: 1
+        BoostSharpness: 1
+      - Id: translucency_gloss
+        TextureQuality: 1
+        BoostSharpness: 1
+    _meshImportSettings:
+      _convertMeshes: 1
+      _meshComplexity: 1
+      _axisOrientation: 0
+      _trunkHasColliders: 0
+      _branchWindScale: 1
+      _leafWindScale: 1
+      _windVariation: 1
+      _mergeIntersecting: 0
+      _removeDoubleSidedFaces: 1
+      _settings:
+      - Id: Mesh
+        SubMeshes:
+        - Id: Optimized Bark Material
+          Type: 0
+        - Id: Optimized Leaf Material
+          Type: 0
+    _rendererImportSettings:
+      _overrideCastShadows: 0
+      _castShadows: 1

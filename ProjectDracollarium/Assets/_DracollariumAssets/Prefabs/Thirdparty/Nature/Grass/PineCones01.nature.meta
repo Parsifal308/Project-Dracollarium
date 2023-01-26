@@ -1,0 +1,78 @@
+fileFormatVersion: 2
+guid: f41dd75ea5043bb49b8688e440dab650
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: d2f8ca521d4faaa41b1d31f0f02aec62, type: 3}
+  _source: {instanceID: 0}
+  _format: 0
+  _materialImportSettings:
+    _convertMaterials: 1
+    _settings: []
+  _textureImportSettings:
+    _convertTextures: 0
+    _settings: []
+  _meshImportSettings:
+    _convertMeshes: 1
+    _meshComplexity: 1
+    _axisOrientation: 0
+    _trunkHasColliders: 0
+    _branchWindScale: 1
+    _leafWindScale: 1
+    _windVariation: 1
+    _mergeIntersecting: 0
+    _removeDoubleSidedFaces: 1
+    _settings: []
+  _importSettings:
+    _source: {fileID: 4035118783424085444, guid: 821f03840163934458eb065b7401ef8c, type: 3}
+    _format: 0
+    _materialImportSettings:
+      _convertMaterials: 1
+      _settings:
+      - Id: PineCones01
+        Shader: Standard (Specular setup)
+        Type: 0
+        Override: {fileID: 2100000, guid: c4f915bb69db6884a8d1bf266928974a, type: 2}
+        Wind: 1
+        Translucency: 1
+        Interaction: 1
+        Overlay: 1
+        FlipNormals: 1
+        Floats: []
+        Vectors: []
+        Colors: []
+        Textures: []
+    _textureImportSettings:
+      _convertTextures: 0
+      _settings:
+      - Id: PineCones01
+        TextureQuality: 1
+        BoostSharpness: 1
+      - Id: PineCones01_AO
+        TextureQuality: 1
+        BoostSharpness: 1
+      - Id: PineCones01_N
+        TextureQuality: 1
+        BoostSharpness: 1
+    _meshImportSettings:
+      _convertMeshes: 1
+      _meshComplexity: 1
+      _axisOrientation: 0
+      _trunkHasColliders: 0
+      _branchWindScale: 1
+      _leafWindScale: 1
+      _windVariation: 1
+      _mergeIntersecting: 0
+      _removeDoubleSidedFaces: 1
+      _settings:
+      - Id: pSphere22
+        SubMeshes:
+        - Id: PineCones01
+          Type: 0
+    _rendererImportSettings:
+      _overrideCastShadows: 0
+      _castShadows: 1
