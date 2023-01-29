@@ -15,6 +15,7 @@ namespace Dracollarium.Player
     //      This script is responsible for saving references to all the components necessary to make the     ||
     //  player character works. It has the necessary methods to enable and disable the functionalities       ||
     //=========================================================================================================
+    /*
     [RequireComponent(typeof(UIController))]
     [RequireComponent(typeof(MovementController))]
     [RequireComponent(typeof(CameraController))]
@@ -25,10 +26,7 @@ namespace Dracollarium.Player
     [RequireComponent(typeof(CharacterAttributesController))]
     [RequireComponent(typeof(Player_ItemPickup))]
     [RequireComponent(typeof(Player_ModularBuilding))]
-    [RequireComponent(typeof(Player_Combat))]
-
-
-
+    [RequireComponent(typeof(Player_Combat))]*/
     public class PlayerManager : MonoBehaviour
     {
 

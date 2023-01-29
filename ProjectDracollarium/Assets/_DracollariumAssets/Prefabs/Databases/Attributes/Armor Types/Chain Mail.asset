@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5833faf5c1426ce41829a8b140e62e75, type: 3}
+  m_Name: Chain Mail
+  m_EditorClassIdentifier: 
+  damageName: Chain Mail
+  damageIcon: {fileID: 0}
+  attributeDescription: 
+  armorDamageRatios:
+  - damageType: {fileID: 11400000, guid: ce75846c536fad24493924ff0e906a14, type: 2}
+    effectivenessModifier: 0
+  - damageType: {fileID: 11400000, guid: 655c3134e1ea1a24cbbf0ce395484c1b, type: 2}
+    effectivenessModifier: 0
+  - damageType: {fileID: 11400000, guid: 8565cf080ed950c4db8e74838447081b, type: 2}
+    effectivenessModifier: 0
+  - damageType: {fileID: 11400000, guid: 7ed8ed796f0f8a24dbd4a392bd06f9d8, type: 2}
+    effectivenessModifier: 0
+  - damageType: {fileID: 11400000, guid: 46bcab7f07bc3594eadca32a72cadfc8, type: 2}
+    effectivenessModifier: 0
+  - damageType: {fileID: 11400000, guid: dcce466034aaf0346939e0289473d988, type: 2}
+    effectivenessModifier: 0
+  - damageType: {fileID: 11400000, guid: f07b2a202b74c344ab2b94c9176a65ed, type: 2}
+    effectivenessModifier: 0
