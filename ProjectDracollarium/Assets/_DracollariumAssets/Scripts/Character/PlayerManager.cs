@@ -5,6 +5,7 @@ using UnityEngine;
 using Dracollarium.Input;
 using Dracollarium.UI;
 using Dracollarium.Character;
+using Dracollarium.Character.Animation;
 
 namespace Dracollarium.Player
 {

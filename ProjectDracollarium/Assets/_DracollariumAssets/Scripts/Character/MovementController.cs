@@ -13,7 +13,6 @@ namespace Dracollarium.Player
         private PlayerManager playerManager;
         private CharacterController characterController;
         [Header("SETTINGS:")]
-        [SerializeField] private MovementType movementType; //remplazar por las locomotion abilities
         [SerializeField] private float horizontalMoveMultiplier = 1;
         [SerializeField] private float frontalMoveMultiplier = 1;
 
@@ -29,7 +28,6 @@ namespace Dracollarium.Player
 
         #region PROPERTIES
         public bool IsCombating { get { return isCombating; } set { isCombating = value; } }
-        public MovementType MovementType { get { return movementType; } set { movementType = value; } }
         #endregion
 
         #region UNITY METHODS
